@@ -13,6 +13,8 @@ Pre-requisites:
   * SAMtools 1.22.1 ```brew install samtools```
   * seqtk 1.5-r133 ```brew install seqtk```
   * R 4.5.2 (2025-10-31) ```brew install R```
+    * with the following packages installed: ape, ggtree, ggplot2
+    * try ```Rscript -e "options(repos='https://cloud.r-project.org'); install.packages(c('ape','ggplot2','BiocManager')); BiocManager::install('ggtree', ask=FALSE, update=FALSE)"```
 
 # Metadata & Data Setup
 
