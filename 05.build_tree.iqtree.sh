@@ -28,6 +28,13 @@ for MODEL in $IQTREE_MODELS; do
 	echo "# SKIP: ${PREFIX}.treefile "
     else
        
+	# create output dir
+	mkdir -p $(dirname $PREFIX)
+	if [[ $? -ne 0 ]]; then
+	    echo "ERROR[$0] could not create output dir: $(dirname $PREFIX)"
+	    exit 1
+	fi
+	
 	#
 	# build tree
 	#
@@ -37,10 +44,14 @@ for MODEL in $IQTREE_MODELS; do
 	    -m "$MODEL" \
 	    -B 1000 \
 	    -nt AUTO \
-	    -pre "$PREFIX" \
+	    -pre "$PREFIX"
 	RC=$?
 	echo RC=$RC
-
+	if [[ $RC -ne 0 ]]; then
+	    echo "ERROR[$0] iqtree2 failed; see ${PREFIX}.log"
+	    exit 1
+	fi
+	
 	echo "# OUTPUTS:"
 	ls -lstra ${PREFIX}*
 
