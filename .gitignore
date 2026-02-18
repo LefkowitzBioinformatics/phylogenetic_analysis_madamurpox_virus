@@ -1,0 +1,7 @@
+# editor files
+*~
+\#*
+# temp files
+.snakemake
+# iqtree2 output to ignore
+*.ckp.gz

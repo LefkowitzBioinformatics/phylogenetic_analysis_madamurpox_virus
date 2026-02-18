@@ -1,0 +1,357 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: ./new_align/merged_proteins.msa-muscle.faa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 519917
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 56 sequences with 17690 amino-acid sites
+Number of constant sites: 4199 (= 23.7366% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 4199 (= 23.7366% of all sites)
+Number of parsimony informative sites: 11895
+Number of distinct site patterns: 13589
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.yeast+F+I+R6
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0412
+  pi(R) = 0.0457
+  pi(N) = 0.0716
+  pi(D) = 0.0595
+  pi(C) = 0.0163
+  pi(Q) = 0.0243
+  pi(E) = 0.0556
+  pi(G) = 0.0388
+  pi(H) = 0.0203
+  pi(I) = 0.0939
+  pi(L) = 0.0912
+  pi(K) = 0.0794
+  pi(M) = 0.0245
+  pi(F) = 0.0539
+  pi(P) = 0.0324
+  pi(S) = 0.0749
+  pi(T) = 0.0569
+  pi(W) = 0.0055
+  pi(Y) = 0.0511
+  pi(V) = 0.0629
+
+Model of rate heterogeneity: Invar+FreeRate with 6 categories
+Proportion of invariable sites: 0.0366
+Site proportion and rates:  (0.1731,0.0897) (0.2406,0.2941) (0.1925,0.6814) (0.1782,1.2567) (0.1246,2.4654) (0.0544,4.6236)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0366
+  1         0.0897         0.1731
+  2         0.2941         0.2406
+  3         0.6814         0.1925
+  4         1.2567         0.1782
+  5         2.4654         0.1246
+  6         4.6236         0.0544
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -522941.5803 (s.e. 3390.6942)
+Unconstrained log-likelihood (without tree): -159071.9424
+Number of free parameters (#branches + #model parameters): 139
+Akaike information criterion (AIC) score: 1046161.1606
+Corrected Akaike information criterion (AICc) score: 1046163.3783
+Bayesian information criterion (BIC) score: 1047242.6855
+
+Total tree length (sum of branch lengths): 18.8224
+Sum of internal branch lengths: 9.7693 (51.9021% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MH816996-Orthopoxvirus_Abatino' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--MH816996-Orthopoxvirus_Abatino
+|
+|                                                                       +----AP013055-Anomala_cuprea_entomopoxvirus
+|                                                                    +--| (100)
+|                                                                    |  |       +--HF679131-Adoxophyes_honmai_entomopoxvirus__L_
+|                                                                    |  |    +--| (100)
+|                                                                    |  |    |  |  +--AF250284-Amsacta_moorei_entomopoxvirus
+|                                                                    |  |    |  +--| (100)
+|                                                                    |  |    |     |  +--HF679132-Choristoneura_biennis_entomopoxvirus
+|                                                                    |  |    |     +--| (100)
+|                                                                    |  |    |        +--HF679133-Choristoneura_rosaceana_entomopoxvirus__L_
+|                                                                    |  +----| (100)
+|                                                                    |       +--HF679134-Mythimna_separata_entomopoxvirus__L_
+|                                      +-----------------------------| (100)
+|                                      |                             +-----AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_
+|                             +--------| (100)
+|                             |        +----------------------KT159937-Salmon_gill_poxvirus
+|                          +--| (100)
+|                          |  +----DQ356948-Nile_crocodilepox_virus
+|                       +--| (100)
+|                       |  |        +--AY318871-Canarypox_virus
+|                       |  |     +--| (100)
+|                       |  |     |  |     +--MF678796-Flamingopox_virus_FGPVKD09
+|                       |  |     |  |  +--| (100)
+|                       |  |     |  |  |  |  +--KJ801920-Pigeonpox_virus
+|                       |  |     |  |  |  +--| (100)
+|                       |  |     |  |  |     +--KJ859677-Penguinpox_virus
+|                       |  |     |  +--| (100)
+|                       |  |     |     +--AF198100-Fowlpox_virus
+|                       |  |  +--| (100)
+|                       |  |  |  +--KP728110-Turkeypox_virus
+|                       |  +--| (100)
+|                       |     |  +--MF467281-Eastern_grey_kangaroopox_virus
+|                       |     +--| (100)
+|                       |        +--MF467280-Western_grey_kangaroopox_virus
+|                    +--| (100)
+|                    |  |     +--U60315-Molluscum_contagiosum_virus_subtype_1
+|                    |  |  +--| (93)
+|                    |  |  |  +--PP711852-Rousettus_bat_poxvirus_isolate_1A/Uganda/UGR70/2019
+|                    |  +--| (100)
+|                    |     +--MNB22-MNB22
+|                 +--| (84)
+|                 |  +--HE601899-Squirrelpox_virus
+|              +--| (100)
+|              |  |            +--AY386265-Bovine_papular_stomatitis_virus
+|              |  |         +--| (74)
+|              |  |         |  +--KM502564-Parapoxvirus_red_deer/HL953
+|              |  |      +--| (90)
+|              |  |      |  |  +--AY386264-Orf_virus_strain_OV-SA00
+|              |  |      |  +--| (100)
+|              |  |      |     +--GQ329670-Pseudocowpox_virus
+|              |  |  +---| (100)
+|              |  |  |   +--KY382358-Seal_parapoxvirus
+|              |  +--| (92)
+|              |     |  +--KU980965-Pteropox_virus
+|              |     +--| (100)
+|              |        +--MH427217-Sea_otter_poxvirus
+|           +--| (100)
+|           |  |           +--HQ647181-Cotia_virus_SPAn232
+|           |  |        +--| (74)
+|           |  |        |  |  +--AF170726-Myxoma_virus_strain_Lausanne
+|           |  |        |  +--| (100)
+|           |  |        |     +--AF170722-Rabbit_fibroma_virus
+|           |  |     +--| (100)
+|           |  |     |  |  +--AY689436-Deerpox_virus_W-848-83
+|           |  |     |  +--| (75)
+|           |  |     |     |        +--NC_004003.1-Goatpox_virus_Pellor
+|           |  |     |     |     +--| (98)
+|           |  |     |     |     |  +--NC_004002.1-Sheeppox_virus
+|           |  |     |     |  +--| (100)
+|           |  |     |     |  |  +--AF325528-Lumpy_skin_disease_virus_NI-2490
+|           |  |     |     +--| (98)
+|           |  |     |        +--AF410153-Swinepox_virus
+|           |  |  +--| (100)
+|           |  |  |  |  +--AJ293568-Yaba-like_disease_virus
+|           |  |  |  +--| (100)
+|           |  |  |     +--AY386371-Yaba_monkey_tumor_virus
+|           |  +--| (100)
+|           |     +--KY747497-Eptesipox_virus
+|        +--| (100)
+|        |  |  +--MF001304-Murmansk_poxvirus
+|        |  +--| (100)
+|        |     +--HQ849551-Yokapox_virus
+|     +--| (100)
+|     |  |  +--KP143769-Raccoonpox_virus
+|     |  +--| (100)
+|     |     |  +--KU749310-Skunkpox_virus
+|     |     +--| (100)
+|     |        +--KU749311-Volepox_virus
+|  +--| (100)
+|  |  +--MH607141-Akhmeta_virus
++--| (100)
+|  |              +--AF438165-Camelpox_virus_M-96
+|  |           +--| (100)
+|  |           |  +--DQ437594-Taterapox_virus
+|  |        +--| (100)
+|  |        |  |  +--X69198-Variola_virus_major
+|  |        |  +--| (100)
+|  |        |     +--Y16780-Variola_minor_virus
+|  |     +--| (81)
+|  |     |  |  +--DQ792504-Horsepox_virus
+|  |     |  +--| (100)
+|  |     |     +--AY243312-Vaccinia_virus_WR
+|  |  +--| (88)
+|  |  |  |  +--AY753185-monkeypox_virus_clade_IIa_strain_cOP-58
+|  |  |  +--| (100)
+|  |  |     +--AF380138-Monkeypox_virus_clade_I_strain_Zaire-96-I-16
+|  +--| (52)
+|     +--AF482758-Cowpox_virus
+|
++--AF012825-Ectromelia_virus
+
+Tree in newick format:
+
+(MH816996-Orthopoxvirus_Abatino:0.0054028669,(((((((((((((AP013055-Anomala_cuprea_entomopoxvirus:0.6038737390,((HF679131-Adoxophyes_honmai_entomopoxvirus__L_:0.1844489132,(AF250284-Amsacta_moorei_entomopoxvirus:0.1494367745,(HF679132-Choristoneura_biennis_entomopoxvirus:0.0123397877,HF679133-Choristoneura_rosaceana_entomopoxvirus__L_:0.0155872516)100:0.1152990711)100:0.0543158936)100:0.0618084158,HF679134-Mythimna_separata_entomopoxvirus__L_:0.1910572789)100:0.5611059452)100:0.3027899847,AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_:0.6979531990)100:3.4006406600,KT159937-Salmon_gill_poxvirus:2.6276815404)100:1.0531112680,DQ356948-Nile_crocodilepox_virus:0.6667517202)100:0.2764881304,(((AY318871-Canarypox_virus:0.1553706623,((MF678796-Flamingopox_virus_FGPVKD09:0.0037311178,(KJ801920-Pigeonpox_virus:0.0112105712,KJ859677-Penguinpox_virus:0.0074859718)100:0.0044199790)100:0.0127617632,AF198100-Fowlpox_virus:0.0221067254)100:0.1100783956)100:0.0594465393,KP728110-Turkeypox_virus:0.1512324598)100:0.4364621576,(MF467281-Eastern_grey_kangaroopox_virus:0.0066358625,MF467280-Western_grey_kangaroopox_virus:0.0069392909)100:0.2566525905)100:0.0954017066)100:0.0975337831,((U60315-Molluscum_contagiosum_virus_subtype_1:0.2223379086,PP711852-Rousettus_bat_poxvirus_isolate_1A/Uganda/UGR70/2019:0.3163899541)93:0.0561242773,MNB22-MNB22:0.3987666445)100:0.0615321804)100:0.2096300043,HE601899-Squirrelpox_virus:0.3046733102)84:0.0476385549,((((AY386265-Bovine_papular_stomatitis_virus:0.0763296535,KM502564-Parapoxvirus_red_deer/HL953:0.1060797959)74:0.0189382706,(AY386264-Orf_virus_strain_OV-SA00:0.0276265810,GQ329670-Pseudocowpox_virus:0.0263213637)100:0.0745924166)90:0.0327977080,KY382358-Seal_parapoxvirus:0.0828612178)100:0.5550550342,(KU980965-Pteropox_virus:0.2453000642,MH427217-Sea_otter_poxvirus:0.2982707124)100:0.2333709805)92:0.0712554762)100:0.2011929859,((((HQ647181-Cotia_virus_SPAn232:0.3358009441,(AF170726-Myxoma_virus_strain_Lausanne:0.0301667402,AF170722-Rabbit_fibroma_virus:0.0370364721)100:0.2106460822)74:0.0249114091,(AY689436-Deerpox_virus_W-848-83:0.1710426472,(((NC_004003.1-Goatpox_virus_Pellor:0.0084609911,NC_004002.1-Sheeppox_virus:0.0081568843)98:0.0027067982,AF325528-Lumpy_skin_disease_virus_NI-2490:0.0025570379)100:0.1854251867,AF410153-Swinepox_virus:0.1975039918)98:0.0307420860)75:0.0231178263)100:0.0502353612,(AJ293568-Yaba-like_disease_virus:0.0529118328,AY386371-Yaba_monkey_tumor_virus:0.0738229361)100:0.1866443986)100:0.0748960172,KY747497-Eptesipox_virus:0.2560916339)100:0.0810896723)100:0.1843246497,(MF001304-Murmansk_poxvirus:0.0432663678,HQ849551-Yokapox_virus:0.1074734104)100:0.0821042655)100:0.0864252866,(KP143769-Raccoonpox_virus:0.0247298459,(KU749310-Skunkpox_virus:0.0127372410,KU749311-Volepox_virus:0.0165620584)100:0.0081269707)100:0.0186291143)100:0.0223018995,MH607141-Akhmeta_virus:0.0124075571)100:0.0078655940,(((((AF438165-Camelpox_virus_M-96:0.0070797303,DQ437594-Taterapox_virus:0.0031343678)100:0.0004771469,(X69198-Variola_virus_major:0.0016804507,Y16780-Variola_minor_virus:0.0016035896)100:0.0076982786)100:0.0031935889,(DQ792504-Horsepox_virus:0.0045370993,AY243312-Vaccinia_virus_WR:0.0019402241)100:0.0030901250)81:0.0013584553,(AY753185-monkeypox_virus_clade_IIa_strain_cOP-58:0.0016338223,AF380138-Monkeypox_virus_clade_I_strain_Zaire-96-I-16:0.0024641152)100:0.0079597532)88:0.0019568873,AF482758-Cowpox_virus:0.0065464101)52:0.0008486073)100:0.0020334594,AF012825-Ectromelia_virus:0.0076451197);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -522941.573608
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--MH816996-Orthopoxvirus_Abatino
+|
+|                                                                       +----AP013055-Anomala_cuprea_entomopoxvirus
+|                                                                    +--| (100)
+|                                                                    |  |       +--HF679131-Adoxophyes_honmai_entomopoxvirus__L_
+|                                                                    |  |    +--| (100)
+|                                                                    |  |    |  |  +--AF250284-Amsacta_moorei_entomopoxvirus
+|                                                                    |  |    |  +--| (100)
+|                                                                    |  |    |     |  +--HF679132-Choristoneura_biennis_entomopoxvirus
+|                                                                    |  |    |     +--| (100)
+|                                                                    |  |    |        +--HF679133-Choristoneura_rosaceana_entomopoxvirus__L_
+|                                                                    |  +----| (100)
+|                                                                    |       +--HF679134-Mythimna_separata_entomopoxvirus__L_
+|                                      +-----------------------------| (100)
+|                                      |                             +-----AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_
+|                             +--------| (100)
+|                             |        +----------------------KT159937-Salmon_gill_poxvirus
+|                          +--| (100)
+|                          |  +----DQ356948-Nile_crocodilepox_virus
+|                       +--| (100)
+|                       |  |        +--AY318871-Canarypox_virus
+|                       |  |     +--| (100)
+|                       |  |     |  |     +--MF678796-Flamingopox_virus_FGPVKD09
+|                       |  |     |  |  +--| (100)
+|                       |  |     |  |  |  |  +--KJ801920-Pigeonpox_virus
+|                       |  |     |  |  |  +--| (100)
+|                       |  |     |  |  |     +--KJ859677-Penguinpox_virus
+|                       |  |     |  +--| (100)
+|                       |  |     |     +--AF198100-Fowlpox_virus
+|                       |  |  +--| (100)
+|                       |  |  |  +--KP728110-Turkeypox_virus
+|                       |  +--| (100)
+|                       |     |  +--MF467281-Eastern_grey_kangaroopox_virus
+|                       |     +--| (100)
+|                       |        +--MF467280-Western_grey_kangaroopox_virus
+|                    +--| (100)
+|                    |  |     +--U60315-Molluscum_contagiosum_virus_subtype_1
+|                    |  |  +--| (93)
+|                    |  |  |  +--PP711852-Rousettus_bat_poxvirus_isolate_1A/Uganda/UGR70/2019
+|                    |  +--| (100)
+|                    |     +--MNB22-MNB22
+|                 +--| (84)
+|                 |  +--HE601899-Squirrelpox_virus
+|              +--| (100)
+|              |  |            +--AY386265-Bovine_papular_stomatitis_virus
+|              |  |         +--| (74)
+|              |  |         |  +--KM502564-Parapoxvirus_red_deer/HL953
+|              |  |      +--| (90)
+|              |  |      |  |  +--AY386264-Orf_virus_strain_OV-SA00
+|              |  |      |  +--| (100)
+|              |  |      |     +--GQ329670-Pseudocowpox_virus
+|              |  |  +---| (100)
+|              |  |  |   +--KY382358-Seal_parapoxvirus
+|              |  +--| (92)
+|              |     |  +--KU980965-Pteropox_virus
+|              |     +--| (100)
+|              |        +--MH427217-Sea_otter_poxvirus
+|           +--| (100)
+|           |  |           +--HQ647181-Cotia_virus_SPAn232
+|           |  |        +--| (74)
+|           |  |        |  |  +--AF170726-Myxoma_virus_strain_Lausanne
+|           |  |        |  +--| (100)
+|           |  |        |     +--AF170722-Rabbit_fibroma_virus
+|           |  |     +--| (100)
+|           |  |     |  |  +--AY689436-Deerpox_virus_W-848-83
+|           |  |     |  +--| (75)
+|           |  |     |     |        +--NC_004003.1-Goatpox_virus_Pellor
+|           |  |     |     |     +--| (98)
+|           |  |     |     |     |  +--NC_004002.1-Sheeppox_virus
+|           |  |     |     |  +--| (100)
+|           |  |     |     |  |  +--AF325528-Lumpy_skin_disease_virus_NI-2490
+|           |  |     |     +--| (98)
+|           |  |     |        +--AF410153-Swinepox_virus
+|           |  |  +--| (100)
+|           |  |  |  |  +--AJ293568-Yaba-like_disease_virus
+|           |  |  |  +--| (100)
+|           |  |  |     +--AY386371-Yaba_monkey_tumor_virus
+|           |  +--| (100)
+|           |     +--KY747497-Eptesipox_virus
+|        +--| (100)
+|        |  |  +--MF001304-Murmansk_poxvirus
+|        |  +--| (100)
+|        |     +--HQ849551-Yokapox_virus
+|     +--| (100)
+|     |  |  +--KP143769-Raccoonpox_virus
+|     |  +--| (100)
+|     |     |  +--KU749310-Skunkpox_virus
+|     |     +--| (100)
+|     |        +--KU749311-Volepox_virus
+|  +--| (100)
+|  |  +--MH607141-Akhmeta_virus
++--| (100)
+|  |              +--AF438165-Camelpox_virus_M-96
+|  |           +--| (100)
+|  |           |  +--DQ437594-Taterapox_virus
+|  |        +--| (100)
+|  |        |  |  +--X69198-Variola_virus_major
+|  |        |  +--| (100)
+|  |        |     +--Y16780-Variola_minor_virus
+|  |     +--| (81)
+|  |     |  |  +--DQ792504-Horsepox_virus
+|  |     |  +--| (100)
+|  |     |     +--AY243312-Vaccinia_virus_WR
+|  |  +--| (88)
+|  |  |  |  +--AY753185-monkeypox_virus_clade_IIa_strain_cOP-58
+|  |  |  +--| (100)
+|  |  |     +--AF380138-Monkeypox_virus_clade_I_strain_Zaire-96-I-16
+|  +--| (52)
+|     +--AF482758-Cowpox_virus
+|
++--AF012825-Ectromelia_virus
+
+
+Consensus tree in newick format: 
+
+(MH816996-Orthopoxvirus_Abatino:0.0054058964,(((((((((((((AP013055-Anomala_cuprea_entomopoxvirus:0.6044671649,((HF679131-Adoxophyes_honmai_entomopoxvirus__L_:0.1846281309,(AF250284-Amsacta_moorei_entomopoxvirus:0.1495829666,(HF679132-Choristoneura_biennis_entomopoxvirus:0.0123501928,HF679133-Choristoneura_rosaceana_entomopoxvirus__L_:0.0156023993)100:0.1154040749)100:0.0543616344)100:0.0618435628,HF679134-Mythimna_separata_entomopoxvirus__L_:0.1912594055)100:0.5616346996)100:0.3029374411,AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_:0.6987513782)100:3.4039345617,KT159937-Salmon_gill_poxvirus:2.6300636968)100:1.0541647133,DQ356948-Nile_crocodilepox_virus:0.6673157592)100:0.2768074929,(((AY318871-Canarypox_virus:0.1555063881,((MF678796-Flamingopox_virus_FGPVKD09:0.0037342465,(KJ801920-Pigeonpox_virus:0.0112202841,KJ859677-Penguinpox_virus:0.0074924915)100:0.0044231357)100:0.0127733085,AF198100-Fowlpox_virus:0.0221245213)100:0.1101792364)100:0.0595021271,KP728110-Turkeypox_virus:0.1513585415)100:0.4368738872,(MF467281-Eastern_grey_kangaroopox_virus:0.0066397392,MF467280-Western_grey_kangaroopox_virus:0.0069467706)100:0.2568858972)100:0.0954581814)100:0.0976307722,((U60315-Molluscum_contagiosum_virus_subtype_1:0.2225316921,PP711852-Rousettus_bat_poxvirus_isolate_1A/Uganda/UGR70/2019:0.3166770416)93:0.0561643861,MNB22-MNB22:0.3991246543)100:0.0615711996)100:0.2098137061,HE601899-Squirrelpox_virus:0.3049348613)84:0.0476691648,((((AY386265-Bovine_papular_stomatitis_virus:0.0763885345,KM502564-Parapoxvirus_red_deer/HL953:0.1061674735)74:0.0189494548,(AY386264-Orf_virus_strain_OV-SA00:0.0276468807,GQ329670-Pseudocowpox_virus:0.0263423957)100:0.0746540593)90:0.0328272335,KY382358-Seal_parapoxvirus:0.0829189744)100:0.5555317536,(KU980965-Pteropox_virus:0.2454994929,MH427217-Sea_otter_poxvirus:0.2985328954)100:0.2335695729)92:0.0712933805)100:0.2013566637,((((HQ647181-Cotia_virus_SPAn232:0.3360723680,(AF170726-Myxoma_virus_strain_Lausanne:0.0301844213,AF170722-Rabbit_fibroma_virus:0.0370668520)100:0.2108156804)74:0.0249154138,(AY689436-Deerpox_virus_W-848-83:0.1711726386,(((NC_004003.1-Goatpox_virus_Pellor:0.0084671116,NC_004002.1-Sheeppox_virus:0.0081628261)98:0.0027086436,AF325528-Lumpy_skin_disease_virus_NI-2490:0.0025577468)100:0.1855688922,AF410153-Swinepox_virus:0.1976547905)98:0.0307571842)75:0.0231328373)100:0.0502730310,(AJ293568-Yaba-like_disease_virus:0.0529424556,AY386371-Yaba_monkey_tumor_virus:0.0738874263)100:0.1867913259)100:0.0749519135,KY747497-Eptesipox_virus:0.2562977117)100:0.0811398004)100:0.1844653822,(MF001304-Murmansk_poxvirus:0.0432922662,HQ849551-Yokapox_virus:0.1075533593)100:0.0821537510)100:0.0864924906,(KP143769-Raccoonpox_virus:0.0247468650,(KU749310-Skunkpox_virus:0.0127457298,KU749311-Volepox_virus:0.0165738611)100:0.0081324636)100:0.0186400027)100:0.0223181990,MH607141-Akhmeta_virus:0.0124159396)100:0.0078710404,(((((AF438165-Camelpox_virus_M-96:0.0070837312,DQ437594-Taterapox_virus:0.0031361443)100:0.0004778698,(X69198-Variola_virus_major:0.0016813741,Y16780-Variola_minor_virus:0.0016045118)100:0.0077026600)100:0.0031954967,(DQ792504-Horsepox_virus:0.0045402757,AY243312-Vaccinia_virus_WR:0.0019418490)100:0.0030918625)81:0.0013585851,(AY753185-monkeypox_virus_clade_IIa_strain_cOP-58:0.0016347404,AF380138-Monkeypox_virus_clade_I_strain_Zaire-96-I-16:0.0024650427)100:0.0079652722)88:0.0019584419,AF482758-Cowpox_virus:0.0065500166)52:0.0008496797)100:0.0020351610,AF012825-Ectromelia_virus:0.0076504314);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile -m "Q.yeast+F+I{0.036553}+R6{0.173136,0.0896602,0.240609,0.294125,0.192528,0.681383,0.178223,1.25672,0.124569,2.46536,0.0543812,4.6236}" --length 17690
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ./new_align/merged_proteins.msa-muscle.faa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ./new_align/merged_proteins.msa-muscle.faa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Feb 17 20:35:23 2026
+Total CPU time used: 4251.22222 seconds (1h:10m:51s)
+Total wall-clock time used: 611.3130701 seconds (0h:10m:11s)
+
