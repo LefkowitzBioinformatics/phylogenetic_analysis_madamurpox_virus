@@ -2,6 +2,7 @@
 #
 # Compare two trees produced by iqtree under different models
 #
+source 00.set_env.sh
 
 # config
 MODELS="Q.yeast+F+I+R6 LG+I+G4+F"
@@ -15,12 +16,10 @@ MODEL_ABBREV1=$(echo $MODEL_FNAME1 | cut -d _ -f 1)
 MODEL_ABBREV2=$(echo $MODEL_FNAME2 | cut -d _ -f 1)
 
 #inputs
-IQTREE2=/Applications/iqtree2
-echo IQTREE2=$IQTREE2
+echo IQTREE2_EXE=$IQTREE2_EXE
 
-ALL_ALIGN_FAA=all_protein_aligns.faa
-TREE1="all_protein_aligns.faa.$MODEL_FNAME1.treefile"
-TREE2="all_protein_aligns.faa.$MODEL_FNAME2.treefile"
+TREE1="iqtree.$MODEL_FNAME1/merged_proteins.msa-muscle.faa.$MODEL_FNAME1.treefile"
+TREE2="iqtree.$MODEL_FNAME2/merged_proteins.msa-muscle.faa.$MODEL_FNAME2.treefile"
 
 for INP in $IQTREE $ALL_ALIGN_FAA $TREE1 $TREE2; do
     if [[ ! -e "$INP" ]]; then
@@ -30,7 +29,7 @@ for INP in $IQTREE $ALL_ALIGN_FAA $TREE1 $TREE2; do
 done
 
 # intermediate
-TREES="all_protein_aligns.candidates.treefile"
+TREES="merged_proteins.msa-muscle.candidates.treefile"
 
 # output
 CMP_MODEL1="topotest_$MODEL_ABBREV1"
@@ -60,7 +59,7 @@ for MODEL in $MODELS; do
     #
     # compare under a model
     #
-    echo $IQTREE2 \
+    echo $IQTREE2_EXE \
       -s "$ALL_ALIGN_FAA" \
       -m "$MODEL" \
       -z "$TREES" \
@@ -69,7 +68,7 @@ for MODEL in $MODELS; do
       -au \
       -nt AUTO \
       -pre "$CMP_OUT"
-    $IQTREE2 \
+    $IQTREE2_EXE \
       -s "$ALL_ALIGN_FAA" \
       -m "$MODEL" \
       -z "$TREES" \

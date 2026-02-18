@@ -25,7 +25,7 @@ for PROT_NAME in $CORE_PROT_NAMES_ORD; do
     fi
 
     echo "IQTREE2 version"
-    $IQTREE2 --version
+    $IQTREE2_EXE --version
 
     #echo "RAXML version"
     #$RAXML --version | tee $PROT_DIR/version.raxml.txt
@@ -42,13 +42,13 @@ for PROT_NAME in $CORE_PROT_NAMES_ORD; do
 	echo "# "
 	echo "# (PROTEIN $PROT_NAME) Tree Build IQTREE2; model=$(MODEL)"
 	echo "#"
-	echo $IQTREE2 \
+	echo $IQTREE2_EXE \
 	     -s $PROT_ALIGN_MSA \
 	     -m "$MODEL" \
 	     -B 1000 \
 	     -nt AUTO \
 	     -pre "$PREFIX" 
-	$IQTREE2 \
+	$IQTREE2_EXE \
 	    -s $PROT_ALIGN_MSA \
 	    -m "$MODEL" \
 	    -B 1000 \

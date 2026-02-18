@@ -8,7 +8,7 @@ source 00.set_env.sh
 echo ALL_ALIGN_FAA=$ALL_ALIGN_FAA
 
 echo "IQTREE2 version"
-$IQTREE2 --version 
+$IQTREE2_EXE --version 
 
 #
 # align
@@ -38,7 +38,7 @@ for MODEL in $IQTREE_MODELS; do
 	#
 	# build tree
 	#
-	$IQTREE2 \
+	$IQTREE2_EXE \
 	    $* \
 	    -s $ALL_ALIGN_FAA \
 	    -m "$MODEL" \
