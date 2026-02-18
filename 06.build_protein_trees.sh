@@ -33,15 +33,18 @@ for PROT_NAME in $CORE_PROT_NAMES_ORD; do
     # MFP = model finder plus - tries them all, very slow
     #MODEL="MFP"
     MODEL=$IQTREE_FINAL_MODEL
-    PREFIX="$(dirname ${PROT_ALIGN_MSA})/$(basename ${PROT_ALIGN_MSA}).${IQTREE_FINAL_MODEL_SAFE}"
+    MODEL_SAFE=$IQTREE_FINAL_MODEL_SAFE
+    PREFIX="$(dirname ${PROT_ALIGN_MSA})/iqtree.${MODEL_SAFE}/$(basename ${PROT_ALIGN_MSA}).${IQTREE_FINAL_MODEL_SAFE}"
     
     # skip, if already computed
     if [[ -s ${PREFIX}.treefile ]]; then
 	echo "# SKIP: exists ${PREFIX}.treefile "
     else
 	echo "# "
-	echo "# (PROTEIN $PROT_NAME) Tree Build IQTREE2; model=$(MODEL)"
+	echo "# (PROTEIN $PROT_NAME) Tree Build IQTREE2; model=${MODEL}"
 	echo "#"
+	mkdir -p $(dirname $PREFIX)
+
 	echo $IQTREE2_EXE \
 	     -s $PROT_ALIGN_MSA \
 	     -m "$MODEL" \
