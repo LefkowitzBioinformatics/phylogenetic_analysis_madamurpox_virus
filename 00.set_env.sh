@@ -52,7 +52,32 @@ IQTREE_FINAL_MODEL_SAFE=$(echo "$IQTREE_FINAL_MODEL" | tr '+' '_' | sed 's/\.//g
 SCRIPT_DIR=./scripts
 GRAPH_TREE=$SCRIPT_DIR/graph_tree.R
 
-IQTREE2=/Applications/iqtree2
+# hand-installed apps
+IQTREE2_EXE=~/Applications/iqtree2
+MUSCLE_EXE=~/Applications/muscle-osx-arm64.v5.3
+for APP_EXE in $IQTREE2_EXE $MUSCLE_EXE; do
+    if [[ ! -e "$APP_EXE" ]]; then
+	echo "ERROR[$0] missing application: $APP_EXE"
+	exit 1
+    fi
+done 
+
+# brew apps
+for EXE in blastn samtools seqtk Rscript; do
+    if [[ -z "$(which $EXE 2>/dev/null)" ]]; then
+	echo "ERROR[$0] missing exe: $EXE"
+	exit 1
+    fi
+done
+
+# R libraries
+for RLIB_NAME in ape ggplot2 ggtree; do
+    Rscript -e "library($RLIB_NAME)" > /dev/null 2>&1  
+    if [[ $? -ne 0 ]]; then
+	echo "ERROR[$0] R library '$RLIB_NAME' not installed (see README.md)"
+	exit 1
+    fi
+done
 
 # ----------------------------------------------------------------------
 #

@@ -80,8 +80,8 @@ samtools faidx $SRC_PROTEINS_DB_FAA
 
 # QC line count
 echo "grep -c '>'  $OLD_PROTEIN_DIR/*/sequence.fasta.txt $GENBANK_FAAS $NEW_POX_FAA "
-SRC_SEQ_CT=$(grep -c '>'  $OLD_PROTEIN_DIR/*/sequence.fasta.txt $GENBANK_FAAS $NEW_POX_FAA )
-SEQ_DB_CT=$(grep -c '>'  $SRC_PROTEINS_DB_FAA)
+SRC_SEQ_CT=$(grep '>'  $OLD_PROTEIN_DIR/*/sequence.fasta.txt $GENBANK_FAAS $NEW_POX_FAA | wc -l )
+SEQ_DB_CT=$(grep '>'  $SRC_PROTEINS_DB_FAA | wc -l)
 echo "TOTAL SRC Sequences: $SRC_SEQ_CT"
 echo "$SRC_PROTEINS_DB_FAA:    $SEQ_DB_CT"
 if [[ "$SRC_SEQ_CT" -ne "$SEQ_DB_CT" ]]; then

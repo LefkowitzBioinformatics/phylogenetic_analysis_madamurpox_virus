@@ -7,8 +7,8 @@ Phylogenetic analysis places novel poxvirus species in the Poxviridae family usi
 This analysis was run on Mac OSX Tahoe 26.2 (MacBook Pro with M4 Pro chip, 48G RAM).
 
 Pre-requisites:
-  * MUSCLE v5.4 https://github.com/rcedgar/muscle/releases/tag/v5.3
-  * iqtree2 v2.4.0 https://github.com/iqtree/iqtree2/releases/tag/v2.4.0
+  * MUSCLE v5.4 [https://github.com/recdgar/muscle](https://github.com/rcedgar/muscle/releases/tag/v5.3) installed as ~/Applications/muscle-osx-arm64.v5.3
+  * iqtree2 v2.4.0 [https://github.com/iqtree/iqtree2](https://github.com/iqtree/iqtree2/releases/tag/v2.4.0) installed as ~/Applications/iqtree2 
   * BLAST 2.17.0+ ```brew install blast```
   * SAMtools 1.22.1 ```brew install samtools```
   * seqtk 1.5-r133 ```brew install seqtk```
