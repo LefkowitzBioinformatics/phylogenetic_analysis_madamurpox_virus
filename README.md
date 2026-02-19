@@ -19,9 +19,19 @@ This analysis was run on a MacBook Pro with M4 Pro chip, 48G RAM, running Mac OS
     * try ```Rscript -e "options(repos='https://cloud.r-project.org'); install.packages(c('ape','ggplot2','BiocManager')); BiocManager::install('ggtree', ask=FALSE, update=FALSE)"```
   * pdfunite 25.12.0 ```brew install poppler``` used to merge PDFs files into one big one
 
-## Environment Check
+## Quick Start
 
-To check many parts of the environment: ```./00.set_env.sh -v```
+```
+# copy down code and data
+git clone https://github.com/LefkowitzBioinformatics/phylogenetic_analysis_madamurpox_virus.git
+cd phylogenetic_analysis_madamurpox_virus
+
+# check environment
+./00.set_env.sh -v
+
+# run pipeline (~2 hours: runs iqTree2 ModelFinder Plus (MFP))
+./99.full_run.sh
+```
 
 # Metadata & Data Setup
 
@@ -36,16 +46,19 @@ Which contains worksheets:
       * "QC Pivot" checks that "AllProteins" is filled in consistently.
 
 The derived file is, which is actually used by the scripts is
-  * AllProteins.txt
+  * [AllProteins.txt](protein_lists/AllProteins.txt)
 which is the worksheet of the same name from the .xlsx file, saved as .txt (TAB separated). 
 
 To add an additional genome(s):
-   * add rows for the genome(s) to .xlsx/Genomes
-   * add rows for the protein homologs in those genomes to .xlsx/AllProteins
+   * add rows for the genome(s) to core_proteins.curated.xlsx[Genomes].
+   * add rows for the protein homologs in those genomes to core_proteins.curated.xlsx[AllProteins].
+   * add *.faa files to [src_sequences/](src_sequences/).
+   * update "# sources" section of [01.build_protein_db.sh](01.build_protein_db.sh) to include the new .faa's.  
+   * export a AllProteins workbook at "Tab delimited Text (.txt)" into AllProteins.txt, and re-run the pipeline. 
 
 ## src_sequences/
 
-A collection of protein sequences from many Poxviridae genomes. This may include a lot of proteins that wont be used in the current alignments. The selection of which proteins are included in the alignment is driven by the "protein_lists/AllProteins.txt" file.
+A collection of protein sequences from many Poxviridae genomes. This may include a lot of proteins that wont be used in the current alignments. The selection of which proteins are included in the alignment is driven by the protein_lists/[AllProteins.txt](protein_lists/) file.
 
 ### genbank/
 
