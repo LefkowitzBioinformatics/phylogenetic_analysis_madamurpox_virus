@@ -1,10 +1,10 @@
 # phylogenetic_analysis_madamurpox_virus
 
-Phylogenetic analysis places novel poxvirus species in the Poxviridae family using protein MSA of 25 conserved genes across 56 diverse genomes
+This phylogenetic analysis places a novel poxvirus isolate (madamurpox virus) in the *Poxviridae* family using a merged protein MSA of 25 conserved proteins across 56 diverse isolates spanning the *Poxviridae* family.
 
 # Environment
 
-This analysis was run on Mac OSX Tahoe 26.2 (MacBook Pro with M4 Pro chip, 48G RAM).
+This analysis was run on a MacBook Pro with M4 Pro chip, 48G RAM, running Mac OSX Tahoe 26.2.
 
 ## Pre-requisites:
   * MUSCLE v5.4 [https://github.com/recdgar/muscle](https://github.com/rcedgar/muscle/releases/tag/v5.3) installed as ~/Applications/muscle-osx-arm64.v5.3
@@ -55,7 +55,7 @@ If proteins are missing or incorrectly annotated in the genbank records, then ad
 
 ### ictv_report/
 
-Protein sequences used to build the Poxviridae phylogenetic trees in the ICTV Report [Poxviridae](https://ictv.global/report/chapter/poxviridae/poxviridae) chapter, with some later updates. 
+Protein sequences used to build the *Poxviridae* phylogenetic trees in the ICTV Report *[Poxviridae]*(https://ictv.global/report/chapter/poxviridae/poxviridae) chapter, with some later updates. 
 
 See [https://ictv.global/report/chapter/poxviridae/poxviridae](https://ictv.global/report/chapter/poxviridae/poxviridae)
 
@@ -96,3 +96,16 @@ Iterate over the protein groups, using iqtree2 and a pre-selected model, to buil
 ## 99.full_run.sh
 
 Convenience script that runs all the above scripts, in order.
+
+# Results
+
+Final merged MSA: 
+  * [new_align](new_align)/[merged_proteins.msa-muscle.faa](new_align/merged_proteins.msa-muscle.faa)
+
+Final merged MSA iqTree2 tree file: 
+  * [new_align](new_align)/[iqtree.Qyeast_F_I_R6](new_align/iqtree.Qyeast_F_I_R6)/[merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile](new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile)
+
+Rough visualization of tree file: 
+  * [new_align](new_align)/[iqtree.Qyeast_F_I_R6](new_align/iqtree.Qyeast_F_I_R6)/[merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile.pdf](new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile.pdf) [![IQ-TREE phylogeny](new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile.png)](new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile.pdf)
+
+
