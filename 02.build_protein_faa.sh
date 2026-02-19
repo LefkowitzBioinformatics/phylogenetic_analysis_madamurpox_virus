@@ -6,7 +6,7 @@
 #
 #
 # set-env
-source 00.set_env.sh
+source 00.set_env.sh $*
 
 # inputs
 echo WC META=$(wc -l $META)
@@ -23,27 +23,9 @@ for SCRIPT in $AWK_GET_GROUP_ACC_LIST $AWK_PROT_HEADER; do
     fi
 done
 
-# WARNING: these column name/ordinal mappings appear in the AWK scripts, too.
-# head -1 protein_lists/AllProteins.txt | sed 's/\t/\n/g' | egrep -n .
-# 1:GeneOrder
-# 2:GroupName
-# 3:GroupProteinFunction
-# 4:GeneAccession
-# 5:GeneLink
-# 6:GeneProteinFunction
-# 7:IsolateName
-# 8:IsolateAccession
-# 9:isIsolate
-# 10:GroupNameGood
-# 11:Fence
-# 12:GenomeAcc
-# 13:NcbiIsolateName
-# 14:GenomeOrder
-# 15:inNewPoxAlign
-
 # gene names
 # to prefix with ordinal: awk '{ printf "poxcore%02d-%s\n", $1, $2 }')
-CORE_PROT_NAMES_ORD=$(sort -t $'\t' -k1n $META | grep -v GroupName | cut -f 2 | uniq)
+CORE_PROT_NAMES_ORD=$(sort -t $'\t' -k${META_GeneOrder}n $META | grep -v GroupName | cut -f ${META_GroupName} | uniq)
 if [ $? -ne 0 ]; then echo ERROR parsing $META; exit 1; fi
 echo CORE_PROT_NAMES_ORD=$CORE_PROT_NAMES_ORD
 
@@ -66,11 +48,11 @@ for PROT_NAME in $CORE_PROT_NAMES_ORD; do
     echo -n "" >  $PROT_FAA
 
     # debug
-    echo awk -v TargGroup="$PROT_NAME" -v inAlignCol=15 -f $AWK_GET_GROUP_ACC_LIST $META |sort -t $'\t' -k2n 
-    awk -v TargGroup="$PROT_NAME" -v inAlignCol=15 -f $AWK_GET_GROUP_ACC_LIST $META |sort -t $'\t' -k2n 
+    echo awk -v TargGroup="$PROT_NAME" -f $META_AWK -f $AWK_GET_GROUP_ACC_LIST $META |sort -t $'\t' -k2n 
+    awk      -v TargGroup="$PROT_NAME" -f $META_AWK -f $AWK_GET_GROUP_ACC_LIST $META |sort -t $'\t' -k2n 
     if [ $? -ne 0 ]; then echo ERROR parsing $META with $AWK_GET_GROUP_ACC_LIST  ; exit 1; fi
     
-    PROT_ACC_ORDERED=$(awk -v TargGroup="$PROT_NAME" -v inAlignCol=15 -f $AWK_GET_GROUP_ACC_LIST $META|sort -t $'\t' -k2n | cut -f 1)
+    PROT_ACC_ORDERED=$(awk -v TargGroup="$PROT_NAME" -f $META_AWK -f $AWK_GET_GROUP_ACC_LIST $META|sort -t $'\t' -k2n | cut -f 1)
     if [ $? -ne 0 ]; then echo ERROR parsing $META with $AWK_GET_GROUP_ACC_LIST; exit 1; fi
     echo PROT_ACC_ORDERED=$PROT_ACC_ORDERED
     
@@ -79,7 +61,7 @@ for PROT_NAME in $CORE_PROT_NAMES_ORD; do
     #
     for PROT_ACC in $PROT_ACC_ORDERED; do
 	# get genome name and accession
-	PROT_HEADER=$(awk -v TargAccession="$PROT_ACC" -f $AWK_PROT_HEADER $META)
+	PROT_HEADER=$(awk -v TargAccession="$PROT_ACC" -f $META_AWK -f $AWK_PROT_HEADER $META)
 	if [ $? -ne 0 ]; then echo ERROR parsing $META with $AWK_PROT_HEADER ; exit 1; fi
 	echo ">$PROT_HEADER" 
 	echo ">$PROT_HEADER" >> $PROT_FAA

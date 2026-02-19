@@ -3,67 +3,67 @@
 BEGIN Taxa;
 DIMENSIONS ntax=56;
 TAXLABELS
-[1] 'MH816996-Orthopoxvirus_Abatino'
+[1] 'MH816996-orthopoxvirus_abatino'
 [2] 'AP013055-Anomala_cuprea_entomopoxvirus'
-[3] 'HF679131-Adoxophyes_honmai_entomopoxvirus__L_'
+[3] 'HF679131-Adoxophyes_honmai_entomopoxvirus'
 [4] 'MH607141-Akhmeta_virus'
 [5] 'AF250284-Amsacta_moorei_entomopoxvirus'
-[6] 'AY386265-Bovine_papular_stomatitis_virus'
-[7] 'AF438165-Camelpox_virus_M-96'
+[6] 'AY386265-bovine_papular_stomatitis_virus'
+[7] 'AF438165-camelpox_virus'
 [8] 'HF679132-Choristoneura_biennis_entomopoxvirus'
-[9] 'AY318871-Canarypox_virus'
-[10] 'HQ647181-Cotia_virus_SPAn232'
-[11] 'AF482758-Cowpox_virus'
-[12] 'HF679133-Choristoneura_rosaceana_entomopoxvirus__L_'
-[13] 'AY689436-Deerpox_virus_W-848-83'
-[14] 'AF012825-Ectromelia_virus'
+[9] 'AY318871-canarypox_virus'
+[10] 'HQ647181-Cotia_virus'
+[11] 'AF482758-cowpox_virus'
+[12] 'HF679133-Choristoneura_rosaceana_entomopoxvirus'
+[13] 'AY689436-mule_deerpox_virus'
+[14] 'AF012825-ectromelia_virus'
 [15] 'MF467281-Eastern_grey_kangaroopox_virus'
-[16] 'KY747497-Eptesipox_virus'
-[17] 'MF678796-Flamingopox_virus_FGPVKD09'
-[18] 'AF198100-Fowlpox_virus'
-[19] 'KY382358-Seal_parapoxvirus'
-[20] 'NC_004003.1-Goatpox_virus_Pellor'
-[21] 'DQ792504-Horsepox_virus'
-[22] 'AF325528-Lumpy_skin_disease_virus_NI-2490'
-[23] 'U60315-Molluscum_contagiosum_virus_subtype_1'
+[16] 'KY747497-eptesipox_virus'
+[17] 'MF678796-flamingopox_virus'
+[18] 'AF198100-fowlpox_virus'
+[19] 'KY382358-seal_parapoxvirus'
+[20] 'NC_004003-goatpox_virus'
+[21] 'DQ792504-horsepox_virus'
+[22] 'AF325528-lumpy_skin_disease_virus'
+[23] 'U60315-molluscum_contagiosum_virus'
 [24] 'MF001304-Murmansk_poxvirus'
-[25] 'AY753185-monkeypox_virus_clade_IIa_strain_cOP-58'
-[26] 'AF380138-Monkeypox_virus_clade_I_strain_Zaire-96-I-16'
-[27] 'AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_'
-[28] 'HF679134-Mythimna_separata_entomopoxvirus__L_'
-[29] 'AF170726-Myxoma_virus_strain_Lausanne'
+[25] 'AY753185-monkeypox_virus__clade_IIa_'
+[26] 'AF380138-monkeypox_virus__clade_I_'
+[27] 'AF063866-Melanoplus_sanguinipes_entomopoxvirus'
+[28] 'HF679134-Mythimna_separata_entomopoxvirus'
+[29] 'AF170726-myxoma_virus'
 [30] 'DQ356948-Nile_crocodilepox_virus'
-[31] 'AY386264-Orf_virus_strain_OV-SA00'
-[32] 'GQ329670-Pseudocowpox_virus'
-[33] 'KJ801920-Pigeonpox_virus'
-[34] 'KJ859677-Penguinpox_virus'
-[35] 'KU980965-Pteropox_virus'
-[36] 'KP143769-Raccoonpox_virus'
-[37] 'KM502564-Parapoxvirus_red_deer/HL953'
-[38] 'AF170722-Rabbit_fibroma_virus'
-[39] 'NC_004002.1-Sheeppox_virus'
-[40] 'KU749310-Skunkpox_virus'
-[41] 'KT159937-Salmon_gill_poxvirus'
-[42] 'MH427217-Sea_otter_poxvirus'
-[43] 'HE601899-Squirrelpox_virus'
-[44] 'AF410153-Swinepox_virus'
-[45] 'DQ437594-Taterapox_virus'
-[46] 'KP728110-Turkeypox_virus'
-[47] 'AY243312-Vaccinia_virus_WR'
-[48] 'X69198-Variola_virus_major'
-[49] 'Y16780-Variola_minor_virus'
-[50] 'KU749311-Volepox_virus'
+[31] 'AY386264-orf_virus'
+[32] 'GQ329670-pseudocowpox_virus'
+[33] 'KJ801920-pigeonpox_virus'
+[34] 'KJ859677-penguinpox_virus'
+[35] 'KU980965-pteropox_virus'
+[36] 'KP143769-raccoonpox_virus'
+[37] 'KM502564-parapoxvirus_red_deer'
+[38] 'AF170722-rabbit_fibroma_virus'
+[39] 'NC_004002-sheeppox_virus'
+[40] 'KU749310-skunkpox_virus'
+[41] 'KT159937-salmon_gill_poxvirus'
+[42] 'MH427217-sea_otter_poxvirus'
+[43] 'HE601899-squirrelpox_virus'
+[44] 'AF410153-swinepox_virus'
+[45] 'DQ437594-taterapox_virus'
+[46] 'KP728110-turkeypox_virus'
+[47] 'AY243312-vaccinia_virus'
+[48] 'X69198-variola_major_virus'
+[49] 'Y16780-variola_minor_virus'
+[50] 'KU749311-volepox_virus'
 [51] 'MF467280-Western_grey_kangaroopox_virus'
-[52] 'HQ849551-Yokapox_virus'
-[53] 'AJ293568-Yaba-like_disease_virus'
+[52] 'HQ849551-yokapox_virus'
+[53] 'AJ293568-tanapox_virus'
 [54] 'AY386371-Yaba_monkey_tumor_virus'
-[55] 'MNB22-MNB22'
-[56] 'PP711852-Rousettus_bat_poxvirus_isolate_1A/Uganda/UGR70/2019'
+[55] 'MNB22-madamurpox_virus'
+[56] 'PP711852-rousettus_bat_poxvirus'
 ;
 END; [Taxa]
 
 BEGIN Splits;
-DIMENSIONS ntax=56 nsplits=139;
+DIMENSIONS ntax=56 nsplits=137;
 FORMAT labels=no weights=yes confidences=no intervals=no;
 MATRIX
 	100	 2,
@@ -101,40 +101,40 @@ MATRIX
 	100	 2 3 5 8 9 12 15 17 18 27 28 30 33 34 41 46 51,
 	100	 23,
 	100	 56,
-	93	 23 56,
+	96	 23 56,
 	100	 55,
 	100	 23 55 56,
 	100	 2 3 5 8 9 12 15 17 18 23 27 28 30 33 34 41 46 51 55 56,
 	100	 43,
-	84	 2 3 5 8 9 12 15 17 18 23 27 28 30 33 34 41 43 46 51 55 56,
+	82	 2 3 5 8 9 12 15 17 18 23 27 28 30 33 34 41 43 46 51 55 56,
 	100	 6,
 	100	 37,
-	74	 6 37,
+	66	 6 37,
 	100	 31,
 	100	 32,
 	100	 31 32,
-	90	 6 31 32 37,
+	87	 6 31 32 37,
 	100	 19,
 	100	 6 19 31 32 37,
 	100	 35,
 	100	 42,
 	100	 35 42,
-	92	 6 19 31 32 35 37 42,
+	93	 6 19 31 32 35 37 42,
 	100	 1 4 7 10 11 13 14 16 20 21 22 24 25 26 29 36 38 39 40 44 45 47 48 49 50 52 53 54,
 	100	 10,
-	100	 13,
-	21	 10 13,
-	100	 20,
-	100	 39,
-	98	 20 39,
-	100	 22,
-	100	 20 22 39,
-	100	 44,
-	98	 20 22 39 44,
 	100	 29,
 	100	 38,
 	100	 29 38,
-	19	 20 22 29 38 39 44,
+	74	 10 29 38,
+	100	 13,
+	100	 20,
+	100	 39,
+	99	 20 39,
+	100	 22,
+	100	 20 22 39,
+	100	 44,
+	97	 20 22 39 44,
+	74	 13 20 22 39 44,
 	100	 10 13 20 22 29 38 39 44,
 	100	 53,
 	100	 54,
@@ -155,11 +155,9 @@ MATRIX
 	100	 1 4 7 11 14 21 25 26 45 47 48 49,
 	100	 4,
 	100	 1 7 11 14 21 25 26 45 47 48 49,
-	100	 11,
-	10	 1 7 14 21 25 26 45 47 48 49,
 	100	 7,
 	100	 45,
-	100	 7 45,
+	98	 7 45,
 	100	 48,
 	100	 49,
 	100	 48 49,
@@ -167,44 +165,44 @@ MATRIX
 	100	 21,
 	100	 47,
 	100	 21 47,
-	81	 7 21 45 47 48 49,
 	100	 25,
 	100	 26,
 	100	 25 26,
-	88	 7 21 25 26 45 47 48 49,
+	12	 21 25 26 47,
+	95	 7 21 25 26 45 47 48 49,
+	100	 11,
+	67	 7 11 21 25 26 45 47 48 49,
 	100	 1 14,
 	100	 14,
 	100	 1,
-	10	 19 31 32,
-	8	 6 19 31 32,
-	8	 6 19 31 32 37 43,
-	8	 2 3 5 6 8 9 12 15 17 18 19 23 27 28 30 31 32 33 34 37 41 43 46 51 55 56,
-	74	 10 29 38,
-	75	 13 20 22 39 44,
-	15	 21 25 26 47,
-	38	 1 11 14,
-	52	 7 11 21 25 26 45 47 48 49,
-	3	 1 11 14 21 25 26 47,
-	11	 1 11 14 25 26,
-	6	 10 13 20 22 39 44,
-	2	 22 39,
-	8	 6 19 31 32 35 37 42 43,
-	7	 23 55,
-	16	 31 32 37,
-	2	 19 31 32 37,
-	3	 13 20 22 29 38 39 44,
-	1	 13 44,
-	3	 10 20 22 29 38 39 44,
-	2	 1 7 11 14 25 26 45 48 49,
-	1	 29 38 44,
-	1	 11 25 26,
-	0	 7 48 49,
-	0	 6 19,
-	0	 1 7 11 21 25 26 45 47 48 49,
+	21	 31 32 37,
+	88	 7 21 45 47 48 49,
+	22	 10 13,
+	18	 20 22 29 38 39 44,
+	22	 1 11 14,
+	7	 6 19 31 32 37 43,
+	7	 2 3 5 6 8 9 12 15 17 18 19 23 27 28 30 31 32 33 34 37 41 43 46 51 55 56,
+	11	 6 19 31 32 35 37 42 43,
+	4	 23 55,
+	13	 19 31 32,
+	13	 6 19 31 32,
+	8	 10 13 20 22 39 44,
 	0	 1 7 11 14 21 45 47 48 49,
+	4	 1 11 14 25 26,
+	1	 19 31 32 37,
+	1	 13 44,
+	3	 7 48 49,
+	11	 1 7 14 21 25 26 45 47 48 49,
+	0	 1 11 14 21 25 26 47,
+	2	 29 38 44,
+	3	 10 20 22 29 38 39 44,
+	3	 13 20 22 29 38 39 44,
+	1	 2 3 5 6 8 9 12 15 17 18 19 23 27 28 30 31 32 33 34 35 37 41 42 46 51 55 56,
+	0	 1 7 11 14 45 48 49,
+	1	 11 25 26,
+	1	 22 39,
 	0	 2 3 5 8 9 12 17 18 27 28 30 33 34 41 46,
-	0	 2 3 5 6 8 9 12 15 17 18 19 23 27 28 30 31 32 33 34 35 37 41 42 46 51 55 56,
-	0	 20 22,
+	0	 7 25 26 45 48 49,
 ;
 END; [Splits]
 

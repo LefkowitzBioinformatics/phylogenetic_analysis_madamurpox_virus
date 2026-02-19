@@ -1,0 +1,352 @@
+IQ-TREE 2.4.0 built Mar  8 2025
+
+Input file name: ./new_align/protein_groups/A2/sequence.msa-muscle.faa.txt
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 450269
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 56 sequences with 292 amino-acid sites
+Number of constant sites: 73 (= 25% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 73 (= 25% of all sites)
+Number of parsimony informative sites: 192
+Number of distinct site patterns: 255
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.yeast+F+I+R6
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0177
+  pi(R) = 0.0356
+  pi(N) = 0.1030
+  pi(D) = 0.0480
+  pi(C) = 0.0354
+  pi(Q) = 0.0313
+  pi(E) = 0.0652
+  pi(G) = 0.0208
+  pi(H) = 0.0292
+  pi(I) = 0.0836
+  pi(L) = 0.0855
+  pi(K) = 0.1025
+  pi(M) = 0.0180
+  pi(F) = 0.0688
+  pi(P) = 0.0124
+  pi(S) = 0.0826
+  pi(T) = 0.0506
+  pi(W) = 0.0044
+  pi(Y) = 0.0361
+  pi(V) = 0.0693
+
+Model of rate heterogeneity: Invar+FreeRate with 6 categories
+Proportion of invariable sites: 0.0449
+Site proportion and rates:  (0.4631,0.1697) (0.0332,0.8494) (0.1126,0.8680) (0.1511,0.8683) (0.1444,2.6347) (0.0507,5.5961)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0449
+  1         0.1697         0.4631
+  2         0.8494         0.0332
+  3         0.8680         0.1126
+  4         0.8683         0.1511
+  5         2.6347         0.1444
+  6         5.5961         0.0507
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6390.7940 (s.e. 349.1833)
+Unconstrained log-likelihood (without tree): -1589.7418
+Number of free parameters (#branches + #model parameters): 131
+Akaike information criterion (AIC) score: 13043.5880
+Corrected Akaike information criterion (AICc) score: 13259.7380
+Bayesian information criterion (BIC) score: 13525.2428
+
+Total tree length (sum of branch lengths): 18.7721
+Sum of internal branch lengths: 11.5642 (61.6031% of tree length)
+
+WARNING: 5 near-zero internal branches (<0.0034) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AAC97623.1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--AAC97623.1
+|
++--BAO49552.1
+|
+|                  +--CCU56429.1
+|               +--| (68)
+|               |  +--AAG02911.1
+|            +--| (77)
+|            |  +--CCU55463.1
+|         +--| (75)
+|         |  +--CCU56105.1
+|  +------| (100)
+|  |      +**CCU55803.1
++--| (93)
+   |                                      +-----------------AKR04224.1
+   +--------------------------------------| (100)
+                                          |                                                     +--YP_001293283.1
+                                          |                                                  +--| (98)
+                                          |                                                  |  |  +**NP_659664.1
+                                          |                                                  |  +**| (56)
+                                          |                                                  |     +**AAK85053.1
+                                          |                                               +--| (88)
+                                          |                                               |  +--AAL69828.1
+                                          |                                            +--| (89)
+                                          |                                            |  |     +--AAF14978.1
+                                          |                                            |  |  +--| (100)
+                                          |                                            |  |  |  +--AAF17974.1
+                                          |                                            |  +--| (93)
+                                          |                                            |     +--ADT91121.1
+                                          |                                         +--| (75)
+                                          |                                         |  |  +--AAR07448.1
+                                          |                                         |  +--| (100)
+                                          |                                         |     +--CAC21330.1
+                                          |                                      +--| (85)
+                                          |                                      |  +--ABI99256.1
+                                          |                                   +--| (82)
+                                          |                                   |  +--ASK51298.1
+                                          |                                +--| (68)
+                                          |                                |  |  +**AST09311.1
+                                          |                                |  +--| (99)
+                                          |                                |     +--AEN03691.1
+                                          |                             +--| (61)
+                                          |                             |  +--AAM92408.1
+                                          |                          +--| (37)
+                                          |                          |  +**AXN74915.1
+                                          |                       +**| (21)
+                                          |                       |  +**AAM13574.1
+                                          |                    +--| (37)
+                                          |                    |  |  +**AOP31809.1
+                                          |                    |  +--| (83)
+                                          |                    |     |  +--AOP31598.1
+                                          |                    |     +--| (85)
+                                          |                    |        +--AKJ93749.1
+                                          |                 +**| (13)
+                                          |                 |  |  +--AAL40570.1
+                                          |                 |  +--| (95)
+                                          |                 |     +**AAX09207.1
+                                          |              +**| (27)
+                                          |              |  |  +**AYN64686.1
+                                          |              |  +**| (55)
+                                          |              |     +**ABH08227.1
+                                          |           +--| (73)
+                                          |           |  +--AAL73825.1
+                                          |        +--| (65)
+                                          |        |  |        +--AAC55232.1
+                                          |        |  |     +--| (65)
+                                          |        |  |     |  +--ORF081
+                                          |        |  |  +--| (61)
+                                          |        |  |  |  |           +--AAF44509.1
+                                          |        |  |  |  |        +--| (88)
+                                          |        |  |  |  |        |  +--AUD40272.1
+                                          |        |  |  |  |     +--| (94)
+                                          |        |  |  |  |     |  |     +**AID46672.1
+                                          |        |  |  |  |     |  |  +--| (100)
+                                          |        |  |  |  |     |  |  |  +--AID46903.1
+                                          |        |  |  |  |     |  +--| (90)
+                                          |        |  |  |  |     |     +--AAR83584.1
+                                          |        |  |  |  |  +--| (100)
+                                          |        |  |  |  |  |  +--ALA62495.1
+                                          |        |  |  |  +--| (91)
+                                          |        |  |  |     |  +**ATI21037.1
+                                          |        |  |  |     +--| (100)
+                                          |        |  |  |        +--ATI21201.1
+                                          |        |  +--| (98)
+                                          |        |     +--XBH23832.1
+                                          |     +--| (76)
+                                          |     |  |  +--CCD83272.1
+                                          |     |  +--| (68)
+                                          |     |     |     +--AAR98302.1
+                                          |     |     |  +--| (95)
+                                          |     |     |  |  +**ADC53979.1
+                                          |     |     +--| (96)
+                                          |     |        |     +--AAR98434.1
+                                          |     |        |  +--| (97)
+                                          |     |        |  |  +--AIZ77328.1
+                                          |     |        +--| (99)
+                                          |     |           +--ASC55563.1
+                                          |  +--| (76)
+                                          |  |  |  +--AWU47135.1
+                                          |  |  +--| (90)
+                                          |  |     +--ANS71179.1
+                                          +--| (88)
+                                             +--ABJ09013.1
+
+Tree in newick format:
+
+(AAC97623.1:0.7113080023,BAO49552.1:0.6558779963,(((((CCU56429.1:0.3681133438,AAG02911.1:0.0834908692)68:0.0181318733,CCU55463.1:0.0731824935)77:0.1020026003,CCU56105.1:0.0136676274)75:0.0104642394,CCU55803.1:0.0000021481)100:1.2566957150,(AKR04224.1:3.3900523748,((((((((((((((((((YP_001293283.1:0.0048431496,(NP_659664.1:0.0000010064,AAK85053.1:0.0000010064)56:0.0000027194)98:0.0561064989,AAL69828.1:0.1152240781)88:0.0490525792,((AAF14978.1:0.0056178323,AAF17974.1:0.0150493306)100:0.0747638424,ADT91121.1:0.1269661333)93:0.0144260132)89:0.0105258290,(AAR07448.1:0.0120714429,CAC21330.1:0.0354748328)100:0.0862264680)75:0.0159500767,ABI99256.1:0.0608621917)85:0.0480087309,ASK51298.1:0.1122657166)82:0.0536080460,(AST09311.1:0.0018029895,AEN03691.1:0.0767840853)99:0.0478308676)68:0.0426627123,AAM92408.1:0.0102707450)61:0.0040583011,AXN74915.1:0.0000021654)37:0.0047187388,AAM13574.1:0.0000010064)21:0.0000020999,(AOP31809.1:0.0000024554,(AOP31598.1:0.0046919126,AKJ93749.1:0.0095185760)85:0.0048232176)83:0.0047140082)37:0.0047328394,(AAL40570.1:0.0047331342,AAX09207.1:0.0000021848)95:0.0047469228)13:0.0000020660,(AYN64686.1:0.0000010064,ABH08227.1:0.0000010064)55:0.0000010064)27:0.0000029597,AAL73825.1:0.0095967085)73:0.0952591563,(((AAC55232.1:0.0843397218,ORF081:0.0869625624)65:0.0222893593,((((AAF44509.1:0.0050906807,AUD40272.1:0.0133399392)88:0.0057029165,((AID46672.1:0.0000010064,AID46903.1:0.0046124564)100:0.0294683802,AAR83584.1:0.0672709731)90:0.0170734193)94:0.0537197092,ALA62495.1:0.0294294238)100:0.1613311106,(ATI21037.1:0.0000022103,ATI21201.1:0.0093569423)100:0.1028375516)91:0.0911497878)61:0.0375815297,XBH23832.1:0.0902673239)98:0.2251228088)65:0.0587641017,(CCD83272.1:0.0579325873,((AAR98302.1:0.0049249998,ADC53979.1:0.0000010064)95:0.0407764840,((AAR98434.1:0.0158592052,AIZ77328.1:0.0494170732)97:0.0141732027,ASC55563.1:0.0138952008)99:0.0321829424)96:0.2972557335)68:0.0490110990)76:0.1235974777,(AWU47135.1:0.1620925969,ANS71179.1:0.1606963774)90:0.1881920502)76:0.2145938649,ABJ09013.1:0.4509406959)88:0.4314253002)100:7.1224663750)93:0.2359661466);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6390.797557
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AAC97623.1
+|
++--BAO49552.1
+|
+|                  +--CCU56429.1
+|               +--| (68)
+|               |  +--AAG02911.1
+|            +--| (77)
+|            |  +--CCU55463.1
+|         +--| (75)
+|         |  +--CCU56105.1
+|  +------| (100)
+|  |      +--CCU55803.1
++--| (93)
+   |                                      +-----------------AKR04224.1
+   +--------------------------------------| (100)
+                                          |                                                  +--YP_001293283.1
+                                          |                                               +--| (98)
+                                          |                                               |  |  +--NP_659664.1
+                                          |                                               |  +--| (56)
+                                          |                                               |     +--AAK85053.1
+                                          |                                            +--| (88)
+                                          |                                            |  +--AAL69828.1
+                                          |                                         +--| (89)
+                                          |                                         |  |     +--AAF14978.1
+                                          |                                         |  |  +--| (100)
+                                          |                                         |  |  |  +--AAF17974.1
+                                          |                                         |  +--| (93)
+                                          |                                         |     +--ADT91121.1
+                                          |                                      +--| (75)
+                                          |                                      |  |  +--AAR07448.1
+                                          |                                      |  +--| (100)
+                                          |                                      |     +--CAC21330.1
+                                          |                                   +--| (85)
+                                          |                                   |  +--ABI99256.1
+                                          |                                +--| (82)
+                                          |                                |  +--ASK51298.1
+                                          |                             +--| (68)
+                                          |                             |  |  +--AST09311.1
+                                          |                             |  +--| (99)
+                                          |                             |     +--AEN03691.1
+                                          |                          +--| (61)
+                                          |                          |  +--AAM92408.1
+                                          |                       +--| (37)
+                                          |                       |  +--AXN74915.1
+                                          |                    +--| (21)
+                                          |                    |  +--AAM13574.1
+                                          |                 +--| (37)
+                                          |                 |  |  +--AOP31809.1
+                                          |                 |  +--| (83)
+                                          |                 |     |  +--AOP31598.1
+                                          |                 |     +--| (85)
+                                          |                 |        +--AKJ93749.1
+                                          |              +--| (27)
+                                          |              |  |     +--AAL40570.1
+                                          |              |  |  +--| (95)
+                                          |              |  |  |  +--AAX09207.1
+                                          |              |  +--| (28)
+                                          |              |     |              +**AYN64686.1
+                                          |              |     |           +**|
+                                          |              |     |           |  +**CAB54705.1
+                                          |              |     |        +**|
+                                          |              |     |        |  +**ABD97688.1
+                                          |              |     |     +**|
+                                          |              |     |     |  +**AAO89399.1
+                                          |              |     |  +--|
+                                          |              |     |  |  +**CAA49046.1
+                                          |              |     +--| (55)
+                                          |              |        +--ABH08227.1
+                                          |           +--| (73)
+                                          |           |  +--AAL73825.1
+                                          |        +--| (65)
+                                          |        |  |        +--AAC55232.1
+                                          |        |  |     +--| (65)
+                                          |        |  |     |  +--ORF081
+                                          |        |  |  +--| (61)
+                                          |        |  |  |  |           +--AAF44509.1
+                                          |        |  |  |  |        +--| (88)
+                                          |        |  |  |  |        |  +--AUD40272.1
+                                          |        |  |  |  |     +--| (94)
+                                          |        |  |  |  |     |  |     +--AID46672.1
+                                          |        |  |  |  |     |  |  +--| (100)
+                                          |        |  |  |  |     |  |  |  +--AID46903.1
+                                          |        |  |  |  |     |  +--| (90)
+                                          |        |  |  |  |     |     +--AAR83584.1
+                                          |        |  |  |  |  +--| (100)
+                                          |        |  |  |  |  |  +--ALA62495.1
+                                          |        |  |  |  +--| (91)
+                                          |        |  |  |     |  +--ATI21037.1
+                                          |        |  |  |     +--| (100)
+                                          |        |  |  |        +--ATI21201.1
+                                          |        |  +--| (98)
+                                          |        |     +--XBH23832.1
+                                          |     +--| (76)
+                                          |     |  |  +--CCD83272.1
+                                          |     |  +--| (68)
+                                          |     |     |     +--AAR98302.1
+                                          |     |     |  +--| (95)
+                                          |     |     |  |  +--ADC53979.1
+                                          |     |     +--| (96)
+                                          |     |        |     +--AAR98434.1
+                                          |     |        |  +--| (97)
+                                          |     |        |  |  +--AIZ77328.1
+                                          |     |        +--| (99)
+                                          |     |           +--ASC55563.1
+                                          |  +--| (76)
+                                          |  |  |  +--AWU47135.1
+                                          |  |  +--| (90)
+                                          |  |     +--ANS71179.1
+                                          +--| (88)
+                                             +--ABJ09013.1
+
+
+Consensus tree in newick format: 
+
+(AAC97623.1:0.7112773923,BAO49552.1:0.6558131656,(((((CCU56429.1:0.3681122822,AAG02911.1:0.0834885460)68:0.0181345897,CCU55463.1:0.0731839389)77:0.1020023921,CCU56105.1:0.0136680477)75:0.0104645406,CCU55803.1:0.0000026263)100:1.2543148808,(AKR04224.1:3.3875326374,(((((((((((((((((YP_001293283.1:0.0048418584,(NP_659664.1:0.0000026779,AAK85053.1:0.0000026779)56:0.0000026779)98:0.0561052809,AAL69828.1:0.1152156193)88:0.0490489818,((AAF14978.1:0.0056190576,AAF17974.1:0.0150484815)100:0.0747554974,ADT91121.1:0.1269579035)93:0.0144244978)89:0.0105265429,(AAR07448.1:0.0120718251,CAC21330.1:0.0354722008)100:0.0862219443)75:0.0159496146,ABI99256.1:0.0608577217)85:0.0480093325,ASK51298.1:0.1122604140)82:0.0536043860,(AST09311.1:0.0018048363,AEN03691.1:0.0767795665)99:0.0478281364)68:0.0426604113,AAM92408.1:0.0102716066)61:0.0040581037,AXN74915.1:0.0000026779)37:0.0047187307,AAM13574.1:0.0000026779)21:0.0000026779,(AOP31809.1:0.0000026779,(AOP31598.1:0.0046919580,AKJ93749.1:0.0095185736)85:0.0048224891)83:0.0047139971)37:0.0047321544,((AAL40570.1:0.0047331482,AAX09207.1:0.0000026779)95:0.0047462166,(((((AYN64686.1:0.0000000000,CAB54705.1:0.0000000000):0.0000000000,ABD97688.1:0.0000000000):0.0000000000,AAO89399.1:0.0000000000):0.0000000000,CAA49046.1:0.0000000000):0.0000026779,ABH08227.1:0.0000026779)55:0.0000026779)28:0.0000026779)27:0.0000021548,AAL73825.1:0.0095975659)73:0.0952357732,(((AAC55232.1:0.0843381969,ORF081:0.0869564648)65:0.0222908962,((((AAF44509.1:0.0050908483,AUD40272.1:0.0133391013)88:0.0057036679,((AID46672.1:0.0000026779,AID46903.1:0.0046115635)100:0.0294669801,AAR83584.1:0.0672686413)90:0.0170737978)94:0.0537158797,ALA62495.1:0.0294326519)100:0.1613246239,(ATI21037.1:0.0000023122,ATI21201.1:0.0093565484)100:0.1028330173)91:0.0911447462)61:0.0375798649,XBH23832.1:0.0902613222)98:0.2251153457)65:0.0588452869,(CCD83272.1:0.0579190700,((AAR98302.1:0.0049251973,ADC53979.1:0.0000026779)95:0.0407814526,((AAR98434.1:0.0158587933,AIZ77328.1:0.0494152010)97:0.0141728721,ASC55563.1:0.0138958170)99:0.0321770068)96:0.2972607383)68:0.0489634520)76:0.1235392268,(AWU47135.1:0.1620767009,ANS71179.1:0.1607194640)90:0.1881373703)76:0.2185257591,ABJ09013.1:0.4476628871)88:0.4337822928)100:7.1156837570)93:0.2385923416);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ./new_align/protein_groups/A2/iqtree.Qyeast_F_I_R6/sequence.msa-muscle.faa.txt.Qyeast_F_I_R6.treefile -m "Q.yeast+F+I{0.0448885}+R6{0.463093,0.169656,0.033172,0.849374,0.112614,0.867975,0.151106,0.868282,0.144402,2.63466,0.0507242,5.59611}" --length 292
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ./new_align/protein_groups/A2/sequence.msa-muscle.faa.txt --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ./new_align/protein_groups/A2/sequence.msa-muscle.faa.txt --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Feb 18 23:44:19 2026
+Total CPU time used: 244.433843 seconds (0h:4m:4s)
+Total wall-clock time used: 142.319736 seconds (0h:2m:22s)
+

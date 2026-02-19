@@ -1,7 +1,39 @@
+# ----------------------------------------------------------------------
 # editor files
+# ----------------------------------------------------------------------
 *~
 \#*
+
+# ----------------------------------------------------------------------
 # temp files
+# ----------------------------------------------------------------------
+*.fai
 .snakemake
+
+# ----------------------------------------------------------------------
 # iqtree2 output to ignore
+# ----------------------------------------------------------------------
 *.ckp.gz
+
+# ----------------------------------------------------------------------
+#
+# new_align
+#
+# ----------------------------------------------------------------------
+# working files
+new_align/src_proteins_cache.faa
+
+# directories not to keep
+new_align/iqtree.LG_I_G4_F/
+new_align/iqtree.MFP/
+
+# most iqtree files in protein_group subdirectories
+new_align/protein_groups/*/iqtree*/*.bionj
+new_align/protein_groups/*/iqtree*/*.contree
+#new_align/protein_groups/*/iqtree*/*.iqtree
+new_align/protein_groups/*/iqtree*/*.log
+new_align/protein_groups/*/iqtree*/*.mldist
+new_align/protein_groups/*/iqtree*/*.splits.nex
+#new_align/protein_groups/*/iqtree*/*.treefile
+# this file only gets output when some sequences are duplicates
+new_align/protein_groups/*/iqtree*/*.uniqueseq.phy

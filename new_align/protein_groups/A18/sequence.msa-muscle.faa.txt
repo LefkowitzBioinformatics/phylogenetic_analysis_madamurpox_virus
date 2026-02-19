@@ -1,4 +1,4 @@
->CCU55377.1 Adoxophyes honmai entomopoxvirus 'L' [HF679131]
+>CCU55377.1 Adoxophyes honmai entomopoxvirus 'L' [HF679131.1]
 ---MIK-YIKLTKNLFKLF--------KSKIKF-NEILVY-----DN-NLNFILLTDKIIKDNEFLE-LD-IIYPIFLYN
 KNDDVI--DKI--Y----------N--FT-S--DIKCKYQLRDDQTPIVNKIL-DIHNIYSSNAPIYISLVCPCGFGKTI
 LSIDILCNLKYKCAIIVPRKFIIKQWVDKIEDKNN---IFMSLDG-RKSAIDK-INNN-LKCDIFICPDKHLENENIRNY
@@ -9,7 +9,7 @@ GRILRDFK---D-DKYIYIYNFSYTTDTINMYNNDKTLMAKMCLSE--W-------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ----------------------------------------------KCNE---LK-C---S
->AAG02765.1 Amsacta moorei entomopoxvirus [AF250284]
+>AAG02765.1 Amsacta moorei entomopoxvirus [AF250284.1]
 ---MVK-YIKLNKKIFNYI--------KSRLKS-QEILIY-----DK-NSNHAIITNDM---IENID-LD-IICPLILYN
 ENDKII--DKI--N----------N--MD-K--FIECKYQLREDQLELINNIM-NINNNYSCNSPIYLSLVCPCGYGKTI
 LGIDIISRLKYKCAIIVPRIFIIYQWLDKIKQKNN---IFASTCG-RKKAIEQ-IKNG-LECDVFICPDKHLENDIIRNY
@@ -20,7 +20,7 @@ GRIMRNMN---E-DKYTYIYNFSNINNMINMYINDKTDLIRKVLSD--W-------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ----------------------------------------------ECVE---IKCS---Y
->CCU56280.1 Mythimna separata entomopoxvirus 'L' [HF679134]
+>CCU56280.1 Mythimna separata entomopoxvirus 'L' [HF679134.1]
 ---MVK-YIKLSKNLYKLF--------KSKIKS-NEILVF-----DT-YHNSIIITKDIMDTIESSD-LN-IICPIFLYN
 KTDKVI--SNI--Y----------K--IN-T--NINCKFTLRELQLEIINKIL-NINSNYLLHSPLYISIVCPCGFGKTI
 IGIDLICKLKYKCVIIVPRKFIMTQWKEKFEESSI---IFTSFNG-RKEAIEK-IKNG-LNCDIFICPDKHLEDDTIKSY
@@ -31,7 +31,7 @@ GRILRDYN---E-DKLVCVYNFSYINNIIKTYINDNTMLIKKSLSE--W-------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ----------------------------------------------ECSE---LK-C---D
->CCU55672.1 Choristoneura biennis entomopoxvirus [HF679132]
+>CCU55672.1 Choristoneura biennis entomopoxvirus [HF679132.1]
 ---MTK-YIKLTKKIFNLF--------KSKLKS-NEILVF-----DK-NFNYIYITDDIIKNNENLD-LD-IICPIFLYN
 KDDNSV--IKI--N----------N--FN-T--NIKCKYILRESQVDVVDKIM-DIHTNYSINSPIYISLVCPCGYGKTI
 LGIDIISKVKYKCAIIVPRIFIIKQWVDKIYGGDN--KIFASIYG-RKKAIEQ-INNG-LDCDIFICPDKHLENDIIRNF
@@ -42,7 +42,7 @@ GRIMRNYN---E-NKYVYIYNFSYINKIINMYINDKTDMVKKTLSE--W-------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ----------------------------------------------NCVE---IK-C---L
->CCU55983.1 Choristoneura rosaceana entomopoxvirus 'L' [HF679133]
+>CCU55983.1 Choristoneura rosaceana entomopoxvirus 'L' [HF679133.1]
 ---MTK-YIKLTKKIFNLF--------KSKLKS-NEILVF-----DK-NFNYIYITDDIIKNNENLD-LD-IICPIFLYN
 KDDNSV--IKI--N----------K--FN-T--NIKCKYILRESQVDVVDKIM-DIHTNYSINSPIYISLVCPCGYGKTI
 LGIDIISKVKYKCAIIVPRIFIIKQWVDKIYGGDN--KIFASIYG-RKKAIEQ-INNG-LDCDIFICPDKHLENDIIRNF
@@ -53,7 +53,7 @@ GRIMRNYN---E-NKYVYIYNFSYINKIINMYINDKINMVKKTLSE--W-------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ----------------------------------------------DCVE---IK-C---L
->BAO49508.1 Anomala cuprea entomopoxvirus [AP013055]
+>BAO49508.1 Anomala cuprea entomopoxvirus [AP013055.1]
 ---MNLIYKHMNDKLYGLF--------YEKLKT-QHILCY-----DS-DNNPYFLNK----E-NKNILKN-IIIPPSIIS
 DLNLQI--HNL--N----------NDTIN-K--NIQSNIILRDEQRIIVTKIE-E---LYSNFIPVYVLLECPCGYGKTI
 ISIELICRLKLKCAIVVPRKFIIQQWKDKFNTNTF--NIFTSFNG-RVDAIKN-ITNG-LDCDIFICPDKHLENDTIRNF
@@ -64,7 +64,7 @@ GRIMRTSN---E-NKYIYLFNFSYLNDIIRTFINDKCNFVKRILNN--W-------------------------------
 --------------------------------------------------------------------------------
 --------EY----------------------------------------------------------------------
 ----------------------------------------------NIYN--DIY-I---T
->AAC97786.1 Melanoplus sanguinipes entomopoxvirus 'O' [AF063866]
+>AAC97786.1 Melanoplus sanguinipes entomopoxvirus 'O' [AF063866.1]
 ---ML--YSKLSPALHAAL--------RSRINN-NSVLCY-----DI-YMNPIIYND------PNTVNNTLIRIPPRMLK
 NYDKIS--FNL--K----------SISNE-S--LEISNLELRHKQKHIFNKIL-EIYNINESNKPLYISLVCPCGFGKTI
 LSIAIINKLKFKCVIIAPMKFIVSQWVDKINIFNKDLKIYSSIDG-IKKALKD-IKNG-LDCDIFICPDKHLQNDEIYNY
@@ -75,7 +75,7 @@ GRIFRTNV-K-DDNKFVYYYNISFIDNIIRMFINDKYYNIKKQIDNDED-------------------------------
 --------------------------------------------------------------------------------
 --------KK----------------------------------------------------------------------
 ----------------------------------------------WIIN---KI-Y---I
->AKR04244.1 Salmon gill poxvirus [KT159937]
+>AKR04244.1 Salmon gill poxvirus [KT159937.1]
 ---MAS-GK-KNMRTCGKLAKNYIDLISKNTFE-KGILTWDAEHSNEQENPIILTK-------VRPD-IS-IVIPLGYWS
 NPILKN--YPK-ID-YN----M-TTLIPD-L---KYKEIELRDYQVTPYSIISSTIDKKIEESRPCFLRLIMPCGFGKTM
 MAVKLIQELKIKTAVILWCTSLMTQWMESLKFGGI--TDVVGSQGSIPDTLEL-INL--KYPDIIIITAAHLVRRDCRKL
@@ -86,7 +86,7 @@ GRVSRFNP-KKP-IRLAVVFNVSSILNWINIMRKG-SKLVTETLSS--LDWVEDI-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -----------------------------------------------------SV-P---K
->AIZ77346.1 Parapoxvirus red deer/HL953 [KM502564]
+>AIZ77346.1 Parapoxvirus red deer/HL953 [KM502564.1]
 ---MFG-GVQVDDKLYAYL--------KNLVGPHRPLCLF-----RD-NEEFAEVF-------PGSS-FR-FALPVGLFA
 DLRVRT--RGV-AF-PALRDAA-RMRGVN-L--GANTLPSLYPNQRIVVDEVLAARDELLAAGRAVYITLHLACGFGKTL
 TACHLIATHARRAVVCVPNRMLVPQWRAAVAELRV--PFAVSYDG-AAALLRS-GEL--DRAMVAIVVSRHFANDEFCRA
@@ -97,7 +97,7 @@ GRVCRESH-A-D-ARTLFVFPSSSVRAIADTVAAFAGRLVALATDA--LGFVRERAV-S----------A----------
 -----------------------------------------------------GA-PGS---------------------
 ------R-EERAL-------------------------------------------------------Y-----------
 ----------------------------------------------SALSGLDLA-A---G
->AAR98320.1 Orf virus strain OV-SA00 [AY386264]
+>AAR98320.1 Orf virus strain OV-SA00 [AY386264.1]
 ---MFG-GVQVDDKLYAYL--------KKLAGRGRPLCLF-----RD-NGEFVEVF-------AGSA-FR-FVLPVGLFA
 DLRVRT--RGV-AF-PKLRDSA-RMRGVR-V--DAHTLPSLYPNQRIVVDEVLAARDQLLAAGRAVYVTLHLACGFGKTL
 TACHLIATHGRRAVVCVPNRMLVPQWRAAVAELRV--PFAVSCDG-AASLLRS-GEL--DRAMVAIVVSRHFANDDFCRA
@@ -108,7 +108,7 @@ GRVCRESH-A-N-TRTLFVFPDSSVRAIRDTVSAFAQRLVALAVDG--LGFVRERSA-A---------------------
 ---------------------------------------------------------GA---------------------
 ------K-NEPAL-------------------------------------------------------Y-----------
 ----------------------------------------------SAISGRDLA-A---V
->ADC53997.1 Pseudocowpox virus [GQ329670]
+>ADC53997.1 Pseudocowpox virus [GQ329670.1]
 ---MFG-GVQVDDKLYAYL--------KKLAGRGRPLCLF-----RD-NGEFAEVF-------AGSA-FR-FVLPVGLFA
 DLRVRT--RGV-AF-PKLRDSA-RMRGVR-V--DAHTLPSLYPNQRIVVDEVLAARDQLLAAGRCVYITLHLACGFGKTL
 TACHLIATHGRRAVVCVPNRMLVPQWRAAVAELRV--PFAVSCDG-AASLLRS-GEL--DRAMVAIVVSRHFANDDFCRA
@@ -119,7 +119,7 @@ GRVCRESH-A-N-TRTLFVFPDSSVRAIRDTVAAFAQRLVALAVDG--LGFVRERAA-A---------------------
 ---------------------------------------------------------GA---------------------
 ------K-NEPAL-------------------------------------------------------Y-----------
 ----------------------------------------------SAINGRDLS-A---G
->AAR98452.1 Bovine papular stomatitis virus [AY386265]
+>AAR98452.1 Bovine papular stomatitis virus [AY386265.1]
 ---MFR-GVQVDDKLYAYL--------KNLAGYNRPLCLF-----RD-NGEFAEVF-------PGSA-FR-FVLPVGLFS
 DLRVRS--RGV-AF-PRLRDSA-RMRGVD-V--GENTLPSLYPNQKIVVDEVLAARDQLLAAGRCVYVTLHLACGFGKTL
 TACHLIATHARRAVVCVPNRMLVPQWRSAVAELRV--PFVVSYDG-ASALLRS-GEL--DRAMVAIVVSRHFANDEFCRA
@@ -130,7 +130,7 @@ GRVCRESH-S-D-ARTLYVFPTSSVRAIRDTVAAFAQRLVALATDG--LGFVRERAA-A---------------------
 ---------------------------------------------------------GA---------------------
 ------KNDEPAL-------------------------------------------------------Y-----------
 ----------------------------------------------SAINGRDLA-A---G
->ASC55551.1 Seal parapoxvirus [KY382358]
+>ASC55551.1 Seal parapoxvirus [KY382358.2]
 ---MFR-GVQVDDKLYAYL--------KNLAGHHRPLCLF-----RD-NGEFTEVF-------SGSV-FK-FVLPVGLFA
 DLRVRD--RGT-VF-PRLRDAA-KMRGVN-L--STNTLPSLYPNQRIVVDEVLAARDQMLAAGRPVYITLHLACGFGKTL
 TACHLIATHGRRTVVCVPNRMLIPQWRAAVAELRV--PFAVSHDG-AASLLRS-GEL--ERAMVAIVVSRHFANDDFCRA
@@ -141,7 +141,7 @@ GRVCRESH-A-N-ARTLYVFPNSSVRAIRDIVSVFAQRLVALATDS--LGFVLEQTA-A---------------------
 ---------------------------------------------------------GV---------------------
 ------KTDEPAL-------------------------------------------------------Y-----------
 ----------------------------------------------SAISGRDLA-A---G
->ABJ09032.1 Nile crocodilepox virus [DQ356948]
+>ABJ09032.1 Nile crocodilepox virus [DQ356948.1]
 MPKMSR-YVVIDDKLYSAI--------RSLIGI-KELYLF-----NS-DGDFVEVH-------KRSG-FR-FLIPVGYYT
 SLAVPA--DR--EY-DY----G-DNDLPP-D--QRPRLPELRPAQRRVVAEIARLEKLKRLERRPLYTLLHLACGFGKTV
 TASFLIGSHAKRAVVVLPNKLLSAQWEEVVARLGV--PYAASYEG-VSKLLPR-LRD--RDYAVLLVIDRHFTNKEFCRL
@@ -152,7 +152,7 @@ GRILRDGP-R-K-DRYLFVFPVTSVRRLAGCLEGHTARVEHVA-RQ--LGFG----------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -------------------------------------------------------------
->AST09329.1 Murmansk poxvirus [MF001304]
+>AST09329.1 Murmansk poxvirus [MF001304.1]
 ---MSL--LKMDYNLYSEL--------KSLTNN-NPVNLF-----NE-RGEFSEVV-------PGSS-FK-YIVPPGLFA
 SMTIKTNLTF---E-SS----S-HNKITTEY--DSSNAPTLYPLQRKVVSTVFSTIRKMISEKRPIYITLHLACGFGKTI
 TTCHLISSHCRKTVICVPNKLLIHQWKVQVEAFGL--DHVISVDG-VTRLLKEKLSS--NNPDVLIIVSRHLINDEFCKH
@@ -163,7 +163,7 @@ GRVCRETE-L-L-DRTAYVFPNTSIREIKYTVGNFIQRIISLATDK--LGFTQEGNT-----------------------
 --------------------------------------------------------CKG---------------------
 ------R-VEHAL-------------------------------------------------------H-----------
 ----------------------------------------------KVFS---EQ-N---H
->AEN03711.1 Yokapox virus [HQ849551]
+>AEN03711.1 Yokapox virus [HQ849551.1]
 ---MSL--LKIDYNLYTEL--------KSLTGN-SIVNLF-----NE-NGEFGEVM-------V-SS-FK-YIIPNGLFS
 SMNIKTNLVF---E-TS----T-CNKITNKV--DSTKSPKLYPLQYKVVSFVFSTIRKLILEKRPIYITLHLSCGFGKTI
 TTCHLIASHCRKTVICVPNKLLIHQWKTQVEAFGL--DHVISIDG-VTRLLKDKLSS--NVPDILIIVSRHLTNDEFCKY
@@ -174,7 +174,7 @@ GRVCRETE-L-L-NRTVYVFPNTSIKEIKYTVGNFIQRIISLAIDK--LGFIQDCN------------------------
 --------------------------------------------------------PSN---------------------
 ------R-VEHAL-------------------------------------------------------C-----------
 ----------------------------------------------KVFS---GQ-N---H
->ASK51316.1 Eptesipox virus [KY747497]
+>ASK51316.1 Eptesipox virus [KY747497.1]
 ---MSI-ATVIDHKLFNEL--------KKISKE-HTINLF-----NL-DGKFTEIV-------STSI-NK-FLIPIGLYS
 SS-IPI--KDP-II-NV----T-NNIINN-Y--EYITLPTLYPLQKKVVTEVLTRMKKKISEKRSLYMTLHLACGFGKTI
 TACYLMGIHKRKTIICVPNKMLINQWKSAVNNTNI--NYKISVDG-VQKLLKE-LNKIPNVYDVLIIVSRHLSNDEFCKY
@@ -185,7 +185,7 @@ GRICRDTE-L-K-NRIVYIFPNTSIREIKHSVGMYAQRLILLACDK--LGFEKHTPI-P---------------------
 --------------------------------------------------------FHS---------------------
 ------K-VELAL-------------------------------------------------------F-----------
 ----------------------------------------------K------AL-N---Q
->AAC55251.1 Molluscum contagiosum virus subtype 1 [U60315]
+>AAC55251.1 Molluscum contagiosum virus subtype 1 [U60315.1]
 ---MSG-FLAMDDKLYTDL--------KKLVGA-QPLYLF-----TA-RGDFVEVA-------RRSE-FR-FRVPAGFFA
 GEGVAL--RGQ-QF-PA----G-SARMPD-A--AHLRLPRLYPAQQQVVAELRAIAKACAREQRPLYVTLHLACGFGKTV
 TASYLLGTHRRRAVVCVPTKMLLAQWGAVLAALRV--SVYVSGEG-VRKLMSV-LRT--RDFSVLVVVNKHFADPGFCAL
@@ -196,7 +196,7 @@ GRICRETE-Q-P-RRTVYVFPTTSVREIKNMVGLFAQRFITLATQK--LGFTQEREQ-P--EDAAVPASADRPASADKRA
 PADRPAPADRPASADKRAPADRPASADKRAPADRPASADKRAPADRPASADKRAP-ADRPASADRTAHAYWRANGPCCSN
 RFASADN-KKPALSISRASGGDNAVELGHKPGPGPGTHASLRSVRKHGRSLACELAQGTQCRSARRAVQRVGPGRGHAQR
 AGLQLAHIGEECEARLAHGARGARVRGRLLHGGTRLALAPPLLGSGHVHL---DA-E---K
->ANS71197.1 Pteropox virus [KU980965]
+>ANS71197.1 Pteropox virus [KU980965.1]
 ---MFG-YINITNKLYTYI--------KKISGS-QPLFLF-----NS-DNNHVEVF-------PNSS-FK-FLVPAGLFS
 SYRVML--RDELKY-PI----A-NNPMTN-E--KDLSLPNLYPLQQLVVDKVVAAMKRKEEEHRPKYITLHLKCGFGKTV
 TACYLMAKERKRTVICVPNKMLIPQWKTAVELTKA--NYMISVHG-VSKLLLE---K--STPDVLIVVSRHFANEEFCNL
@@ -207,7 +207,7 @@ GRVCRETT-L-T-DRTVYVFPTTSIREIKSVVDNYVQRLISLA-LD--LGFVQLNTD-K--PC-----------------
 --------------------------------------------------------------------------------
 ------K-EETAL-------------------------------------------------------K-----------
 ----------------------------------------------L-------A-F---S
->CCD83290.1 Squirrelpox virus [HE601899]
+>CCD83290.1 Squirrelpox virus [HE601899.1]
 ---MSV-YTEIDDKLFSEL--------RNLVGE-QQLNLF-----TQ-KGELTEVF-------QGSS-FR-FLVPVGFFA
 ASRYPP--RGR-RF-RR----P-ANPMPD-A--EKVSVPELYPVQRRVVEEVEAAAKRKAREGRPPYVTLHLACGFGKTV
 TACHLIAKHRLRAVVCVPNKMIIPQWRAAVEATGA--SHLVSVDG-VSSLLRE-LRT--VTPSVLVVVSRHFGNEEFCRL
@@ -218,7 +218,7 @@ GRVCRDTA-DHA-NRTVFVFPTTAIREIRSVVGLFAQRLVALATQK--LGFERDAGP-PDPRA-----------------
 --------------------------------------------------------------------------------
 ------R-TEKAL-------------------------------------------------------A-----------
 ----------------------------------------------RA------F-R---R
->AWU47153.1 Sea otter poxvirus [MH427217]
+>AWU47153.1 Sea otter poxvirus [MH427217.1]
 ---MFG-YISMTYKLYTYI--------KKLAGY-QPVNLF-----TS-SGEFVEVF-------PNST-FK-FLVPAGLFS
 SSDVAL--RDL-NY-PK----P-TNDMRN-L--KDVVLPSLYAQQKIVIDKVSEAVAKKKSENRPIYITLHLACGFGKTV
 TACYIIAKEKVKTVICVPNKMLIPQWKSAIEAMNI--SFIISING-VKSLLQE-LRY--QDANILVVVSRHFVNDEFCKL
@@ -229,7 +229,7 @@ GRVCRETD-D-I-HRKVYVFPSTSILCIRSIIGMFTQRLITLATQS--LGFSMESQS-Q--TA-----------------
 --------------------------------------------------------------------------------
 ------K-EEKTL-------------------------------------------------------N-----------
 ----------------------------------------------LTFN---YK-M---R
->ORF100 MNB22 [MNB22]
+>ORF100 madamurpox virus [MNB22.0]
 ---MFG-PLIVDDSLYREL--------KKLVGQ-SQLWLF-----NA-DGDFVEVI-------RKTE-FR-IRVPLGFFS
 GQDVDL--RGI-TA-PI----G-KNHMLD-A--TNMTIPRLYPIQRQVITEIRRVIRDCHRDRRPIYMTLHLACGFGKTV
 IASYLACMHRRKTVICVPNKMLLSQWEKTISQLGV--SYYISIDG-VGKLMKDVLND--RDISILIVVNKHFTNDSFCEL
@@ -240,7 +240,7 @@ GRICRETV-Y-T-DRTVFVFPTTSIRDIKHTVGLFAQRFITLATQK--LGFVQITDD-R--SNVSSQ-------------
 -----------------------------RICGATRTDVTHKSGLIPSRRAAICI-TSR---------------------
 ------N-RVNAL-------------------------------------------------------T-----------
 -----------------------------------------------RIR---MP-H---N
->XBH23847.1 Rousettus bat poxvirus isolate 1A/Uganda/UGR70/2019 [PP711852]
+>XBH23847.1 Rousettus bat poxvirus isolate 1A/Uganda/UGR70/2019 [PP711852.1]
 ---MSE-GMTIDDKLYAEL--------RKLVGA-QPLCLF-----NS-RGDFVEVY-------RRSE-FK-FVVPVGFFA
 GAGVDM--RGR-SF-PP----GDANAMVD-A--AGLSLPSLYPIQKQVLAELRASIRARTREHRPLYTTLHLACGFGKTV
 MTSYLIGMHRRRAVVCVPNKMLLSQWRDALAKLNV--SCYVSSEG-VARLLRV-LRD--ASYNVLVVVNKHFANERFCRL
@@ -251,7 +251,7 @@ GRICRETE-H-P-HRVLYVFPTTGVTAIKNIVGLFVQRLVNLATQK--LGFAHVPPL-K--ACGGESARH----------
 -------------------------------------ALPAEVRQSPPPRAPL----GR---------------------
 ------R-----A-------------------------------------------------------A-----------
 -----------------------------------------------SCR---RR-H---R
->ATI21220.1 Eastern grey kangaroopox virus [MF467281]
+>ATI21220.1 Eastern grey kangaroopox virus [MF467281.1]
 ---MSD-FTVIDDKLYSAL--------RKSIGY-VPLYLF-----NR-AGDFVEVV-------RRSV-FE-FLLPTGYFT
 NLAVPL--GGR-SF-PT----G-TNTMAD-A--ARLKLPELYPCQQRVIDELTDRFKRKVAERRPVYATLHLACGFGKTI
 TASYLIGMHRKRAVVCVPNKMILAQWSAAVHKLGV--SCYVSSEG-AAKLLRV-IDG--RDVSVLVVVDKHLANEAFCKL
@@ -262,7 +262,7 @@ GRICRETD-S-T-RRAIYLFPNTSVREIRYTVGIFTQRIGTVA-AR--LGFSEFAER-T--QVG----------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -----------------------------------------------PAS---RT-Q---K
->ATI21056.1 Western grey kangaroopox virus [MF467280]
+>ATI21056.1 Western grey kangaroopox virus [MF467280.1]
 ---MSD-FTVIDDKLYSAL--------RKSIGY-VPLYLF-----NR-AGDFVEVV-------RRSV-FE-FLLPTGYFT
 NLAVPL--GGR-SF-PT----G-TNTMTD-A--ALLKLPELYPCQRRVIDELTERFKRKVAERRPVYATLHLACGFGKTI
 TASYLIGMHRKRAVVCVPNKMILAQWSAAVHKLGV--SCYVSSEG-AAKLLRV-IDG--RDVSVLVVVDKHLANEAFCKL
@@ -273,7 +273,7 @@ GRICRETD-S-T-RRAIYLFPNTSVREIRYTVGIFTQRIGAVA-AR--LGFSEFAER-T--QVG----------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 -----------------------------------------------PAS---RT-Q---K
->AAR83603.1 Canarypox virus [AY318871]
+>AAR83603.1 Canarypox virus [AY318871.1]
 ---MSY-ITVIDDKLYSSL--------RKLIGY-SPLYLF-----TE-EGKFVEVV-------KNSE-FK-FLIPPGYFS
 NPNVPL--NGL-KF-SH----G-TNWMKD-K--HKVTLPELYPIQKRVIDEIVLQFSKKSKEKRPLYTTLHLACGFGKTI
 TASYLIGIHKKNAVISVPNKLILRQWEAAIKALKV--SYYISHEG-VSKLLKV-LSS--ESFSILVVVDKHFTNEEFCKY
@@ -284,7 +284,7 @@ GRICRETG-SSP-TRSIFLFISTSIKDIKSLVGVFTQRFAQQA-TK--LGFREIT-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------Q-I---T
->AID46690.1 Pigeonpox virus [KJ801920]
+>AID46690.1 Pigeonpox virus [KJ801920.1]
 ---MSY-ITVIDDKLYSSL--------RKLVGH-SPLYLF-----ND-KGNFVEVV-------KNSE-FR-FLIPPGYFS
 NSNIPL--YGL-TF-SY----G-RNWMKD-K--QKIILPELYPIQRRVIEEIILQFSRKCKEKRPLYTTLHLACGFGKTV
 TASYLIGTHKKNAVVSVPNKLILKQWENAISSLKV--SYYISYEG-VSKLLKV-LSS--KSFSILVVVDKHFSNKEFCEF
@@ -295,7 +295,7 @@ GRICRDTG-SSP-TRSIYLFINTSIKEIKSLVGVFTQRFAQQA-TK--LGFREVS-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------Q-M---T
->AUD40291.1 Flamingopox virus FGPVKD09 [MF678796]
+>AUD40291.1 Flamingopox virus FGPVKD09 [MF678796.1]
 ---MSY-ITVIDDKLYSSL--------RKLVGY-SPLYLF-----ND-KGNFVEVV-------KNSE-FR-FLIPPGYFS
 NSNVPL--YGL-MF-SY----G-RNWMKD-K--QKIILPELYPIQRRVIEEIILQFSRKCKEKRPLYTTLHLACGFGKTV
 TASYLIGTHKKNAVVSVPNKLILKQWENAISSLKV--SYYVSYEG-VSKLLKV-LSS--KSFSILVVVDKHFSNKEFCEF
@@ -306,7 +306,7 @@ GRICRDTG-SSP-TRSIYLFINTSIKEIKSLVGVFTQRFAQQA-TK--LGFREVS-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------Q-M---T
->AID46922.1 Penguinpox virus [KJ859677]
+>AID46922.1 Penguinpox virus [KJ859677.1]
 ---MSY-ITVIDDKLYSSL--------RKLVGY-SPLYLF-----ND-KGNFVEVV-------KNSE-FR-FLIPPGYFS
 NSNVPL--YGL-VF-SY----G-KNWMKD-K--QKIILPELYPIQRRVIEEIILQFSRKCKEKRPLYTTLHLACGFGKTV
 TASYLIGTHKKNAVVSVPNKLILKQWETAISSLKV--SYYVSYEG-VSKLLKV-LSS--KSFSILVVVDKHFSNKEFCEF
@@ -317,7 +317,7 @@ GRICRDTG-SSP-TRSIYLFINTSIKEIKSLVGVFTQRFAQQA-TK--LGFREVS-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------Q-M---T
->AAF44527.1 Fowlpox virus [AF198100]
+>AAF44527.1 Fowlpox virus [AF198100.1]
 ---MSY-ITVIDDKLYSSL--------RKLVGY-SPLYLF-----ND-KGDFVEVM-------KNSE-FR-FLIPSGYFS
 NSNVPL--YGL-TF-SY----G-RNWMKD-R--QKIILPELYPIQRRVIEEIILQFSRKCKEKRPLYTTLHLACGFGKTV
 TASYLIGTHKKNAVVSVPNKLILKQWENSISSLKV--SYYVSYEG-VSKLLKV-LTS--KSFSILVVVDKHFSNKEFCEL
@@ -328,7 +328,7 @@ GRICRDTG-SSP-TRSIYLFINTSIKEIKSLVGVFTQRFAQQA-TK--LGFREVS-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------Q-M---A
->ALA62507.1 Turkeypox virus [KP728110]
+>ALA62507.1 Turkeypox virus [KP728110.2]
 ---MAV-ITVIDDKLYSSL--------RKLVGY-STIYLF-----TE-DGNFVEVV-------KNSE-FK-FLIPVGYFS
 NTNVPL--DGL-SF-SY----G-KNAMKD-K--HKLVLPDLYPIQSRVIEEIILQFSRKYKERRPLYMTLHLACGFGKTI
 TASYLVGYHKKNTLISVPNKLILKQWESAIKALGV--SYYISYDG-VSKLLKV-LNT--NSFSILVVVDKHLNNTEFCKY
@@ -339,7 +339,7 @@ GRICRDNG-SGV-SRSIFLFINTSIKDIKSLVGVFTQRFAQIA-IK--LGFREVV-------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 ------------------------------------------------------Q-T---T
->ADT91137.1 Cotia virus SPAn232 [HQ647181]
+>ADT91137.1 Cotia virus SPAn232 [HQ647181.2]
 ---MYI-CSSLDHKLYTNI--------MKIINA-PTLFLF-----NS-QKEFVEAL-------PIST-FK-FFIPIGLFS
 KD-IPL--IKN-IE-LL----P-NNYVNN-K--DIVTLPTLYPIQKIVVDNILTQLRNNQRNKRSMYTTIHLSCGFGKTI
 TTCYLIGMHKRKTVICLPNKMLINQWVNGIKSTNL--SYLISLDG-ATQLLKQ-LEK--NNPDILVIVSRHLSNEIFCNK
@@ -350,7 +350,7 @@ GRICRENEDI-F-NRVIYLFKTTSIREISNTVGYYTEKMLSLAIDK--LGFVKEKTE-----------------------
 ---------------------------------------------------------NI---------------------
 ------K-SEPAL-------------------------------------------------------Y-----------
 ----------------------------------------------KAFN---LQ-N---H
->AXN74933.1 Akhmeta virus [MH607141]
+>AXN74933.1 Akhmeta virus [MH607141.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QPISLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYA
 SQSVKTSLTFE-TL-TT----T-DNKITS-INHSPSSAPKLFPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMAMHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -361,7 +361,7 @@ GRVCRETE-L-L-DRTVYVFPSTSIKEIKYVIGNFVQRIISLSVDK--LGFKQESYR-K--HQESEPASV----------
 -----------------------------------------------------P--TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AAM13592.1 Cowpox virus [AF482758]
+>AAM13592.1 Cowpox virus [AF482758.2]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QPISLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYA
 STSVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -372,7 +372,7 @@ GRVCRETE-L-L-DRTVYVFPSTSIKEIKYVIGNFVQRIISLSVDK--LGFKQESYR-K--HQESEPASV----------
 -----------------------------------------------------P--TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AAX09225.1 monkeypox virus clade IIa strain cOP-58 [AY753185]
+>AAX09225.1 monkeypox virus strain cOP-58 (clade IIa) [AY753185.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QTISLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPCVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMTTHGRKTIICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -383,7 +383,7 @@ GRVCRETE-L-L-DRTVYVFPNTSIKEIKYMIGNFVQRIISLSVDK--LGFKQESYQ-K--HQESEPASV----------
 -----------------------------------------------------P--TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AAL40587.1 Monkeypox virus clade I strain Zaire-96-I-16 [AF380138]
+>AAL40587.1 Monkeypox virus Zaire-96-I-16 (clade I) [AF380138.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QTISLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPCVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMTTHGRKTIICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -394,7 +394,7 @@ GRVCRETE-L-L-DRTVYVFPNTSIKEIKYMIGNFVQRIISLSVDK--LGFKQESYR-K--HQESEPASV----------
 -----------------------------------------------------P--TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AOP31616.1 Skunkpox virus [KU749310]
+>AOP31616.1 Skunkpox virus [KU749310.1]
 ---MSL--LKMEYNLYAEL--------KRMAGG-QPISLF-----NE-HGDFVEVE-------HGSS-FK-FLIPKGFYS
 SMSVKTNLQLE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVISNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKD-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -405,7 +405,7 @@ GRVCRETE-L-L-DRTVYVFPSTSIKEIKYTIGNFLQRIISLSVDK--LGFKQESYR-K--HQESVTSST----------
 -----------------------------------------------------CTPVSS---------------------
 ------R-EEHVL-------------------------------------------------------N-----------
 ----------------------------------------------KIFN---SQ-N---R
->AOP31827.1 Volepox virus [KU749311]
+>AOP31827.1 Volepox virus [KU749311.1]
 ---MSL--LKMDYNLYAEL--------KKMTGGQQPISLF-----NE-HGDFVEVE-------HGSS-FK-FLIPRGFYS
 STSIKTNLQLE-TL-TI----T-DNKITS-I--NPTNAPKLYPLQRKVVTEVISNMRKMISLKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LRT--QSPDVLIVVSRHLTNDAFCKY
@@ -416,7 +416,7 @@ GRVCRETE-L-L-DRTVYVFPSTSIKEIKYTVGNFLQRIISLSVDK--LGFKQESYK-K--HQESVTSSI----------
 -----------------------------------------------------STLVSS---------------------
 ------R-EEHVL-------------------------------------------------------N-----------
 ----------------------------------------------KIFN---VQ-NRQEV
->AAM92426.1 Ectromelia virus [AF012825]
+>AAM92426.1 Ectromelia virus [AF012825.2]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QPISLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPSVKTSLVFE-TL-TT----T-DNKITS-I--NPINAPKLYPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTIICVPNKMLIHQWKTLVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -427,7 +427,7 @@ GRVCRETE-L-L-DRTVYVFPSTSIKEIKYMIGNFVQRIISLSVDK--LGFKQESYR-K--HQESDPTST----------
 -----------------------------------------------------CT-TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AYN64703.1 Orthopoxvirus Abatino [MH816996]
+>AYN64703.1 Orthopoxvirus Abatino [MH816996.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QPISLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPSVNTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMSTHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -438,7 +438,7 @@ GRVCRETE-L-L-DRTVYVFPSTSIKEIKYMIGNFVQRIISLSVDK--LGFKQESYR-K--HQESDPTSV----------
 -----------------------------------------------------CT-TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->ABH08245.1 Horsepox virus [DQ792504]
+>ABH08245.1 Horsepox virus [DQ792504.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QPLSLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYA
 SPSVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIESKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -449,7 +449,7 @@ GRVCRETE-L-L-DRTVYVFPNTSIKEIKYMIGNFMQRIISLSVDK--LGFKQESYR-K--HQESDSTSV----------
 -----------------------------------------------------CT-TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AAO89417.1 Vaccinia virus WR [AY243312]
+>AAO89417.1 Vaccinia virus WR [AY243312.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QPLSLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYA
 SPSVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIESKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -460,7 +460,7 @@ GRVCRETE-L-L-DRTVYVFPNTSIKEIKYMIGNFMQRIISLSVDK--LGFKQESYR-K--HQESDPTSV----------
 -----------------------------------------------------CT-TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->ABD97706.1 Taterapox virus [DQ437594]
+>ABD97706.1 Taterapox virus [DQ437594.1]
 ---MSL--LKMEYNLYAEL--------KKMTCG-QSLSLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPSVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -471,7 +471,7 @@ GRVCRETE-L-L-DRTVYVFPNTSIKEIKYMIGNFVQRIISLSVDK--LGFKQESYR-K--HQESDPTSA----------
 -----------------------------------------------------CT-TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AAL73843.1 Camelpox virus M-96 [AF438165]
+>AAL73843.1 Camelpox virus M-96 [AF438165.1]
 ---MSL--LKMEYNLYTEL--------KKMTCG-QSLSLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPSVKTSLVFD-TL-TT----T-DNKITS-I--NPTNAPKLYPIQCKVVSEVVSNMRKMIELKRPLYITLHLACGFGKTI
 TTCYLMAIHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSILLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -482,7 +482,7 @@ GRVCRETA-L-L-DRRVYVFPNTSIKEIKYMIGNFVQRIISLSVDK--LGFKQESYR-K--HQESDPTSA----------
 -----------------------------------------------------CT-TSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->CAA49063.1 Variola virus major [X69198]
+>CAA49063.1 Variola virus major [X69198.1]
 ---MSL--LKMEYNLYAEL--------KKITCG-QSLSLF-----NE-DGDFVEVE-------PGSL-FK-FLIPKGFYS
 SPSVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQHKVVSEVVSNMRKMIKLKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -493,7 +493,7 @@ GRVCRETE-L-L-DRTVYVFPNTSVKEIKYMIGNFVQRIISLSVDK--LGFKQESYR-K--HQESDPTSV----------
 -----------------------------------------------------CT-ASS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------RIFN---SQ-N---R
->AKJ93767.1 Raccoonpox virus [KP143769]
+>AKJ93767.1 Raccoonpox virus [KP143769.1]
 ---MSL--LKMEYNLYAEL--------KRITGG-QPVSLF-----NE-HGDFVEVE-------HGSS-FK-FIIPKGFYS
 STSVKTGLQLE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQRKVVLEVISNMRKMIALKRPPYITLHLACGFGKTI
 TACYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLRE-LKT--QSPDVLIIVSRHLTNDAFCKY
@@ -504,7 +504,7 @@ GRVCRETE-L-L-DRMVYVFPSTSIKEIKYTVGNFLQRIISLSVDK--LGFKQESYT-K--HLESSSSST----------
 -----------------------------------------------------ST-VSS---------------------
 ------R-EERVL-------------------------------------------------------N-----------
 ----------------------------------------------KIFN---SQ-N---R
->CAB54722.1 Variola minor virus [Y16780]
+>CAB54722.1 Variola minor virus [Y16780.1]
 ---MSL--LKMEYNLYAEL--------KKITCG-QSLSLF-----NE-DGDFVEVE-------PGSS-FK-FLIPKGFYS
 SPSVKTSLVFE-TL-TT----T-DNKITS-I--NPTNAPKLYPLQHKVVSEVVSNMRKMIKLKRPLYITLHLACGFGKTI
 TTCYLMATHGRKTVICVPNKMLIHQWKTQVEAVGL--EHKISIDG-VSSLLKE-LKT--QSPDVLIVVSRHLTNDAFCKY
@@ -537,7 +537,7 @@ GRICRESN-Y-Q-KRIVFLFPTTSIKEIRHLVGFFTQKIISFSMEK--LGFEKETEV-N---------------------
 --------------------------------------------------------DRG---------------------
 ------K-KELAL-------------------------------------------------------C-----------
 ----------------------------------------------KALN---LQ-T---H
->AAK85071.1 Lumpy skin disease virus NI-2490 [AF325528]
+>AAK85071.1 Lumpy skin disease virus NI-2490 [AF325528.1]
 ---MSM-YYEIDYKLYSQI--------KRIIDD-QQLFLF-----ND-KKEFVEVE-------PKSM-FK-FILPIGLFS
 SESFPL--PSK-IF-AE----K-KNYIIN-L--DAITLPNLYPLQKKVVFKVLSLMREKRLQGRPMYITLHLSCGFGKTI
 TACYLMLKHKRKTVICLPNKMLASQWKTVIESTKL--SYIISLDG-VKKLMDK-LKF--ENVDVLIIINRHLSNEDFCKK
@@ -548,7 +548,7 @@ GRICRESD-H-Q-KRIVFLFPTTSIKEIRHLVGFFTQKIISFSMEK--LGFEKEIEG-N---------------------
 --------------------------------------------------------DRG---------------------
 ------K-KELAL-------------------------------------------------------C-----------
 ----------------------------------------------KALN---LQ-T---H
->AAF14996.1 Myxoma virus strain Lausanne [AF170726]
+>AAF14996.1 Myxoma virus strain Lausanne [AF170726.2]
 ---MSV-CSEIDYALYTEL--------KKFLNS-QPLFLF-----NA-DKNFVEVV-------PSSS-FK-FYIPIGVFS
 NSDVAL--IRP-VH-TT----C-TNHIES-A---DATFPNLYPLQKRVVAEVTTSMRQKLSTHRPMYMTLHLSCGFGKTI
 TACYLMVVHRRKTVICVPNKMLIHQWKAAVELTKL--SYIISTDG-VSVLLKQ-LRT--KTADVLIIVSRHLSNDYFCKK
@@ -559,7 +559,7 @@ GRVCRESE-S-V-KKTVFLFPNTSIREIKHSLGFFTERIVSVSTDK--LGFQQEGK------------------------
 --------------------------------------------------------EGT---------------------
 ------K-EEPAL-------------------------------------------------------T-----------
 ----------------------------------------------KAFS---SQ-I---R
->AAF17991.1 Rabbit fibroma virus [AF170722]
+>AAF17991.1 Rabbit fibroma virus [AF170722.1]
 ---MSV-CLEVDYTLYTEL--------KKFLNG-QPLFLF-----NA-DKNYVEVV-------PSST-LK-FYIPIGLFS
 NSNVAL--IRP-VH-TT----C-TNHIES-V---DVTFPNLYPLQKHVVAEVTTSMRQKLSTHRPMYMTLHLSCGFGKTV
 TACYLMVVHRRKTVICVPNKMLIHQWKVAVELTKL--SYIISTDG-VSMLLKQ-LRT--KTADVLIIVSRHLSNDYFCKK
@@ -570,7 +570,7 @@ GRVCRESE-S-V-KKTVFLFPNTSIREIKHSLGFFTERIVSISTDK--LGFEQEGI------------------------
 --------------------------------------------------------EGT---------------------
 ------K-EEPVL-------------------------------------------------------T-----------
 ----------------------------------------------KAFS---SQ-T---R
->CAC21348.1 Yaba-like disease virus [AJ293568]
+>CAC21348.1 Yaba-like disease virus [AJ293568.1]
 ---MSV-CTEIDYKLYTEL--------KKIAG--NSLFLF-----NE-NGDFTEVV-------LNSS-FK-FLVPIGFFS
 SIDIPL--KKP-IEYKN----N-NNNIEH-S--KNIILPNLYPFQKHVVSEVLLSMEKKNKHKRPTYITLHLACGFGKTI
 TSCYLLSLHKKKAVICLPNKMLINQWKRAIESINM--DHIVSVDG-VSNLLKE-MVK--KTADILIIVSRHLLNEEFCKK
@@ -581,7 +581,7 @@ GRICRSSV-S-K-TRTVIVFPNTSIKEIKHMVGFFTQKIITLAIEK--LNFKKIEK------------------------
 --------------------------------------------------------KGK---------------------
 ------K-KELAL-------------------------------------------------------C-----------
 ----------------------------------------------KAFN---LQ-T---H
->AAR07466.1 Yaba monkey tumor virus [AY386371]
+>AAR07466.1 Yaba monkey tumor virus [AY386371.1]
 ---MSV-CTEIDYKLYTEL--------RKIAG--NSLFLF-----NE-DGDFVEVV-------SNSS-FK-FLLPVGLFS
 SMDIPL--KKP-IE-CN----T-DNDIEH-S--KNVVMPNLYPFQERVASEVLSSIKKKVELKRPMYVTLHLACGFGKTI
 TTCYLLSVHKKKAVICLPNKMLINQWKRAIESINI--NHLVSVDG-VGNLLKE-LVK--KPADILIIVSRHLSNKEFCKK
@@ -592,7 +592,7 @@ GRICRYSI-S-K-TRTVIVFPNTSIKEIKHMIGFFTQKIITLAIEK--LGFKKIDK------------------------
 --------------------------------------------------------KGN---------------------
 ------K-QEFAL-------------------------------------------------------C-----------
 ----------------------------------------------KAFN---LQ-T---R
->ABI99274.1 Deerpox virus W-848-83 [AY689436]
+>ABI99274.1 Deerpox virus W-848-83 [AY689436.1]
 ---MSI-CTIIDYNLYMEM--------KKIIGD-IPLFLF-----NY-KKDFVEVN-------KMSN-FK-FYIPMGFFS
 SFNTSL--IRQ-ID-SK----L-INNYLT-I--TDINLPELYPIQKRVINSVLSSMKRKIKEKRPMYITLHLSCGFGKTV
 LACHLISIHRRKTVICLPNKMLVNQWRSTIENTNM--NYLISLDG-VRNLLKT-LDN--KTADILIIVSRHLSNDTFCKR
@@ -603,7 +603,7 @@ GRICRESI-N-Y-NRYVYIFPNTSIKEIKHLIGFFSQKIISLAIDK--LGFEKEPKAVK---------------------
 --------------------------------------------------------GGR---------------------
 ------K-EESAL-------------------------------------------------------Y-----------
 ----------------------------------------------KAFN---LQ-N---H
->AAL69846.1 Swinepox virus [AF410153]
+>AAL69846.1 Swinepox virus [AF410153.1]
 ---MSI-CSVIDYNLYKEI--------KKVIST-NQLFLF-----NY-KKEFVEVP-------LESS-MK-FLIPPGLFS
 ST-IPL--IYP-FE-NN----T-TINYAR-T--ASILLPELYPIQKRVVSEVIRSMRKKILEKRPLYITLHLACGFGKTI
 TASYLIAMHKRRTIICLPNKMLASQWKHVIESTKL--SYIVSLDG-VQQLMKI-LMR--ESADVLIIINRHLTNEDFCKK

@@ -11,26 +11,39 @@
 # ----------------------------------------------------------------------
 
 META=protein_lists/AllProteins.txt
+META_AWK=protein_lists/AllProteins.coldefs.awk
+source protein_lists/AllProteins.coldefs.sh
 
+if [[ ! -s "$META" ]]; then
+    echo "ERROR[${0}:00_set_env.sh $*]: missing or empty METADATA file: $META"
+    exit 1
+elif [[ "-v" == "$1" ]]; then
+    echo "OK: $(wc -l $META)"
+fi
+    
 SRC_SEQ_DIR=src_sequences
 
 # extract from META
-GENOME_ACCESSIONS_ORD=$(sort -t $'\t' -k14n $META | grep -v GroupName | awk 'BEGIN{FS="\t";IsolateAccession=8;inAlignCol=15}{sub(/\r$/,"",$0)}($inAlignCol=="Y"){print $IsolateAccession}'| uniq)
+GENOME_ACCESSIONS_ORD=$(sort -t $'\t' -k${META_GenomeOrder}n $META | grep -v GroupName | awk -f $META_AWK -f scripts/00_included_genome_accessions.awk |  uniq)
+if [[ "-v" == "$1" ]]; then echo GENOME_ACCESSIONS_ORD=$GENOME_ACCESSIONS_ORD; fi
 
-GENOME_CT=$(awk 'BEGIN{FS="\t";GenomeOrder=14;inNewPoxAlign=15}(tolower(substr($inNewPoxAlign,1,1))=="y"){print $GenomeOrder}' $META | sort | uniq | wc -l)
-if [ $? -ne 0 ]; then echo ERROR parsing $META; exit 1; fi
+GENOME_CT=$(awk -f $META_AWK -f scripts/00_included_genome_accessions.awk $META | sort | uniq | wc -l )
+if [[ "-v" == "$1" ]]; then echo GENOME_CT=$GENOME_CT; fi
+if [[ $? -ne 0 ]]; then echo ERROR parsing $META; exit 1; fi
 if [[ "$GENOME_CT" -lt 1 ]]; then
-    echo "ERROR[$0]: invalid GENOME_CT=$GENOME_CT (from $META)"
+    echo "ERROR[${0}:00_set_env.sh $*]: invalid GENOME_CT=$GENOME_CT (from $META)"
     exit 1
 fi
 
-CORE_PROT_NAMES_ORD=$(sort -t $'\t' -k1n $META | grep -v GroupName | cut -f 2 | egrep -v '^$'| uniq)
+CORE_PROT_NAMES_ORD=$(sort -t $'\t' -k${META_GeneOrder}n $META | grep -v GroupName | cut -f ${META_GroupName} | egrep -v '^$'| uniq)
+if [[ "-v" == "$1" ]]; then echo CORE_PROT_NAMES_ORD=$CORE_PROT_NAMES_ORD; fi
 
-CORE_PROT_CT=$(awk 'BEGIN{FS="\t";GroupName=2;inNewPoxAlign=15}(tolower(substr($inNewPoxAlign,1,1))=="y"){print $GroupName}' $META | sort | uniq | wc -l)
-if [ $? -ne 0 ]; then echo ERROR parsing $META; exit 1; fi
+CORE_PROT_CT=$(awk -f $META_AWK -f scripts/00_included_group_names.awk $META | sort | uniq | wc -l)
+if [[ "-v" == "$1" ]]; then echo CORE_PROT_CT=$CORE_PROT_CT; fi 
+if [[ $? -ne 0 ]]; then echo ERROR parsing $META; exit 1; fi
 if [[ "$CORE_PROT_CT" -ne 25 ]]; then
-    echo "ERROR[$0]: invalid CORE_PROT_CT=$CORE_PROT_CT (from $META)"
-    echo "ERROR[$0]: expected at least 25 core protein groups"
+    echo "ERROR[${0}:00_set_env.sh $*]: invalid CORE_PROT_CT=$CORE_PROT_CT (from $META)"
+    echo "ERROR[${0}:00_set_env.sh $*]: expected at least 25 core protein groups"
     exit 1
 fi
 
@@ -57,16 +70,18 @@ IQTREE2_EXE=~/Applications/iqtree2
 MUSCLE_EXE=~/Applications/muscle-osx-arm64.v5.3
 for APP_EXE in $IQTREE2_EXE $MUSCLE_EXE; do
     if [[ ! -e "$APP_EXE" ]]; then
-	echo "ERROR[$0] missing application: $APP_EXE"
+	echo "ERROR[${0}:00_set_env.sh $*] missing application: $APP_EXE"
 	exit 1
     fi
 done 
 
 # brew apps
-for EXE in blastn samtools seqtk Rscript; do
+for EXE in blastn samtools seqtk snakemake gcc Rscript pdfunite ; do
     if [[ -z "$(which $EXE 2>/dev/null)" ]]; then
-	echo "ERROR[$0] missing exe: $EXE"
+	echo "ERROR[${0}:00_set_env.sh $*] missing exe: $EXE"
 	exit 1
+    elif [[ "-v" == "$1" ]]; then
+	echo "OK[${0}:00_set_env.sh $*] found $EXE"
     fi
 done
 
@@ -74,8 +89,10 @@ done
 for RLIB_NAME in ape ggplot2 ggtree; do
     Rscript -e "library($RLIB_NAME)" > /dev/null 2>&1  
     if [[ $? -ne 0 ]]; then
-	echo "ERROR[$0] R library '$RLIB_NAME' not installed (see README.md)"
+	echo "ERROR[${0}:00_set_env.sh $*] R library '$RLIB_NAME' not installed (see README.md)"
 	exit 1
+    elif [[ "-v" == "$1" ]]; then
+	echo "OK[${0}:00_set_env.sh $*] found R library $RLIB_NAME"
     fi
 done
 
@@ -92,8 +109,10 @@ done
 ALIGN_DIR=./new_align
 mkdir -p ./new_align
 if [[ ! -d $ALIGN_DIR ]]; then
-    echo "ERROR[$0]: output dir missing: $ALIGN_DIR"
+    echo "ERROR[${0}:00_set_env.sh $*]: output dir missing: $ALIGN_DIR"
     exit 1
+elif [[ "-v" == "$1" ]]; then
+    echo "OK[${0}:00_set_env.sh $*] exists ALIGN_DIR=$ALIGN_DIR"
 fi
 
 #
@@ -105,6 +124,7 @@ fi
 # protein  fastas
 #
 SRC_PROTEINS_DB_FAA=$ALIGN_DIR/src_proteins_cache.faa
+if [[ "-v" == "$1" ]]; then echo "OK[${0}:00_set_env.sh $*] SRC_PROTEINS_DB_FAA=$SRC_PROTEINS_DB_FAA"; fi
 
 
 #
@@ -113,8 +133,10 @@ SRC_PROTEINS_DB_FAA=$ALIGN_DIR/src_proteins_cache.faa
 # terminal filename; found in $ALIGN_DIR/protein_groups/$PROT_GROUP/
 #
 PROT_GROUPS_DIR=$ALIGN_DIR/protein_groups
+if [[ "-v" == "$1" ]]; then echo "OK[${0}:00_set_env.sh $*] PROT_GROUPS_DIR=$PROT_GROUPS_DIR"; fi
 
 PROT_ALIGN_MSA_FNAME=sequence.msa-muscle.faa.txt
+if [[ "-v" == "$1" ]]; then echo "OK[${0}:00_set_env.sh $*] PROT_ALIGN_MSA_FNAME=$PROT_ALIGN_MSA_FNAME"; fi
 
 
 
@@ -123,3 +145,17 @@ PROT_ALIGN_MSA_FNAME=sequence.msa-muscle.faa.txt
 #
 ALL_ALIGN_RAW=$ALIGN_DIR/merged_proteins.msa-muscle.raw.faa
 ALL_ALIGN_FAA=$ALIGN_DIR/merged_proteins.msa-muscle.faa
+if [[ "-v" == "$1" ]]; then echo "OK[${0}:00_set_env.sh $*] ALL_ALIGN_RAW=$ALL_ALIGN_RAW"; fi
+if [[ "-v" == "$1" ]]; then echo "OK[${0}:00_set_env.sh $*] ALL_ALIGN_FAA=$ALL_ALIGN_FAA"; fi
+	
+# ----------------------------------------------------------------------
+#
+# done
+#
+# ----------------------------------------------------------------------
+
+if [[ "-v" == "$1" ]]; then
+    echo "# ----------------------------------------------------------------------"
+    echo "OK[${0}:00_set_env.sh $*] Env setup/check SUCCESSFUL"
+    echo "# ----------------------------------------------------------------------"
+fi

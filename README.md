@@ -6,7 +6,7 @@ Phylogenetic analysis places novel poxvirus species in the Poxviridae family usi
 
 This analysis was run on Mac OSX Tahoe 26.2 (MacBook Pro with M4 Pro chip, 48G RAM).
 
-Pre-requisites:
+## Pre-requisites:
   * MUSCLE v5.4 [https://github.com/recdgar/muscle](https://github.com/rcedgar/muscle/releases/tag/v5.3) installed as ~/Applications/muscle-osx-arm64.v5.3
     * MUSCLE requires gcc be installed: Either ```xcode-select --install``` or  ```brew install gcc@11```
   * iqtree2 v2.4.0 [https://github.com/iqtree/iqtree2](https://github.com/iqtree/iqtree2/releases/tag/v2.4.0) installed as ~/Applications/iqtree2 
@@ -18,7 +18,11 @@ Pre-requisites:
     * with the following packages installed: ape, ggtree, ggplot2
     * try ```Rscript -e "options(repos='https://cloud.r-project.org'); install.packages(c('ape','ggplot2','BiocManager')); BiocManager::install('ggtree', ask=FALSE, update=FALSE)"```
   * pdfunite 25.12.0 ```brew install poppler``` used to merge PDFs files into one big one
-  
+
+## Environment Check
+
+To check many parts of the environment: ```./00.set_env.sh -v```
+
 # Metadata & Data Setup
 
 ## protein_lists/
@@ -89,3 +93,6 @@ Determine the best model, using iqtree2/MFP and build phylogenetic trees for tha
 
 Iterate over the protein groups, using iqtree2 and a pre-selected model, to build an independent phylogenetic tree for each protein. These can then be reviewed and compared against the tree from the merged MSA.
 
+## 99.full_run.sh
+
+Convenience script that runs all the above scripts, in order.

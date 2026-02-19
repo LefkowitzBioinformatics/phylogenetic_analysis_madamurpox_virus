@@ -3,263 +3,267 @@ Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
 Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
 Host:    genome-hsv1.local (SSE4.2, 48 GB RAM)
-Command: /Applications/iqtree2 -s ./new_align/merged_proteins.msa-muscle.faa -m Q.yeast+F+I+R6 -B 1000 -nt AUTO -pre ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6
-Seed:    519917 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Tue Feb 17 20:25:12 2026
+Command: /Users/curtish/Applications/iqtree2 -s ./new_align/merged_proteins.msa-muscle.faa -m Q.yeast+F+I+R6 -B 1000 -nt AUTO -pre ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6
+Seed:    304162 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Feb 18 23:08:45 2026
 Kernel:  SSE2 - auto-detect threads (14 CPU cores detected)
 
 Reading alignment file ./new_align/merged_proteins.msa-muscle.faa ... Fasta format detected
-Reading fasta file: done in 0.00767493 secs using 92.86% CPU
+Reading fasta file: done in 0.00776482 secs using 92.49% CPU
 Alignment most likely contains protein sequences
 Alignment has 56 sequences with 17690 columns, 13589 distinct patterns
 11895 parsimony-informative, 1596 singleton sites, 4199 constant sites
 WARNING: Some sequence names are changed as follows:
-HF679131-Adoxophyes_honmai_entomopoxvirus_'L' -> HF679131-Adoxophyes_honmai_entomopoxvirus__L_
-HF679133-Choristoneura_rosaceana_entomopoxvirus_'L' -> HF679133-Choristoneura_rosaceana_entomopoxvirus__L_
-AF063866-Melanoplus_sanguinipes_entomopoxvirus_'O' -> AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_
-HF679134-Mythimna_separata_entomopoxvirus_'L' -> HF679134-Mythimna_separata_entomopoxvirus__L_
+AY753185-monkeypox_virus_(clade_IIa) -> AY753185-monkeypox_virus__clade_IIa_
+AF380138-monkeypox_virus_(clade_I) -> AF380138-monkeypox_virus__clade_I_
 
-                                                              Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.000182867 secs using 586.8% CPU
-   1  MH816996-Orthopoxvirus_Abatino                                 25.02%    passed     43.25%
-   2  AP013055-Anomala_cuprea_entomopoxvirus                         22.52%    failed      0.00%
-   3  HF679131-Adoxophyes_honmai_entomopoxvirus__L_                  23.55%    failed      0.00%
-   4  MH607141-Akhmeta_virus                                         25.26%    passed     58.71%
-   5  AF250284-Amsacta_moorei_entomopoxvirus                         23.48%    failed      0.00%
-   6  AY386265-Bovine_papular_stomatitis_virus                       24.84%    failed      0.00%
-   7  AF438165-Camelpox_virus_M-96                                   25.03%    passed     48.89%
-   8  HF679132-Choristoneura_biennis_entomopoxvirus                  23.62%    failed      0.00%
-   9  AY318871-Canarypox_virus                                       25.50%    failed      0.00%
-  10  HQ647181-Cotia_virus_SPAn232                                   25.33%    failed      0.00%
-  11  AF482758-Cowpox_virus                                          24.82%    passed     48.41%
-  12  HF679133-Choristoneura_rosaceana_entomopoxvirus__L_            23.62%    failed      0.00%
-  13  AY689436-Deerpox_virus_W-848-83                                25.05%    failed      0.00%
-  14  AF012825-Ectromelia_virus                                      25.05%    passed     36.22%
-  15  MF467281-Eastern_grey_kangaroopox_virus                        24.87%    failed      0.00%
-  16  KY747497-Eptesipox_virus                                       25.09%    failed      0.00%
-  17  MF678796-Flamingopox_virus_FGPVKD09                            25.04%    failed      0.00%
-  18  AF198100-Fowlpox_virus                                         25.30%    failed      0.00%
-  19  KY382358-Seal_parapoxvirus                                     24.97%    failed      0.00%
-  20  NC_004003.1-Goatpox_virus_Pellor                               25.16%    failed      0.00%
-  21  DQ792504-Horsepox_virus                                        25.10%    passed     52.00%
-  22  AF325528-Lumpy_skin_disease_virus_NI-2490                      25.18%    failed      0.00%
-  23  U60315-Molluscum_contagiosum_virus_subtype_1                   22.53%    failed      0.00%
-  24  MF001304-Murmansk_poxvirus                                     25.03%    passed      8.21%
-  25  AY753185-monkeypox_virus_clade_IIa_strain_cOP-58               24.87%    passed     57.14%
-  26  AF380138-Monkeypox_virus_clade_I_strain_Zaire-96-I-16          24.87%    passed     44.73%
-  27  AF063866-Melanoplus_sanguinipes_entomopoxvirus__O_             22.97%    failed      0.00%
-  28  HF679134-Mythimna_separata_entomopoxvirus__L_                  23.70%    failed      0.00%
-  29  AF170726-Myxoma_virus_strain_Lausanne                          25.47%    failed      0.00%
-  30  DQ356948-Nile_crocodilepox_virus                               25.42%    failed      0.00%
-  31  AY386264-Orf_virus_strain_OV-SA00                              23.36%    failed      0.00%
-  32  GQ329670-Pseudocowpox_virus                                    24.99%    failed      0.00%
-  33  KJ801920-Pigeonpox_virus                                       25.30%    failed      0.00%
-  34  KJ859677-Penguinpox_virus                                      25.61%    failed      0.00%
-  35  KU980965-Pteropox_virus                                        25.20%    failed      0.00%
-  36  KP143769-Raccoonpox_virus                                      25.08%    passed     42.74%
-  37  KM502564-Parapoxvirus_red_deer/HL953                           24.23%    failed      0.00%
-  38  AF170722-Rabbit_fibroma_virus                                  25.46%    failed      0.00%
-  39  NC_004002.1-Sheeppox_virus                                     25.21%    failed      0.00%
-  40  KU749310-Skunkpox_virus                                        25.09%    passed     34.20%
-  41  KT159937-Salmon_gill_poxvirus                                  20.97%    failed      0.00%
-  42  MH427217-Sea_otter_poxvirus                                    25.29%    failed      0.00%
-  43  HE601899-Squirrelpox_virus                                     24.89%    failed      0.00%
-  44  AF410153-Swinepox_virus                                        25.25%    failed      0.00%
-  45  DQ437594-Taterapox_virus                                       25.04%    passed     46.98%
-  46  KP728110-Turkeypox_virus                                       25.83%    failed      0.00%
-  47  AY243312-Vaccinia_virus_WR                                     25.04%    passed     45.04%
-  48  X69198-Variola_virus_major                                     25.04%    passed     48.92%
-  49  Y16780-Variola_minor_virus                                     25.01%    passed     53.24%
-  50  KU749311-Volepox_virus                                         25.09%    passed     15.57%
-  51  MF467280-Western_grey_kangaroopox_virus                        24.86%    failed      0.00%
-  52  HQ849551-Yokapox_virus                                         24.93%    failed      0.00%
-  53  AJ293568-Yaba-like_disease_virus                               25.21%    failed      0.00%
-  54  AY386371-Yaba_monkey_tumor_virus                               25.36%    failed      0.00%
-  55  MNB22-MNB22                                                    25.07%    failed      0.00%
-  56  PP711852-Rousettus_bat_poxvirus_isolate_1A/Uganda/UGR70/2019   25.10%    failed      0.00%
-****  TOTAL                                                          24.75%  40 sequences failed composition chi2 test (p-value<5%; df=19)
-Creating fast initial parsimony tree by random order stepwise addition...
-0.832 seconds, parsimony score: 100308 (based on 13491 sites)
-Generating 1000 samples for ultrafast bootstrap (seed: 519917)...
+                                                 Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000185013 secs using 556.7% CPU
+   1  MH816996-orthopoxvirus_abatino                    25.02%    passed     43.25%
+   2  AP013055-Anomala_cuprea_entomopoxvirus            22.52%    failed      0.00%
+   3  HF679131-Adoxophyes_honmai_entomopoxvirus         23.55%    failed      0.00%
+   4  MH607141-Akhmeta_virus                            25.26%    passed     58.71%
+   5  AF250284-Amsacta_moorei_entomopoxvirus            23.48%    failed      0.00%
+   6  AY386265-bovine_papular_stomatitis_virus          24.84%    failed      0.00%
+   7  AF438165-camelpox_virus                           25.03%    passed     48.89%
+   8  HF679132-Choristoneura_biennis_entomopoxvirus     23.62%    failed      0.00%
+   9  AY318871-canarypox_virus                          25.50%    failed      0.00%
+  10  HQ647181-Cotia_virus                              25.33%    failed      0.00%
+  11  AF482758-cowpox_virus                             24.82%    passed     48.41%
+  12  HF679133-Choristoneura_rosaceana_entomopoxvirus   23.62%    failed      0.00%
+  13  AY689436-mule_deerpox_virus                       25.05%    failed      0.00%
+  14  AF012825-ectromelia_virus                         25.05%    passed     36.22%
+  15  MF467281-Eastern_grey_kangaroopox_virus           24.87%    failed      0.00%
+  16  KY747497-eptesipox_virus                          25.09%    failed      0.00%
+  17  MF678796-flamingopox_virus                        25.04%    failed      0.00%
+  18  AF198100-fowlpox_virus                            25.30%    failed      0.00%
+  19  KY382358-seal_parapoxvirus                        24.97%    failed      0.00%
+  20  NC_004003-goatpox_virus                           25.16%    failed      0.00%
+  21  DQ792504-horsepox_virus                           25.10%    passed     52.00%
+  22  AF325528-lumpy_skin_disease_virus                 25.18%    failed      0.00%
+  23  U60315-molluscum_contagiosum_virus                22.53%    failed      0.00%
+  24  MF001304-Murmansk_poxvirus                        25.03%    passed      8.21%
+  25  AY753185-monkeypox_virus__clade_IIa_              24.87%    passed     57.14%
+  26  AF380138-monkeypox_virus__clade_I_                24.87%    passed     44.73%
+  27  AF063866-Melanoplus_sanguinipes_entomopoxvirus    22.97%    failed      0.00%
+  28  HF679134-Mythimna_separata_entomopoxvirus         23.70%    failed      0.00%
+  29  AF170726-myxoma_virus                             25.47%    failed      0.00%
+  30  DQ356948-Nile_crocodilepox_virus                  25.42%    failed      0.00%
+  31  AY386264-orf_virus                                23.36%    failed      0.00%
+  32  GQ329670-pseudocowpox_virus                       24.99%    failed      0.00%
+  33  KJ801920-pigeonpox_virus                          25.30%    failed      0.00%
+  34  KJ859677-penguinpox_virus                         25.61%    failed      0.00%
+  35  KU980965-pteropox_virus                           25.20%    failed      0.00%
+  36  KP143769-raccoonpox_virus                         25.08%    passed     42.74%
+  37  KM502564-parapoxvirus_red_deer                    24.23%    failed      0.00%
+  38  AF170722-rabbit_fibroma_virus                     25.46%    failed      0.00%
+  39  NC_004002-sheeppox_virus                          25.21%    failed      0.00%
+  40  KU749310-skunkpox_virus                           25.09%    passed     34.20%
+  41  KT159937-salmon_gill_poxvirus                     20.97%    failed      0.00%
+  42  MH427217-sea_otter_poxvirus                       25.29%    failed      0.00%
+  43  HE601899-squirrelpox_virus                        24.89%    failed      0.00%
+  44  AF410153-swinepox_virus                           25.25%    failed      0.00%
+  45  DQ437594-taterapox_virus                          25.04%    passed     46.98%
+  46  KP728110-turkeypox_virus                          25.83%    failed      0.00%
+  47  AY243312-vaccinia_virus                           25.04%    passed     45.04%
+  48  X69198-variola_major_virus                        25.04%    passed     48.92%
+  49  Y16780-variola_minor_virus                        25.01%    passed     53.24%
+  50  KU749311-volepox_virus                            25.09%    passed     15.57%
+  51  MF467280-Western_grey_kangaroopox_virus           24.86%    failed      0.00%
+  52  HQ849551-yokapox_virus                            24.93%    failed      0.00%
+  53  AJ293568-tanapox_virus                            25.21%    failed      0.00%
+  54  AY386371-Yaba_monkey_tumor_virus                  25.36%    failed      0.00%
+  55  MNB22-madamurpox_virus                            25.07%    failed      0.00%
+  56  PP711852-rousettus_bat_poxvirus                   25.10%    failed      0.00%
+****  TOTAL                                             24.75%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.063 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 304162)...
 WARNING: Normalizing state frequencies so that sum of them equals to 1
 
 NOTE: 758 MB RAM (0 GB) is required!
 Measuring multi-threading efficiency up to 14 CPU cores
-10 trees examined
-Threads: 1 / Time: 14.787 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -865177
-Threads: 2 / Time: 9.148 sec / Speedup: 1.616 / Efficiency: 81% / LogL: -865177
-Threads: 3 / Time: 6.257 sec / Speedup: 2.363 / Efficiency: 79% / LogL: -865177
-Threads: 4 / Time: 4.879 sec / Speedup: 3.031 / Efficiency: 76% / LogL: -865177
-Threads: 5 / Time: 4.093 sec / Speedup: 3.613 / Efficiency: 72% / LogL: -865177
-Threads: 6 / Time: 3.538 sec / Speedup: 4.180 / Efficiency: 70% / LogL: -865177
-Threads: 7 / Time: 3.190 sec / Speedup: 4.635 / Efficiency: 66% / LogL: -865177
-Threads: 8 / Time: 2.876 sec / Speedup: 5.142 / Efficiency: 64% / LogL: -865177
-Threads: 9 / Time: 2.720 sec / Speedup: 5.437 / Efficiency: 60% / LogL: -865177
-Threads: 10 / Time: 2.816 sec / Speedup: 5.251 / Efficiency: 53% / LogL: -865177
-Threads: 11 / Time: 2.550 sec / Speedup: 5.799 / Efficiency: 53% / LogL: -865177
-Threads: 12 / Time: 2.573 sec / Speedup: 5.746 / Efficiency: 48% / LogL: -865177
+Increase to 10 rounds for branch lengths
+2 trees examined
+Threads: 1 / Time: 22.816 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -842149
+Threads: 2 / Time: 14.157 sec / Speedup: 1.612 / Efficiency: 81% / LogL: -842149
+Threads: 3 / Time: 9.663 sec / Speedup: 2.361 / Efficiency: 79% / LogL: -842149
+Threads: 4 / Time: 7.350 sec / Speedup: 3.104 / Efficiency: 78% / LogL: -842149
+Threads: 5 / Time: 6.187 sec / Speedup: 3.688 / Efficiency: 74% / LogL: -842149
+Threads: 6 / Time: 5.371 sec / Speedup: 4.248 / Efficiency: 71% / LogL: -842149
+Threads: 7 / Time: 4.633 sec / Speedup: 4.925 / Efficiency: 70% / LogL: -842149
+Threads: 8 / Time: 4.141 sec / Speedup: 5.510 / Efficiency: 69% / LogL: -842149
+Threads: 9 / Time: 3.823 sec / Speedup: 5.968 / Efficiency: 66% / LogL: -842149
+Threads: 10 / Time: 3.759 sec / Speedup: 6.070 / Efficiency: 61% / LogL: -842149
+Threads: 11 / Time: 3.593 sec / Speedup: 6.350 / Efficiency: 58% / LogL: -842149
+Threads: 12 / Time: 3.645 sec / Speedup: 6.259 / Efficiency: 52% / LogL: -842149
+Threads: 13 / Time: 3.536 sec / Speedup: 6.453 / Efficiency: 50% / LogL: -842149
 BEST NUMBER OF THREADS: 11
 
 Estimate model parameters (epsilon = 0.100)
-1. Initial log-likelihood: -534396.841
-2. Current log-likelihood: -523419.443
-3. Current log-likelihood: -523261.673
-4. Current log-likelihood: -523242.151
-5. Current log-likelihood: -523229.789
-6. Current log-likelihood: -523220.633
-7. Current log-likelihood: -523213.375
-8. Current log-likelihood: -523207.884
-9. Current log-likelihood: -523203.859
-10. Current log-likelihood: -523201.006
-11. Current log-likelihood: -523199.122
-12. Current log-likelihood: -523197.821
-13. Current log-likelihood: -523197.003
-14. Current log-likelihood: -523196.415
-15. Current log-likelihood: -523196.007
-16. Current log-likelihood: -523195.709
-17. Current log-likelihood: -523195.520
-18. Current log-likelihood: -523195.347
-19. Current log-likelihood: -523195.187
-20. Current log-likelihood: -523195.048
-21. Current log-likelihood: -523194.922
-22. Current log-likelihood: -523194.787
-23. Current log-likelihood: -523194.673
-24. Current log-likelihood: -523194.549
-25. Current log-likelihood: -523194.433
-26. Current log-likelihood: -523194.319
-27. Current log-likelihood: -523194.201
-28. Current log-likelihood: -523194.099
-29. Current log-likelihood: -523193.998
-30. Current log-likelihood: -523193.885
-Optimal log-likelihood: -523193.777
+1. Initial log-likelihood: -534419.748
+2. Current log-likelihood: -523353.421
+3. Current log-likelihood: -523197.781
+4. Current log-likelihood: -523179.454
+5. Current log-likelihood: -523167.875
+6. Current log-likelihood: -523159.005
+7. Current log-likelihood: -523151.852
+8. Current log-likelihood: -523146.295
+9. Current log-likelihood: -523142.102
+10. Current log-likelihood: -523139.039
+11. Current log-likelihood: -523136.862
+12. Current log-likelihood: -523135.411
+13. Current log-likelihood: -523134.467
+14. Current log-likelihood: -523133.786
+15. Current log-likelihood: -523133.303
+16. Current log-likelihood: -523132.939
+17. Current log-likelihood: -523132.671
+18. Current log-likelihood: -523132.462
+19. Current log-likelihood: -523132.282
+20. Current log-likelihood: -523132.103
+21. Current log-likelihood: -523131.940
+22. Current log-likelihood: -523131.781
+23. Current log-likelihood: -523131.634
+24. Current log-likelihood: -523131.484
+25. Current log-likelihood: -523131.353
+26. Current log-likelihood: -523131.211
+27. Current log-likelihood: -523131.086
+28. Current log-likelihood: -523130.947
+29. Current log-likelihood: -523130.814
+30. Current log-likelihood: -523130.703
+31. Current log-likelihood: -523130.568
+32. Current log-likelihood: -523130.449
+33. Current log-likelihood: -523130.318
+34. Current log-likelihood: -523130.203
+35. Current log-likelihood: -523130.088
+36. Current log-likelihood: -523129.972
+37. Current log-likelihood: -523129.861
+38. Current log-likelihood: -523129.756
+39. Current log-likelihood: -523129.642
+40. Current log-likelihood: -523129.527
+41. Current log-likelihood: -523129.424
+42. Current log-likelihood: -523129.319
+Optimal log-likelihood: -523129.214
 Proportion of invariable sites: 0.037
-Site proportion and rates:  (0.169,0.090) (0.224,0.284) (0.162,0.598) (0.205,1.103) (0.140,2.280) (0.063,4.457)
-Parameters optimization took 30 rounds (66.463 sec)
+Site proportion and rates:  (0.171,0.090) (0.230,0.289) (0.173,0.630) (0.195,1.161) (0.134,2.361) (0.059,4.536)
+Parameters optimization took 42 rounds (87.339 sec)
 Wrote distance file to... 
 Computing ML distances based on estimated model parameters...
-Calculating distance matrix: done in 0.0645518 secs using 996.4% CPU
-Computing ML distances took 0.065030 sec (of wall-clock time) 0.644840 sec (of CPU time)
-Setting up auxiliary I and S matrices: done in 0.000166178 secs using 193.2% CPU
-Computing RapidNJ tree took 0.006694 sec (of wall-clock time) 0.003936 sec (of CPU time)
-Log-likelihood of RapidNJ tree: -523424.894
+Calculating distance matrix: done in 0.065624 secs using 998% CPU
+Computing ML distances took 0.066121 sec (of wall-clock time) 0.656662 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000174999 secs using 147.4% CPU
+Computing RapidNJ tree took 0.007699 sec (of wall-clock time) 0.004330 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -523424.006
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 0.293 second
-Computing log-likelihood of 98 initial trees ... 20.266 seconds
-Current best score: -523193.777
+Generating 98 parsimony trees... 9.297 second
+Computing log-likelihood of 98 initial trees ... 20.795 seconds
+Current best score: -523129.214
 
 Do NNI search on 20 best initial trees
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 1: -523012.197
-Iteration 10 / LogL: -523031.605 / Time: 0h:3m:4s
-Iteration 20 / LogL: -523244.417 / Time: 0h:3m:29s
-Finish initializing candidate tree set (6)
-Current best tree score: -523012.197 / CPU time: 79.508
+BETTER TREE FOUND at iteration 1: -522996.016
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -522943.176
+Iteration 10 / LogL: -522999.136 / Time: 0h:4m:17s
+Iteration 20 / LogL: -522945.065 / Time: 0h:4m:53s
+Finish initializing candidate tree set (11)
+Current best tree score: -522943.176 / CPU time: 110.753
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Estimate model parameters (epsilon = 0.100)
-UPDATE BEST LOG-LIKELIHOOD: -522943.820
-Iteration 30 / LogL: -522993.489 / Time: 0h:4m:15s (0h:10m:23s left)
-Iteration 40 / LogL: -522955.909 / Time: 0h:4m:55s (0h:7m:40s left)
-Iteration 50 / LogL: -523014.587 / Time: 0h:5m:32s (0h:5m:45s left)
-Log-likelihood cutoff on original alignment: -523081.973
-Iteration 60 / LogL: -523083.838 / Time: 0h:6m:10s (0h:4m:16s left)
-Iteration 70 / LogL: -522967.472 / Time: 0h:6m:54s (0h:3m:5s left)
-Iteration 80 / LogL: -522944.969 / Time: 0h:7m:34s (0h:2m:0s left)
-Iteration 90 / LogL: -523003.980 / Time: 0h:8m:15s (0h:1m:1s left)
-Iteration 100 / LogL: -522980.577 / Time: 0h:8m:53s (0h:0m:5s left)
-Log-likelihood cutoff on original alignment: -523081.973
-NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
-TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:9m:1s
+Iteration 30 / LogL: -522985.092 / Time: 0h:5m:34s (0h:15m:11s left)
+Iteration 40 / LogL: -522980.165 / Time: 0h:6m:14s (0h:11m:1s left)
+Iteration 50 / LogL: -522994.864 / Time: 0h:6m:55s (0h:8m:19s left)
+Log-likelihood cutoff on original alignment: -523112.269
+Iteration 60 / LogL: -522987.014 / Time: 0h:7m:31s (0h:6m:14s left)
+Iteration 70 / LogL: -522946.083 / Time: 0h:8m:13s (0h:4m:39s left)
+Iteration 80 / LogL: -522970.760 / Time: 0h:8m:56s (0h:3m:16s left)
+Iteration 90 / LogL: -522964.892 / Time: 0h:9m:37s (0h:2m:3s left)
+Iteration 100 / LogL: -523067.720 / Time: 0h:10m:19s (0h:0m:56s left)
+Log-likelihood cutoff on original alignment: -523112.269
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+Iteration 110 / LogL: -522949.178 / Time: 0h:10m:55s (0h:9m:1s left)
+TREE SEARCH COMPLETED AFTER 110 ITERATIONS / Time: 0h:10m:55s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -522943.820
-2. Current log-likelihood: -522943.731
-3. Current log-likelihood: -522943.650
-4. Current log-likelihood: -522943.575
-5. Current log-likelihood: -522943.482
-6. Current log-likelihood: -522943.417
-7. Current log-likelihood: -522943.331
-8. Current log-likelihood: -522943.259
-9. Current log-likelihood: -522943.187
-10. Current log-likelihood: -522943.101
-11. Current log-likelihood: -522943.034
-12. Current log-likelihood: -522942.958
-13. Current log-likelihood: -522942.897
-14. Current log-likelihood: -522942.882
-15. Current log-likelihood: -522942.808
-16. Current log-likelihood: -522942.741
-17. Current log-likelihood: -522942.664
-18. Current log-likelihood: -522942.598
-19. Current log-likelihood: -522942.541
-20. Current log-likelihood: -522942.477
-21. Current log-likelihood: -522942.422
-22. Current log-likelihood: -522942.374
-23. Current log-likelihood: -522942.363
-24. Current log-likelihood: -522942.328
-25. Current log-likelihood: -522942.256
-26. Current log-likelihood: -522942.196
-27. Current log-likelihood: -522942.133
-28. Current log-likelihood: -522942.118
-29. Current log-likelihood: -522942.107
-30. Current log-likelihood: -522942.046
-31. Current log-likelihood: -522942.002
-32. Current log-likelihood: -522941.942
-33. Current log-likelihood: -522941.888
-34. Current log-likelihood: -522941.875
-35. Current log-likelihood: -522941.864
-36. Current log-likelihood: -522941.854
-37. Current log-likelihood: -522941.813
-38. Current log-likelihood: -522941.802
-39. Current log-likelihood: -522941.792
-40. Current log-likelihood: -522941.781
-41. Current log-likelihood: -522941.743
-42. Current log-likelihood: -522941.731
-43. Current log-likelihood: -522941.720
-44. Current log-likelihood: -522941.688
-45. Current log-likelihood: -522941.677
-46. Current log-likelihood: -522941.667
-47. Current log-likelihood: -522941.656
-48. Current log-likelihood: -522941.618
-49. Current log-likelihood: -522941.606
-50. Current log-likelihood: -522941.596
-Optimal log-likelihood: -522941.580
-Proportion of invariable sites: 0.037
-Site proportion and rates:  (0.173,0.090) (0.241,0.294) (0.193,0.681) (0.178,1.257) (0.125,2.465) (0.054,4.624)
-Parameters optimization took 50 rounds (66.991 sec)
-BEST SCORE FOUND : -522941.580
+1. Initial log-likelihood: -522943.176
+2. Current log-likelihood: -522943.112
+3. Current log-likelihood: -522943.034
+4. Current log-likelihood: -522942.968
+5. Current log-likelihood: -522942.891
+6. Current log-likelihood: -522942.827
+7. Current log-likelihood: -522942.772
+8. Current log-likelihood: -522942.696
+9. Current log-likelihood: -522942.659
+10. Current log-likelihood: -522942.582
+11. Current log-likelihood: -522942.557
+12. Current log-likelihood: -522942.545
+13. Current log-likelihood: -522942.483
+14. Current log-likelihood: -522942.428
+15. Current log-likelihood: -522942.373
+16. Current log-likelihood: -522942.326
+17. Current log-likelihood: -522942.272
+18. Current log-likelihood: -522942.200
+19. Current log-likelihood: -522942.140
+20. Current log-likelihood: -522942.101
+21. Current log-likelihood: -522942.030
+22. Current log-likelihood: -522942.016
+23. Current log-likelihood: -522942.004
+24. Current log-likelihood: -522941.970
+25. Current log-likelihood: -522941.947
+26. Current log-likelihood: -522941.936
+27. Current log-likelihood: -522941.884
+28. Current log-likelihood: -522941.860
+29. Current log-likelihood: -522941.848
+30. Current log-likelihood: -522941.813
+31. Current log-likelihood: -522941.791
+32. Current log-likelihood: -522941.781
+33. Current log-likelihood: -522941.748
+34. Current log-likelihood: -522941.737
+35. Current log-likelihood: -522941.725
+36. Current log-likelihood: -522941.683
+37. Current log-likelihood: -522941.650
+38. Current log-likelihood: -522941.639
+39. Current log-likelihood: -522941.625
+40. Current log-likelihood: -522941.614
+41. Current log-likelihood: -522941.604
+Optimal log-likelihood: -522941.587
+Proportion of invariable sites: 0.036
+Site proportion and rates:  (0.172,0.089) (0.241,0.293) (0.193,0.680) (0.179,1.256) (0.125,2.465) (0.054,4.623)
+Parameters optimization took 41 rounds (53.959 sec)
+BEST SCORE FOUND : -522941.587
 Creating bootstrap support values...
-Split supports printed to NEXUS file ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex
-Total tree length: 18.822
+Split supports printed to NEXUS file ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex
+Total tree length: 18.823
 
-Total number of iterations: 102
-CPU time used for tree search: 2959.861 sec (0h:49m:19s)
-Wall-clock time used for tree search: 411.686 sec (0h:6m:51s)
-Total CPU time used: 4251.222 sec (1h:10m:51s)
-Total wall-clock time used: 608.361 sec (0h:10m:8s)
+Total number of iterations: 110
+CPU time used for tree search: 3368.974 sec (0h:56m:8s)
+Wall-clock time used for tree search: 473.020 sec (0h:7m:53s)
+Total CPU time used: 4884.539 sec (1h:21m:24s)
+Total wall-clock time used: 710.017 sec (0h:11m:50s)
 
 Computing bootstrap consensus tree...
-Reading input file ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex...
-56 taxa and 139 splits.
-Consensus tree written to ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
-Reading input trees file ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
-Log-likelihood of consensus tree: -522941.574
+Reading input file ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex...
+56 taxa and 137 splits.
+Consensus tree written to ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
+Reading input trees file ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
+Log-likelihood of consensus tree: -522941.580
 
 Analysis results written to: 
-  IQ-TREE report:                ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.iqtree
-  Maximum-likelihood tree:       ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile
-  Likelihood distances:          ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.mldist
+  IQ-TREE report:                ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.iqtree
+  Maximum-likelihood tree:       ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile
+  Likelihood distances:          ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.mldist
 
 Ultrafast bootstrap approximation results written to:
-  Split support values:          ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex
-  Consensus tree:                ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
-  Screen log file:               ./new_align/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.log
+  Split support values:          ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex
+  Consensus tree:                ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
+  Screen log file:               ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.log
 
-Date and Time: Tue Feb 17 20:35:23 2026
+Date and Time: Wed Feb 18 23:20:38 2026

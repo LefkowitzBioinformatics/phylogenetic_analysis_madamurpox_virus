@@ -9,7 +9,7 @@
 #
 
 # set-env
-source 00.set_env.sh
+source 00.set_env.sh $*
 
 # sources
 OLD_PROTEIN_DIR="$SRC_SEQ_DIR/ictv_report"

@@ -8,7 +8,7 @@
 #
 
 # set-env
-source 00.set_env.sh
+source 00.set_env.sh $*
 
 # ----------------------------------------------------------------------
 # inputs
@@ -46,26 +46,6 @@ for MSA in $ALIGN_MSAS; do
 done
 
 
-# ----------------------------------------------------------------------
-# META
-# ----------------------------------------------------------------------
-#     head -1 protein_lists/AllProteins.txt | sed 's/\t/\n/g' | egrep -n .
-#     1:GeneOrder
-#     2:GroupName
-#     3:GroupProteinFunction
-#     4:GeneAccession
-#     5:GeneLink
-#     6:GeneProteinFunction
-#     7:IsolateName
-#     8:IsolateAccession
-#     9:isIsolate
-#     10:GroupNameGood
-#     11:Fence
-#     12:GenomeAcc
-#     13:NcbiIsolateName
-#     14:GenomeOrder
-#     15:inNewPoxAlign
-
 # extract from META
 echo "CORE_PROT_NAMES_ORD N=" $(echo $CORE_PROT_NAMES_ORD|sed 's/ /\n/g' | awk 'END{print NR}') " : " $CORE_PROT_NAMES_ORD
 echo GENOME_ACCESSIONS_ORD N=$(echo $GENOME_ACCESSIONS_ORD | sed 's/ /\n/g'  | awk 'END{print NR}') :  $GENOME_ACCESSIONS_ORD
@@ -78,11 +58,11 @@ for GENOME_ACC in $GENOME_ACCESSIONS_ORD; do
     echo "# ------ $GENOME_ACC -------"
 
     # add header to output FAA
-    GENOME_HEADER=$(awk -v TargAccession="$GENOME_ACC" -f $AWK_GENOME_HEADER $META | uniq)
+    GENOME_HEADER=$(awk -v TargAccession="$GENOME_ACC" -f $META_AWK -f $AWK_GENOME_HEADER $META | uniq)
     if [[ $? -ne 0 || -z "$GENOME_HEADER" ]]; then
-	echo "ERROR[$*] running $AWK_GENOME_HEADER on $META"
-	    exit 1
-	fi
+	echo "ERROR[$0 $*] running 'awk -v TargAccession=\"$GENOME_ACC\" -f $META_AWK -f $AWK_GENOME_HEADER $META | uniq'"
+	exit 1
+    fi
     echo GENOME_HEADER=">$GENOME_HEADER"
     echo ">$GENOME_HEADER" >> $ALL_ALIGN_RAW
     #
@@ -94,7 +74,7 @@ for GENOME_ACC in $GENOME_ACCESSIONS_ORD; do
 	PROT_FAA=$PROT_DIR/$PROT_ALIGN_MSA_FNAME
 
 	# debug
-	PROT_ACC=$(awk -v TargGenome="$GENOME_ACC" -v TargGroup="$PROT_NAME" -f $AWK_PROT_FROM_GROUP_GENOME $META |sort -t $'\t' -k2n)
+	PROT_ACC=$(awk -v TargGenome="$GENOME_ACC" -v TargGroup="$PROT_NAME" -f $META_AWK -f $AWK_PROT_FROM_GROUP_GENOME $META |sort -t $'\t' -k2n)
 	if [[ $? -ne 0 || -z "$PROT_ACC" ]]; then
 	    echo "ERROR[$*] running $AWK_PROT_FROM_GROUP_GENOME on $META"
 	    exit 1
