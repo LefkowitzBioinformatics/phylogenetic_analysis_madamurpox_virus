@@ -11,6 +11,7 @@ import os
 META="protein_lists/AllProteins.txt"
 ALIGN_DIR="new_align"
 PROT_GROUPS_DIR=ALIGN_DIR+"/protein_groups"
+TREE_MODELS=["Qyeast_F_I_R6"]
 
 # outputs
 QC_MUSCLE_SUMMARY=ALIGN_DIR+"qc.muscle.ensemble.summary.txt"
@@ -180,28 +181,28 @@ rule mafft_align_prot_group:
 rule iqtree:
     input:
         # IQ-TREE2 output: {group}/sequence.msa-muscle.faa.txt.treefile
-        muscle_iqtree_pdf=expand(PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.pdf", group=GROUPS),
-        muscle_iqtree_png=expand(PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.png", group=GROUPS),
-        muscle_iqtrees_pdf=PROT_GROUPS_DIR+"/sequence.msa-muscle.iqtree.all_groups.pdf"
+        muscle_iqtree_pdf=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.pdf", group=GROUPS, model=TREE_MODELS),
+        muscle_iqtree_png=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.png", group=GROUPS, model=TREE_MODELS),
+        muscle_iqtrees_pdf=expand(PROT_GROUPS_DIR+"/sequence.msa-muscle.iqtree.{model}.all_groups.pdf", model=TREE_MODELS)
 
 rule merge_pdfs_iqtree_muscle:
     input:
-        expand(PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.pdf", group=GROUPS)
+        expand(PROT_GROUPS_DIR+"/{group}/iqtree.{{model}}/sequence.msa-muscle.faa.txt.{{model}}.treefile.pdf", group=GROUPS)
     output:
-        muscle_iqtrees_pdf=PROT_GROUPS_DIR+"/sequence.msa-muscle.iqtree.all_groups.pdf"
+        muscle_iqtrees_pdf=PROT_GROUPS_DIR+"/sequence.msa-muscle.iqtree.{model}.all_groups.pdf"
     shell:
         "pdfunite {input} {output}"
 
 rule render_tree_iqtree_muscle:
     input:
-        tree=PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile",
+        tree=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile",
         faa=PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt",
         script=GRAPH_TREE
     output:
-        pdf=PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.pdf",
-        png=PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.png"
+        pdf=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.pdf",
+        png=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.png"
     params:
-        title=lambda wc: f"muscle-iqtree-{wc.group}"
+        title=lambda wc: f"muscle-iqtree.{wc.model}-{wc.group}"
     shell:
         "Rscript {input.script} {input.tree} {input.faa} '{params.title}'"
 

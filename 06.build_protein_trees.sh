@@ -88,3 +88,16 @@ for PROT_NAME in $CORE_PROT_NAMES_ORD; do
     # echo RAXML_RC=$RAXML_RC
 
 done
+
+cat <<EOF
+# ----------------------------------------------------------------------------
+# ------ graph the trees with R -------
+# ----------------------------------------------------------------------------
+EOF
+
+snakemake --cores 5 iqtree
+if [[ $? -ne 0 ]]; then
+    echo "ERROR[$0] 'snakemake  --cores 5  iqtree' failed"
+    exit 1
+fi
+

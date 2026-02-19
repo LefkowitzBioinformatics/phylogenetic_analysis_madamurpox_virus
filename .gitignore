@@ -37,3 +37,6 @@ new_align/protein_groups/*/iqtree*/*.splits.nex
 #new_align/protein_groups/*/iqtree*/*.treefile
 # this file only gets output when some sequences are duplicates
 new_align/protein_groups/*/iqtree*/*.uniqueseq.phy
+
+# graphics
+new_align/protein_groups/*/iqtree.*/sequence.msa-muscle.faa.txt.*.treefile.png
