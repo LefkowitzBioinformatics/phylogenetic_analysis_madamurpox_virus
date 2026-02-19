@@ -16,6 +16,7 @@ OLD_PROTEIN_DIR="$SRC_SEQ_DIR/ictv_report"
 NEW_POX_FAA="$SRC_SEQ_DIR/madamurpox_isolate_MNB22_067_17/madamurpox_isolate_MNB22_067_17.faa"
 GENBANK_FAAS=" \
 	  $SRC_SEQ_DIR/genbank/MF467280-Western_grey_kangaroopox_virus.faa \
+	  $SRC_SEQ_DIR/genbank/M35027.1-Vaccinia_virus_Copenhagen.faa \
 	  $SRC_SEQ_DIR/genbank/PP711852-Rousettus_bat_poxvirus_isolate_1A-Uganda-UGR70-2019.faa \
 	  $SRC_SEQ_DIR/genbank/PP711852-Rousettus_bat_poxvirus_isolate_1A-Uganda-UGR70-2019.tblastn.faa \
 "
