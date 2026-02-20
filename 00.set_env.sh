@@ -10,7 +10,10 @@
 # 
 # ----------------------------------------------------------------------
 
+# build a tree with 56 diverse genomes (used for the paper)
 META=protein_lists/AllProteins.txt
+# build a tree with all 62 curated genomes
+#META=protein_lists/AllProteins.all_genomes.txt
 META_AWK=protein_lists/AllProteins.coldefs.awk
 source protein_lists/AllProteins.coldefs.sh
 
@@ -48,11 +51,16 @@ if [[ "$CORE_PROT_CT" -ne 25 ]]; then
 fi
 
 
-IQTREE_MODELS="MFP Q.yeast+F+I+R6 LG+I+G4+F"
-IQTREE_MODEL_SAFE=$(echo "$IQTREE_MODELS" | tr '+' '_' | sed 's/\.//g' )
-
+# iqTree2 MFP's best model for 56 genome tree
 IQTREE_FINAL_MODEL="Q.yeast+F+I+R6"
 IQTREE_FINAL_MODEL_SAFE=$(echo "$IQTREE_FINAL_MODEL" | tr '+' '_' | sed 's/\.//g' )
+IQTREE_MODELS="$IQTREE_FINAL_MODEL"
+
+# other models to compute - comment out next line to just compute official model
+# model "MFP" runs the ModelFinder Plus module (quite slow), to determine best model. 
+IQTREE_MODELS="$IQTREE_MODELS MFP LG+I+G4+F"
+IQTREE_MODEL_SAFE=$(echo "$IQTREE_MODELS" | tr '+' '_' | sed 's/\.//g' )
+
 
 
 # ----------------------------------------------------------------------
