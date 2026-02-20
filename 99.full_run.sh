@@ -10,7 +10,7 @@ STEPS="\
      ./03.align.sh \
      ./04.merge_protein_aligns.sh \
      ./05.build_tree.iqtree.sh \
-     ./06.build_protein_trees.sh
+     ./06.build_protein_trees.sh \
 "
 
 for STEP in $STEPS; do
