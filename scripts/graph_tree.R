@@ -1,26 +1,35 @@
 #!/usr/bin/env Rscript
 
 # Usage:
-#   ./graph_tree.R <treefile> <proteins.faa> <plot_title>
+#   ./graph_tree.R <treefile> <proteins.faa> <plot_title> [branch_score_cutoff]
 #
 # Outputs:
 #   <treefile>.pdf
 #   <treefile>.png
 #
-# Colors
-#   red: MNB 
-#   blue: AYY386264, PP711852
+# Tip colors are assigned by case-insensitive regex matches against tip_label.
+#   madamurpox: red
+#   rousettus.bat.pox: blue
+#   orf.virus: blue
 #   black: all others
+#
+# Branches leading to internal nodes with support scores below branch_score_cutoff
+# are colored red. The default cutoff is 80.
 #
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 3) {
-  cat("Usage: graph_tree.R <treefile> <faa_file> <plot_title>\n", file = stderr())
+  cat("Usage: graph_tree.R <treefile> <faa_file> <plot_title> [branch_score_cutoff]\n", file = stderr())
   quit(status = 2)
 }
 
 in_tree <- args[1]
 in_faa  <- args[2]
 plot_title <- args[3]
+branch_score_cutoff <- if (length(args) >= 4) as.numeric(args[4]) else 80
+if (is.na(branch_score_cutoff)) {
+  cat("branch_score_cutoff must be numeric\n", file = stderr())
+  quit(status = 2)
+}
 
 # debug
 #in_tree <- "all_protein_aligns.faa.Qyeast_F_I_R6.treefile"
@@ -68,21 +77,60 @@ tip_label <- tip_ids
 mapped <- tip_ids %in% names(id_to_label)
 tip_label[mapped] <- unname(id_to_label[tip_ids[mapped]])
 
-# Color rule: anything containing "MNB" in the label (or in the original id if you prefer)
+node_color_rules <- c(
+  "madamurpox" = "red",
+  "rousettus.bat.pox" = "blue",
+  "orf.virus" = "blue",
+  "molluscum.contagiosum" = "green"
+)
+
+assign_node_color <- function(label) {
+  for (pattern in names(node_color_rules)) {
+    if (grepl(pattern, label, ignore.case = TRUE)) {
+      return(unname(node_color_rules[[pattern]]))
+    }
+  }
+  "black"
+}
+
+node_color_values <- c(black = "black", stats::setNames(unique(node_color_rules), unique(node_color_rules)))
 node_color <- factor(
-  ifelse(grepl("^MNB", tip_ids), "red",
-         ifelse(grepl("^(AY386264|PP711852)", tip_ids), "blue", "black")),
-  levels = c("black", "red", "blue")
+  vapply(tip_label, assign_node_color, character(1)),
+  levels = names(node_color_values)
 )
 
 print("# Node_color:" )
-node_color
+summary(node_color)
+
+parse_support_score <- function(label) {
+  label <- trimws(label)
+  first_number <- sub("^.*?([0-9]+(?:\\.[0-9]+)?).*$", "\\1", label)
+  suppressWarnings(as.numeric(ifelse(grepl("[0-9]", label), first_number, NA)))
+}
+
+total_nodes <- length(tr$tip.label) + tr$Nnode
+support_score <- rep(NA_real_, total_nodes)
+branch_color <- rep("black", total_nodes)
+
+if (!is.null(tr$node.label) && length(tr$node.label) > 0) {
+  internal_nodes <- (length(tr$tip.label) + 1):total_nodes
+  support_score[internal_nodes] <- parse_support_score(tr$node.label)
+  branch_color[!is.na(support_score) & support_score < branch_score_cutoff] <- "red"
+}
+
+branch_color <- factor(branch_color, levels = c("black", "red"))
+
+print(paste0("# Branch support cutoff: ", branch_score_cutoff))
+summary(branch_color)
 
 # Attach metadata so ggtree can map aesthetics
 df <- data.frame(
-  label = tip_ids,              # must match tree tip labels for %<+%
-  tip_label = tip_label,
-  node_color = node_color,
+  node = seq_len(total_nodes),
+  tip_label = c(tip_label, rep(NA_character_, tr$Nnode)),
+  node_color = factor(c(as.character(node_color), rep(NA_character_, tr$Nnode)),
+                      levels = names(node_color_values)),
+  support_score = support_score,
+  branch_color = branch_color,
   stringsAsFactors = FALSE
 )
 
@@ -107,14 +155,13 @@ node_size <- 6	# was ~2
 
 # Plot
 p <- ggtree(tr) %<+% df +
+  geom_tree(aes(color = branch_color)) +
   geom_tiplab(aes(label = tip_label, color = node_color),
   			size = tip_size
         ,offset = tip_size/20
 #              		, align = FALSE
 	      ) +
-  scale_color_manual(values = c(black = "black",
-                                red = "red",
-                                blue = "blue"),
+  scale_color_manual(values = node_color_values,
                      guide = "none") +
   ggtitle(plot_title) +
   theme(
@@ -144,4 +191,3 @@ png(outpng, width = width_px, height = height_px, res = dpi)
 print(px)
 dev.off()
 message(paste0("wrote: (",width_px,"x",height_px,") ", outpng))
-

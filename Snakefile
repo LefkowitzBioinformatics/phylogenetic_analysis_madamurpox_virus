@@ -98,14 +98,24 @@ rule all:
         muscle=expand(PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt", group=GROUPS),
         muscle_efa=QC_MUSCLE_SUMMARY,
 
+        # Genome-labeled IQ-TREE2 Newick files for MUSCLE alignments
+        muscle_iqtree_genome_treefile=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile", group=GROUPS, model=TREE_MODELS),
+
         # Rendered trees (Newick -> PDF/PNG) for MUSCLE alignments
-        # IQ-TREE2 output: {group}/sequence.msa-muscle.faa.txt.treefile
-        muscle_iqtree_pdf=expand(PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.pdf", group=GROUPS),
-        muscle_iqtree_png=expand(PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt.treefile.png", group=GROUPS),
+        # IQ-TREE2 output: {group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile
+        muscle_iqtree_pdf=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.pdf", group=GROUPS, model=TREE_MODELS),
+        muscle_iqtree_png=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.png", group=GROUPS, model=TREE_MODELS),
 
         # RAxML output: {group}/sequence.msa-muscle.faa.txt.raxml.bestTree
         #muscle_raxml_pdf=expand(PROT_GROUPS_DIR+"{group}/sequence.msa-muscle.faa.txt.raxml.bestTree.pdf", group=GROUPS),
         #muscle_raxml_png=expand(PROT_GROUPS_DIR+"{group}/sequence.msa-muscle.faa.txt.raxml.bestTree.png", group=GROUPS)
+
+rule genome_trees:
+    input:
+        treefile=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile", group=GROUPS, model=TREE_MODELS),
+        pdf=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile.pdf", group=GROUPS, model=TREE_MODELS),
+        png=expand(PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile.png", group=GROUPS, model=TREE_MODELS),
+        rollup_pdf=expand(PROT_GROUPS_DIR+"/sequence.msa-muscle.iqtree.{model}.all_groups.genome.pdf", model=TREE_MODELS)
 
 # ----------------------------------------------------------------------
 #
@@ -193,6 +203,36 @@ rule merge_pdfs_iqtree_muscle:
     shell:
         "pdfunite {input} {output}"
 
+rule merge_pdfs_iqtree_muscle_display:
+    input:
+        expand(PROT_GROUPS_DIR+"/{group}/iqtree.{{model}}/sequence.msa-muscle.faa.txt.{{model}}.genome.treefile.pdf", group=GROUPS)
+    output:
+        genome_iqtrees_pdf=PROT_GROUPS_DIR+"/sequence.msa-muscle.iqtree.{model}.all_groups.genome.pdf"
+    shell:
+        "pdfunite {input} {output}"
+
+rule relabel_iqtree_muscle_tree_to_genome:
+    input:
+        tree=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile",
+        meta=META
+    output:
+        tree=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile"
+    shell:
+        """
+        Rscript -e '
+        suppressPackageStartupMessages(library(ape))
+        meta <- read.delim("{input.meta}", check.names = FALSE, stringsAsFactors = FALSE)
+        mapping <- stats::setNames(meta[["GenomeDisplayName"]], meta[["GeneAccession"]])
+        tr <- read.tree("{input.tree}")
+        missing <- setdiff(tr$tip.label, names(mapping))
+        if (length(missing) > 0) {{
+          stop("Missing GeneAccession mapping for tree tips: ", paste(missing, collapse = ", "))
+        }}
+        tr$tip.label <- unname(mapping[tr$tip.label])
+        write.tree(tr, file = "{output.tree}")
+        '
+        """
+
 rule render_tree_iqtree_muscle:
     input:
         tree=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile",
@@ -203,6 +243,19 @@ rule render_tree_iqtree_muscle:
         png=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.treefile.png"
     params:
         title=lambda wc: f"muscle-iqtree.{wc.model}-{wc.group}"
+    shell:
+        "Rscript {input.script} {input.tree} {input.faa} '{params.title}'"
+
+rule render_tree_iqtree_muscle_display:
+    input:
+        tree=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile",
+        faa=PROT_GROUPS_DIR+"/{group}/sequence.msa-muscle.faa.txt",
+        script=GRAPH_TREE
+    output:
+        pdf=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile.pdf",
+        png=PROT_GROUPS_DIR+"/{group}/iqtree.{model}/sequence.msa-muscle.faa.txt.{model}.genome.treefile.png"
+    params:
+        title=lambda wc: f"muscle-iqtree.{wc.model}-{wc.group}-genome"
     shell:
         "Rscript {input.script} {input.tree} {input.faa} '{params.title}'"
 
