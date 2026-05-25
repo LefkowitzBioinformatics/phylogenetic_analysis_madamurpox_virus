@@ -1474,31 +1474,31 @@ GeneOrder	GroupName	GroupProteinFunction	GeneAccession	GeneLink	GeneProteinFunct
 23	J3	polyA polymerase small	ATI21011.1	PROT:ATI21011.1		Western grey kangaroopox virus	MF467280.1	MF467280-Western_grey_kangaroopox_virus	56	Y
 24	J6	RPO147	ATI21014.1	PROT:ATI21014.1		Western grey kangaroopox virus	MF467280.1	MF467280-Western_grey_kangaroopox_virus	56	Y
 25	L1	IMV membrane protein	ATI21004.1	PROT:ATI21004.1		Western grey kangaroopox virus	MF467280.1	MF467280-Western_grey_kangaroopox_virus	56	Y
-1	A18	DNA helicase	ORF100	PROT:ORF100		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-2	A22	holliday junction resolvase	ORF104	PROT:ORF104		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-3	A23	VITF-3	ORF105	PROT:ORF105		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-4	A24	RPO132	ORF106	PROT:ORF106		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-5	A28	IMV-MP	ORF110	PROT:ORF110		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-6	A2	VLTF-3	ORF081	PROT:ORF081		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-7	A32	ATPase DNA packaging protein	ORF114	PROT:ORF114		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-8	A3	P4b	ORF083	PROT:ORF083		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-9	A7	VETF-L	ORF087	PROT:ORF087		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-10	D11	NPH-I	ORF077	PROT:ORF077		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-11	D12	small capping enzyme	ORF078	PROT:ORF078		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-12	D1	large capping enzyme	ORF068	PROT:ORF068		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-13	D5	NTPase	ORF072	PROT:ORF072		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-14	D6	VETF-S	ORF073	PROT:ORF073		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-15	E10	sulfhydryl oxidase	ORF030	PROT:ORF030		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-16	E1	polyA polymerase large	ORF021	PROT:ORF021		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-17	E9	DNA-polymerase	ORF029	PROT:ORF029		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-18	G5	FEN1	ORF044	PROT:ORF044		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-19	H2	IMV entry-fusion	ORF062	PROT:ORF062		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-20	H4	RAP94	ORF064	PROT:ORF064		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-21	H6	DNA topoisomerase	ORF066	PROT:ORF066		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-22	I8	NPH-II	ORF040	PROT:ORF040		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-23	J3	polyA polymerase small	ORF057	PROT:ORF057		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-24	J6	RPO147	ORF060	PROT:ORF060		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
-25	L1	IMV membrane protein	ORF050	PROT:ORF050		madamurpox virus	MNB22.0	MNB22-madamurpox_virus	60	Y
+1	A18	DNA helicase	YDH75396.1	PROT:YDH75396.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+2	A22	holliday junction resolvase	YDH75400.1	PROT:YDH75400.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+3	A23	VITF-3	YDH75401.1	PROT:YDH75401.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+4	A24	RPO132	YDH75402.1	PROT:YDH75402.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+5	A28	IMV-MP	YDH75406.1	PROT:YDH75406.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+6	A2	VLTF-3	YDH75377.1	PROT:YDH75377.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+7	A32	ATPase DNA packaging protein	YDH75410.1	PROT:YDH75410.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+8	A3	P4b	YDH75379.1	PROT:YDH75379.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+9	A7	VETF-L	YDH75383.1	PROT:YDH75383.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+10	D11	NPH-I	YDH75373.1	PROT:YDH75373.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+11	D12	small capping enzyme	YDH75374.1	PROT:YDH75374.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+12	D1	large capping enzyme	YDH75364.1	PROT:YDH75364.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+13	D5	NTPase	YDH75368.1	PROT:YDH75368.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+14	D6	VETF-S	YDH75369.1	PROT:YDH75369.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+15	E10	sulfhydryl oxidase	YDH75326.1	PROT:YDH75326.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+16	E1	polyA polymerase large	YDH75317.1	PROT:YDH75317.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+17	E9	DNA-polymerase	YDH75325.1	PROT:YDH75325.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+18	G5	FEN1	YDH75340.1	PROT:YDH75340.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+19	H2	IMV entry-fusion	YDH75358.1	PROT:YDH75358.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+20	H4	RAP94	YDH75360.1	PROT:YDH75360.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+21	H6	DNA topoisomerase	YDH75362.1	PROT:YDH75362.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+22	I8	NPH-II	YDH75336.1	PROT:YDH75336.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+23	J3	polyA polymerase small	YDH75353.1	PROT:YDH75353.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+24	J6	RPO147	YDH75356.1	PROT:YDH75356.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
+25	L1	IMV membrane protein	YDH75346.1	PROT:YDH75346.1		Madamurpox virus	PZ016454.1	PZ016454-Madamurpox_virus	60	Y
 1	A18	DNA helicase	XBH23847.1	PROT:XBH23847.1	DNA helicase	Rousettus bat poxvirus isolate 1A/Uganda/UGR70/2019	PP711852.1	PP711852-rousettus_bat_poxvirus	61	Y
 2	A22	holliday junction resolvase	XBH23851.1	PROT:XBH23851.1	holliday junction resolvase	Rousettus bat poxvirus isolate 1A/Uganda/UGR70/2019	PP711852.1	PP711852-rousettus_bat_poxvirus	61	Y
 3	A23	VITF-3	XBH23852.1	PROT:XBH23852.1	intermediate transcription factor VITF-3	Rousettus bat poxvirus isolate 1A/Uganda/UGR70/2019	PP711852.1	PP711852-rousettus_bat_poxvirus	61	Y

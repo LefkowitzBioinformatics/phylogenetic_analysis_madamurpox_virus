@@ -5,6 +5,7 @@ cat <<EOF
 #
 #
 EOF
+SCRIPT_DIR="../../../scripts"
 CONCAT_TREEFILE="../../iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile"
 LOCI_TREEFILE="./loci.treefile"
 GENE_TREE_DIR="../../protein_groups"
@@ -45,4 +46,13 @@ $IQTREE2_EXE \
   -t $CONCAT_TREEFILE \
   --gcf $LOCI_TREEFILE \
   --prefix concordance
+
+
+cat<<EOF
+#
+# PDF render trees
+#
+Rscript $SCRIPT_DIR/plot_iqtree_concordance.R .
+EOF
+Rscript $SCRIPT_DIR/plot_iqtree_concordance.R .
 

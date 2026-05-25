@@ -4,12 +4,12 @@ Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
 Host:    genome-hsv1.local (SSE4.2, 48 GB RAM)
 Command: /Users/curtish/Applications/iqtree2 -s ./new_align/merged_proteins.msa-muscle.faa -m Q.yeast+F+I+R6 -B 1000 -nt AUTO -pre ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6
-Seed:    304162 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Wed Feb 18 23:08:45 2026
+Seed:    945591 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri May 22 17:12:23 2026
 Kernel:  SSE2 - auto-detect threads (14 CPU cores detected)
 
 Reading alignment file ./new_align/merged_proteins.msa-muscle.faa ... Fasta format detected
-Reading fasta file: done in 0.00776482 secs using 92.49% CPU
+Reading fasta file: done in 0.00706196 secs using 92.78% CPU
 Alignment most likely contains protein sequences
 Alignment has 56 sequences with 17690 columns, 13589 distinct patterns
 11895 parsimony-informative, 1596 singleton sites, 4199 constant sites
@@ -18,7 +18,7 @@ AY753185-monkeypox_virus_(clade_IIa) -> AY753185-monkeypox_virus__clade_IIa_
 AF380138-monkeypox_virus_(clade_I) -> AF380138-monkeypox_virus__clade_I_
 
                                                  Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.000185013 secs using 556.7% CPU
+Analyzing sequences: done in 0.000188112 secs using 592.7% CPU
    1  MH816996-orthopoxvirus_abatino                    25.02%    passed     43.25%
    2  AP013055-Anomala_cuprea_entomopoxvirus            22.52%    failed      0.00%
    3  HF679131-Adoxophyes_honmai_entomopoxvirus         23.55%    failed      0.00%
@@ -73,188 +73,201 @@ Analyzing sequences: done in 0.000185013 secs using 556.7% CPU
   52  HQ849551-yokapox_virus                            24.93%    failed      0.00%
   53  AJ293568-tanapox_virus                            25.21%    failed      0.00%
   54  AY386371-Yaba_monkey_tumor_virus                  25.36%    failed      0.00%
-  55  MNB22-madamurpox_virus                            25.07%    failed      0.00%
+  55  PZ016454-Madamurpox_virus                         25.07%    failed      0.00%
   56  PP711852-rousettus_bat_poxvirus                   25.10%    failed      0.00%
 ****  TOTAL                                             24.75%  40 sequences failed composition chi2 test (p-value<5%; df=19)
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.063 seconds
-Generating 1000 samples for ultrafast bootstrap (seed: 304162)...
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.077 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 945591)...
 WARNING: Normalizing state frequencies so that sum of them equals to 1
 
 NOTE: 758 MB RAM (0 GB) is required!
 Measuring multi-threading efficiency up to 14 CPU cores
 Increase to 10 rounds for branch lengths
 2 trees examined
-Threads: 1 / Time: 22.816 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -842149
-Threads: 2 / Time: 14.157 sec / Speedup: 1.612 / Efficiency: 81% / LogL: -842149
-Threads: 3 / Time: 9.663 sec / Speedup: 2.361 / Efficiency: 79% / LogL: -842149
-Threads: 4 / Time: 7.350 sec / Speedup: 3.104 / Efficiency: 78% / LogL: -842149
-Threads: 5 / Time: 6.187 sec / Speedup: 3.688 / Efficiency: 74% / LogL: -842149
-Threads: 6 / Time: 5.371 sec / Speedup: 4.248 / Efficiency: 71% / LogL: -842149
-Threads: 7 / Time: 4.633 sec / Speedup: 4.925 / Efficiency: 70% / LogL: -842149
-Threads: 8 / Time: 4.141 sec / Speedup: 5.510 / Efficiency: 69% / LogL: -842149
-Threads: 9 / Time: 3.823 sec / Speedup: 5.968 / Efficiency: 66% / LogL: -842149
-Threads: 10 / Time: 3.759 sec / Speedup: 6.070 / Efficiency: 61% / LogL: -842149
-Threads: 11 / Time: 3.593 sec / Speedup: 6.350 / Efficiency: 58% / LogL: -842149
-Threads: 12 / Time: 3.645 sec / Speedup: 6.259 / Efficiency: 52% / LogL: -842149
-Threads: 13 / Time: 3.536 sec / Speedup: 6.453 / Efficiency: 50% / LogL: -842149
+Threads: 1 / Time: 21.759 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -852128
+Threads: 2 / Time: 13.679 sec / Speedup: 1.591 / Efficiency: 80% / LogL: -852128
+Threads: 3 / Time: 9.488 sec / Speedup: 2.293 / Efficiency: 76% / LogL: -852128
+Threads: 4 / Time: 7.199 sec / Speedup: 3.022 / Efficiency: 76% / LogL: -852128
+Threads: 5 / Time: 6.102 sec / Speedup: 3.566 / Efficiency: 71% / LogL: -852128
+Threads: 6 / Time: 5.204 sec / Speedup: 4.181 / Efficiency: 70% / LogL: -852128
+Threads: 7 / Time: 4.518 sec / Speedup: 4.816 / Efficiency: 69% / LogL: -852128
+Threads: 8 / Time: 4.060 sec / Speedup: 5.359 / Efficiency: 67% / LogL: -852128
+Threads: 9 / Time: 3.667 sec / Speedup: 5.934 / Efficiency: 66% / LogL: -852128
+Threads: 10 / Time: 3.534 sec / Speedup: 6.157 / Efficiency: 62% / LogL: -852128
+Threads: 11 / Time: 3.367 sec / Speedup: 6.462 / Efficiency: 59% / LogL: -852128
+Threads: 12 / Time: 3.519 sec / Speedup: 6.184 / Efficiency: 52% / LogL: -852128
+Threads: 13 / Time: 3.356 sec / Speedup: 6.483 / Efficiency: 50% / LogL: -852128
 BEST NUMBER OF THREADS: 11
 
 Estimate model parameters (epsilon = 0.100)
 1. Initial log-likelihood: -534419.748
-2. Current log-likelihood: -523353.421
-3. Current log-likelihood: -523197.781
-4. Current log-likelihood: -523179.454
-5. Current log-likelihood: -523167.875
-6. Current log-likelihood: -523159.005
-7. Current log-likelihood: -523151.852
-8. Current log-likelihood: -523146.295
-9. Current log-likelihood: -523142.102
-10. Current log-likelihood: -523139.039
-11. Current log-likelihood: -523136.862
-12. Current log-likelihood: -523135.411
-13. Current log-likelihood: -523134.467
-14. Current log-likelihood: -523133.786
-15. Current log-likelihood: -523133.303
-16. Current log-likelihood: -523132.939
-17. Current log-likelihood: -523132.671
-18. Current log-likelihood: -523132.462
-19. Current log-likelihood: -523132.282
-20. Current log-likelihood: -523132.103
-21. Current log-likelihood: -523131.940
-22. Current log-likelihood: -523131.781
+2. Current log-likelihood: -523353.561
+3. Current log-likelihood: -523197.783
+4. Current log-likelihood: -523179.435
+5. Current log-likelihood: -523167.855
+6. Current log-likelihood: -523159.118
+7. Current log-likelihood: -523151.940
+8. Current log-likelihood: -523146.362
+9. Current log-likelihood: -523142.152
+10. Current log-likelihood: -523139.075
+11. Current log-likelihood: -523136.887
+12. Current log-likelihood: -523135.429
+13. Current log-likelihood: -523134.479
+14. Current log-likelihood: -523133.795
+15. Current log-likelihood: -523133.309
+16. Current log-likelihood: -523132.944
+17. Current log-likelihood: -523132.662
+18. Current log-likelihood: -523132.443
+19. Current log-likelihood: -523132.264
+20. Current log-likelihood: -523132.091
+21. Current log-likelihood: -523131.928
+22. Current log-likelihood: -523131.771
 23. Current log-likelihood: -523131.634
-24. Current log-likelihood: -523131.484
-25. Current log-likelihood: -523131.353
-26. Current log-likelihood: -523131.211
-27. Current log-likelihood: -523131.086
-28. Current log-likelihood: -523130.947
-29. Current log-likelihood: -523130.814
-30. Current log-likelihood: -523130.703
-31. Current log-likelihood: -523130.568
-32. Current log-likelihood: -523130.449
-33. Current log-likelihood: -523130.318
-34. Current log-likelihood: -523130.203
-35. Current log-likelihood: -523130.088
-36. Current log-likelihood: -523129.972
-37. Current log-likelihood: -523129.861
-38. Current log-likelihood: -523129.756
-39. Current log-likelihood: -523129.642
-40. Current log-likelihood: -523129.527
-41. Current log-likelihood: -523129.424
-42. Current log-likelihood: -523129.319
-Optimal log-likelihood: -523129.214
+24. Current log-likelihood: -523131.483
+25. Current log-likelihood: -523131.342
+26. Current log-likelihood: -523131.200
+27. Current log-likelihood: -523131.062
+28. Current log-likelihood: -523130.931
+29. Current log-likelihood: -523130.799
+30. Current log-likelihood: -523130.666
+31. Current log-likelihood: -523130.542
+32. Current log-likelihood: -523130.410
+33. Current log-likelihood: -523130.297
+34. Current log-likelihood: -523130.177
+35. Current log-likelihood: -523130.060
+Optimal log-likelihood: -523129.948
 Proportion of invariable sites: 0.037
-Site proportion and rates:  (0.171,0.090) (0.230,0.289) (0.173,0.630) (0.195,1.161) (0.134,2.361) (0.059,4.536)
-Parameters optimization took 42 rounds (87.339 sec)
+Site proportion and rates:  (0.172,0.090) (0.227,0.288) (0.167,0.614) (0.201,1.136) (0.137,2.330) (0.060,4.509)
+Parameters optimization took 35 rounds (69.316 sec)
 Wrote distance file to... 
 Computing ML distances based on estimated model parameters...
-Calculating distance matrix: done in 0.065624 secs using 998% CPU
-Computing ML distances took 0.066121 sec (of wall-clock time) 0.656662 sec (of CPU time)
-Setting up auxiliary I and S matrices: done in 0.000174999 secs using 147.4% CPU
-Computing RapidNJ tree took 0.007699 sec (of wall-clock time) 0.004330 sec (of CPU time)
-Log-likelihood of RapidNJ tree: -523424.006
+Calculating distance matrix: done in 0.0609539 secs using 1049% CPU
+Computing ML distances took 0.061425 sec (of wall-clock time) 0.640867 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000194073 secs using 176.7% CPU
+Computing RapidNJ tree took 0.007483 sec (of wall-clock time) 0.004155 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -523424.430
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 9.297 second
-Computing log-likelihood of 98 initial trees ... 20.795 seconds
-Current best score: -523129.214
+Generating 98 parsimony trees... 9.688 second
+Computing log-likelihood of 98 initial trees ... 20.034 seconds
+Current best score: -523129.948
 
 Do NNI search on 20 best initial trees
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 1: -522996.016
+BETTER TREE FOUND at iteration 1: -522996.258
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 9: -522943.176
-Iteration 10 / LogL: -522999.136 / Time: 0h:4m:17s
-Iteration 20 / LogL: -522945.065 / Time: 0h:4m:53s
-Finish initializing candidate tree set (11)
-Current best tree score: -522943.176 / CPU time: 110.753
+BETTER TREE FOUND at iteration 9: -522973.427
+Iteration 10 / LogL: -523040.183 / Time: 0h:4m:0s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 15: -522943.520
+Iteration 20 / LogL: -522995.150 / Time: 0h:4m:44s
+Finish initializing candidate tree set (8)
+Current best tree score: -522943.520 / CPU time: 123.210
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Iteration 30 / LogL: -522985.092 / Time: 0h:5m:34s (0h:15m:11s left)
-Iteration 40 / LogL: -522980.165 / Time: 0h:6m:14s (0h:11m:1s left)
-Iteration 50 / LogL: -522994.864 / Time: 0h:6m:55s (0h:8m:19s left)
-Log-likelihood cutoff on original alignment: -523112.269
-Iteration 60 / LogL: -522987.014 / Time: 0h:7m:31s (0h:6m:14s left)
-Iteration 70 / LogL: -522946.083 / Time: 0h:8m:13s (0h:4m:39s left)
-Iteration 80 / LogL: -522970.760 / Time: 0h:8m:56s (0h:3m:16s left)
-Iteration 90 / LogL: -522964.892 / Time: 0h:9m:37s (0h:2m:3s left)
-Iteration 100 / LogL: -523067.720 / Time: 0h:10m:19s (0h:0m:56s left)
-Log-likelihood cutoff on original alignment: -523112.269
-NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
-Iteration 110 / LogL: -522949.178 / Time: 0h:10m:55s (0h:9m:1s left)
-TREE SEARCH COMPLETED AFTER 110 ITERATIONS / Time: 0h:10m:55s
+Iteration 30 / LogL: -523010.786 / Time: 0h:5m:22s (0h:15m:45s left)
+Iteration 40 / LogL: -522988.560 / Time: 0h:6m:1s (0h:11m:34s left)
+Iteration 50 / LogL: -522964.526 / Time: 0h:6m:40s (0h:8m:50s left)
+Log-likelihood cutoff on original alignment: -523066.777
+Iteration 60 / LogL: -522975.097 / Time: 0h:7m:16s (0h:6m:47s left)
+Iteration 70 / LogL: -523017.332 / Time: 0h:7m:59s (0h:5m:12s left)
+Iteration 80 / LogL: -523002.285 / Time: 0h:8m:35s (0h:3m:48s left)
+Iteration 90 / LogL: -522959.188 / Time: 0h:9m:17s (0h:2m:36s left)
+Iteration 100 / LogL: -523005.487 / Time: 0h:9m:56s (0h:1m:30s left)
+Log-likelihood cutoff on original alignment: -523061.988
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -522966.195 / Time: 0h:10m:35s (0h:8m:44s left)
+TREE SEARCH COMPLETED AFTER 116 ITERATIONS / Time: 0h:10m:57s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -522943.176
-2. Current log-likelihood: -522943.112
-3. Current log-likelihood: -522943.034
-4. Current log-likelihood: -522942.968
-5. Current log-likelihood: -522942.891
-6. Current log-likelihood: -522942.827
-7. Current log-likelihood: -522942.772
-8. Current log-likelihood: -522942.696
-9. Current log-likelihood: -522942.659
-10. Current log-likelihood: -522942.582
-11. Current log-likelihood: -522942.557
-12. Current log-likelihood: -522942.545
-13. Current log-likelihood: -522942.483
-14. Current log-likelihood: -522942.428
-15. Current log-likelihood: -522942.373
-16. Current log-likelihood: -522942.326
-17. Current log-likelihood: -522942.272
-18. Current log-likelihood: -522942.200
-19. Current log-likelihood: -522942.140
-20. Current log-likelihood: -522942.101
-21. Current log-likelihood: -522942.030
-22. Current log-likelihood: -522942.016
-23. Current log-likelihood: -522942.004
-24. Current log-likelihood: -522941.970
-25. Current log-likelihood: -522941.947
-26. Current log-likelihood: -522941.936
-27. Current log-likelihood: -522941.884
-28. Current log-likelihood: -522941.860
-29. Current log-likelihood: -522941.848
-30. Current log-likelihood: -522941.813
-31. Current log-likelihood: -522941.791
-32. Current log-likelihood: -522941.781
-33. Current log-likelihood: -522941.748
-34. Current log-likelihood: -522941.737
-35. Current log-likelihood: -522941.725
-36. Current log-likelihood: -522941.683
-37. Current log-likelihood: -522941.650
-38. Current log-likelihood: -522941.639
-39. Current log-likelihood: -522941.625
-40. Current log-likelihood: -522941.614
-41. Current log-likelihood: -522941.604
-Optimal log-likelihood: -522941.587
+1. Initial log-likelihood: -522943.520
+2. Current log-likelihood: -522943.440
+3. Current log-likelihood: -522943.366
+4. Current log-likelihood: -522943.309
+5. Current log-likelihood: -522943.245
+6. Current log-likelihood: -522943.165
+7. Current log-likelihood: -522943.133
+8. Current log-likelihood: -522943.049
+9. Current log-likelihood: -522942.982
+10. Current log-likelihood: -522942.954
+11. Current log-likelihood: -522942.887
+12. Current log-likelihood: -522942.819
+13. Current log-likelihood: -522942.743
+14. Current log-likelihood: -522942.686
+15. Current log-likelihood: -522942.658
+16. Current log-likelihood: -522942.611
+17. Current log-likelihood: -522942.554
+18. Current log-likelihood: -522942.481
+19. Current log-likelihood: -522942.467
+20. Current log-likelihood: -522942.401
+21. Current log-likelihood: -522942.376
+22. Current log-likelihood: -522942.349
+23. Current log-likelihood: -522942.304
+24. Current log-likelihood: -522942.292
+25. Current log-likelihood: -522942.237
+26. Current log-likelihood: -522942.212
+27. Current log-likelihood: -522942.186
+28. Current log-likelihood: -522942.133
+29. Current log-likelihood: -522942.094
+30. Current log-likelihood: -522942.082
+31. Current log-likelihood: -522942.046
+32. Current log-likelihood: -522942.001
+33. Current log-likelihood: -522941.990
+34. Current log-likelihood: -522941.945
+35. Current log-likelihood: -522941.901
+36. Current log-likelihood: -522941.888
+37. Current log-likelihood: -522941.843
+38. Current log-likelihood: -522941.832
+39. Current log-likelihood: -522941.789
+40. Current log-likelihood: -522941.756
+41. Current log-likelihood: -522941.731
+42. Current log-likelihood: -522941.719
+43. Current log-likelihood: -522941.709
+44. Current log-likelihood: -522941.676
+45. Current log-likelihood: -522941.664
+46. Current log-likelihood: -522941.653
+47. Current log-likelihood: -522941.642
+48. Current log-likelihood: -522941.610
+49. Current log-likelihood: -522941.599
+50. Current log-likelihood: -522941.588
+51. Current log-likelihood: -522941.538
+52. Current log-likelihood: -522941.515
+53. Current log-likelihood: -522941.503
+54. Current log-likelihood: -522941.470
+55. Current log-likelihood: -522941.459
+56. Current log-likelihood: -522941.448
+57. Current log-likelihood: -522941.438
+58. Current log-likelihood: -522941.406
+59. Current log-likelihood: -522941.395
+Optimal log-likelihood: -522941.378
 Proportion of invariable sites: 0.036
-Site proportion and rates:  (0.172,0.089) (0.241,0.293) (0.193,0.680) (0.179,1.256) (0.125,2.465) (0.054,4.623)
-Parameters optimization took 41 rounds (53.959 sec)
-BEST SCORE FOUND : -522941.587
+Site proportion and rates:  (0.172,0.089) (0.242,0.293) (0.195,0.685) (0.177,1.268) (0.124,2.481) (0.054,4.637)
+Parameters optimization took 59 rounds (71.338 sec)
+BEST SCORE FOUND : -522941.378
 Creating bootstrap support values...
 Split supports printed to NEXUS file ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex
-Total tree length: 18.823
+Total tree length: 18.824
 
-Total number of iterations: 110
-CPU time used for tree search: 3368.974 sec (0h:56m:8s)
-Wall-clock time used for tree search: 473.020 sec (0h:7m:53s)
-Total CPU time used: 4884.539 sec (1h:21m:24s)
-Total wall-clock time used: 710.017 sec (0h:11m:50s)
+Total number of iterations: 116
+CPU time used for tree search: 3569.257 sec (0h:59m:29s)
+Wall-clock time used for tree search: 496.296 sec (0h:8m:16s)
+Total CPU time used: 5102.615 sec (1h:25m:2s)
+Total wall-clock time used: 729.309 sec (0h:12m:9s)
 
 Computing bootstrap consensus tree...
 Reading input file ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.splits.nex...
-56 taxa and 137 splits.
+56 taxa and 138 splits.
 Consensus tree written to ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
 Reading input trees file ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
-Log-likelihood of consensus tree: -522941.580
+Log-likelihood of consensus tree: -522941.371
 
 Analysis results written to: 
   IQ-TREE report:                ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.iqtree
@@ -266,4 +279,4 @@ Ultrafast bootstrap approximation results written to:
   Consensus tree:                ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.contree
   Screen log file:               ./new_align/iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.log
 
-Date and Time: Wed Feb 18 23:20:38 2026
+Date and Time: Fri May 22 17:24:36 2026

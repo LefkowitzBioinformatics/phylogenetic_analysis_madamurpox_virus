@@ -322,7 +322,7 @@ LGYRECRCYLDEAR-L-LQD-----------------------------------------------ISKLNA--D-AAV
 VDFEAVSNSVFLIH-QGIM-YTYFSN----TVL-LR-S-EDAIHD--VSERAVCAHI---TLYHLLVGC------N-Y-Q
 ELLADL-LNSLVSR--EKCPVVGVVARDKKVGRHG-----------------------VIDIEKDV-IT-----------
 -----------------H
->ORF021 madamurpox virus [MNB22.0]
+>YDH75317.1 madamurpox virus [PZ016454.1]
 MNS---------IQFEILTVYLGRQPSVNHFFIFKHHHKAIQRIMRFDKDLFFA-------------------LIKKNKK
 KFFA----R-I--GG-----------------------------------------------------TAEEINARILDY
 FNK---QRH-LDKVGRILAIIEFQLLLVTTYTDIMGVL-TLPV---PIS--RASTIRLNYSSMD--------RFA---EE

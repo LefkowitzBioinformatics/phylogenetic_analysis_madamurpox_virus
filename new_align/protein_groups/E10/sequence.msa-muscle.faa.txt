@@ -94,7 +94,7 @@ FIALFNNLAF-D-DR-YKIDTAKVRP------------------------------------------------------
 MEPRHWGRSLWCVIFLVLE---------QAARDGDLERAKRRLFLICNTLPCVACRAHALEALQENNVLSSSDLNYVYFF
 FIALFNNLAR-D-PR-YRVDVAKVRP------------------------------------------------------
 ---------------------------LP---RSEAH
->ORF030 madamurpox virus [MNB22.0]
+>YDH75326.1 madamurpox virus [PZ016454.1]
 MEPRHWGRSMWAVIFLVIT---------MAKSDGNIELCKKRLYVICSTLPCVACRTHALDAIRDNNVLSSDDLNYIYFF
 FISLFNNLAR-D-KT-YTIDTSKIIA------------------------------------------------------
 ---------------------------L---------

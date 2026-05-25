@@ -4,8 +4,8 @@ Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
 Host:    genome-hsv1.local (SSE4.2, 48 GB RAM)
 Command: /Users/curtish/Applications/iqtree2 -nt 10 -t ../../iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile --gcf ./loci.treefile --prefix concordance
-Seed:    469705 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Tue May 19 04:40:03 2026
+Seed:    263731 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun May 24 22:55:49 2026
 Kernel:  SSE2 - 10 threads (14 CPU cores detected)
 
 Reading tree ../../iqtree.Qyeast_F_I_R6/merged_proteins.msa-muscle.faa.Qyeast_F_I_R6.treefile ...
@@ -25,4 +25,4 @@ WARNING: You probably want the --scfl option. The site concordance factor
  is described in the paper "Updated site concordance factors minimize effects of
  homoplasy and taxon sampling" by Yu et al.. Please see the tutorial here for more
  information: http://www.iqtree.org/doc/Concordance-Factor
-Date and Time: Tue May 19 04:40:03 2026
+Date and Time: Sun May 24 22:55:49 2026

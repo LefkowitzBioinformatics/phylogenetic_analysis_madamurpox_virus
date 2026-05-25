@@ -208,7 +208,7 @@ V---DAEAIVSFVNR-YAG-ADPSIYEGA-PP---G---ASARGFALAGLAA----------------AWRAF-------
 VAAILGYSTAG-E-----------------------G----EVVMAL-VD-GRPMARHE----DGFYFNAS-C-------
 -------------------------IIEN---A-------P------------------GT-IDIV------R-------
 ---R
->ORF044 madamurpox virus [MNB22.0]
+>YDH75340.1 madamurpox virus [PZ016454.1]
 ----------------------------------------MGIKNLKSVLLEQGSLRKLE--T--------TC--KHNVM
 YIDFMSFFIPIAYSSRNVEELTNSILSRIS---IWKR--RS-RSITLFVDDGAIAIKTSLRESRKSRLLTQCLHKR-ELE
 R---TIQ-------------S-----KI--E-----------------S-L---------S----T-------------D

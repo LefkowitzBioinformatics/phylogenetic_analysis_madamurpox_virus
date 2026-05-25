@@ -89,7 +89,7 @@ render_gcf_plot <- function(tr, node_df, title, out_prefix, label_col = "gCF") {
 
   p <- ggtree(tr) %<+% node_df +
     geom_tree(aes(color = branch_group), linewidth = 0.8) +
-    geom_tiplab(size = 2.4, offset = 0.015) +
+    geom_tiplab(size = 4.4, offset = 0.015) +
     geom_text2(aes(subset = !isTip & !is.na(branch_label), label = branch_label),
                hjust = -0.25, vjust = -0.25, size = 2.4) +
     scale_color_manual(
